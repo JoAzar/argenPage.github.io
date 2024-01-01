@@ -653,8 +653,16 @@
 	margin: .2vw;
 }
 
+.margenNulo {
+	margin: 0px;
+}
+
 .margenIzq {
 	margin-left: 2vw;
+}
+
+.paddingNulo {
+	padding: 0px;
 }
 
 .padding1 {
@@ -737,6 +745,14 @@
 
 .heighMax {
 	height: 100%;
+}
+
+.height50 {
+	height: 50%;
+}
+
+.heightNulo {
+	height: 0px;
 }
 
 .overflowAuto {

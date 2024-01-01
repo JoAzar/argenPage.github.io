@@ -4,68 +4,150 @@
 	<head>
 		<meta charset="utf-8">
 		<title>PokeCards</title>
-		<link rel="stylesheet" href='<?php echo ruta0 ?>'>            
+		<link rel="stylesheet" href='../styles/style.css'>            
 	</head>
 	<body>
 		
 	</body>
 		<header class="fondoAzul" >
-			<h1 class="letraAmarilla sombraNegra textoChanga dropSombraNegra ">Poke-Cards</h1>
-			<div class="avanzarLargo pausarHover"><img class="girar pausarHover" src="img/pokeball.png"></div>
+			<h1 class="letraAmarilla sombraNegra textoChanga dropSombraNegra sinSeleccion">Monkey Achievements</h1>
+			<div class="avanzarLargoI"><img src="img/mono2.gif" width="8%"></div>
 		</header>
 		
-		<nav class="navDesplegable fondoBlanco dropSombraBlanca">
+		<nav class="navDesplegable fondoBlanco dropSombraNegra">
 			<ul class="menu">
 				<li>
-					<h1 class="nav1 menuIcon2" onclick="location.href='<?php echo iniciol ?>'"></h1>
+					<h1 class="nav1 menuIcon" onclick="location.href='../index.html'"></h1>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio">Lenguajes</h1>
+					<h1 class="nav1 textoSerio tamaniopeq">Lenguajes</h1>
 					<ul class="submenu">
-						<?php foreach ($lenguajes as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Bitácora</h1>
-					<ul class="submenu">
-						<?php foreach ($bitacorar as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hardware</h1>
-					<ul class="submenu">
-						<?php foreach ($hardwarer as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hacking</h1>
-					<ul class="submenu">
-						<?php foreach ($hackingr as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon smallIcons" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/bash.html'">Bash<img class="icon smallIcons" 	src="../icons/bash.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/herramientas.html'">Herramientas<img class="icon smallIcons" src="../icons/tools.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/java.html'">Java<img class="icon smallIcons" 	src="../icons/java.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/javascript.html'">Javascript<img class="icon smallIcons" src="../icons/javascript.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/mysql.html'">MySql<img class="icon smallIcons" src="../icons/mysql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/php.html'">PHP<img class="icon smallIcons" src="../icons/php.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/posgresql.html'">Posgresql<img class="icon smallIcons" src="../icons/postgresql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/python.html'">Python<img class="icon smallIcons" src="../icons/python.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/sql.html'">Sql<img class="icon smallIcons" src="../icons/sql.png">
+							</h1>
+						</li>
 					</ul>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio" onclick="location.href='<?php echo nosotrosl ?>'">Acerca de</h1>
+					<h1 class="nav1 textoSerio tamaniopeq">Bitácora</h1>
+					<ul class="submenu">
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../bitacora/conversaciones.html'">Conversaciones<img class="icon" src="../icons/conversaciones.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../bitacora/ideas.html'">Ideas<img class="icon" src="../icons/ideas.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../bitacora/inscripcion.html'">Inscripcion<img class="icon" src="../icons/inscripcion.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq">Hardware</h1>
+					<ul class="submenu">
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/disco.html'">Disco<img class="icon smallIcons" src="../icons/disco.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/modem.html'">Modem<img class="icon smallIcons" src="../icons/modem.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/mouse.html'">Mouse<img class="icon smallIcons" src="../icons/mouse.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/teclado.html'">Teclado<img class="icon smallIcons" src="../icons/teclado.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/usb.html'">USB<img class="icon smallIcons" src="../icons/usb.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq">Hacking</h1>
+					<ul class="submenu">
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/aircrack.html'">Aircrack<img class="icon midIcons" src="icons/aircrack.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/metasploit.html'">Metasploit<img class="icon smallIcons" src="../icons/metasploit.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/wireshark.html'">Wireshark<img class="icon smallIcons" src="../icons/wireshark.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/nessus.html'">Nessus<img class="icon midIcons" src="../icons/nessus.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/netcat.html'">Netcat<img class="icon midIcons" src="../icons/netcat.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/ports.html'">Ports<img class="icon midIcons" src="../icons/ports.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/nmap.html'">Nmap<img class="icon midIcons" src="../icons/nmap.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/redes.html'">Redes<img class="icon midIcons" src="../icons/redes.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/sqlinjection.html'">SqlInjection<img class="icon midIcons" src="../icons/sqlinjection.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq" onclick="location.href='../nosotros.html'">Acerca de</h1>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq" onclick="location.href='../formulario/form.html'">Formulario</h1>
 				</li>
 			</ul>
 		</nav>
@@ -73,7 +155,7 @@
 		<main class="fondoConImagenBosque3">
 			<div class="margen2">
 				<select class="padding1 fondoBlanco radius bordeVidrio textoChanga tamaniopeq" name="Pokemons" onchange="filtrarPokemons(this.value)">
-					<option onclick="location.href='pokeCards.php'">Seleccione un tipo de pokemon</option>
+					<option onclick="location.href='pokeCards.php'">Achievements</option>
 					<option value="fire.png">Fuego</option>
 					<option value="water.png">Agua</option>
 					<option value="ice.png">Hielo</option>
@@ -84,32 +166,10 @@
 					<option value="dark.png">Oscuridad</option>
 					<option value="fairy.png">Hada</option>
 				</select>
-			<div>
-
-			<div class="horizontal flex widMax90 fondoVidrio margen2 dropSombraBlanca espacioEntreEllos radius">
-			<?php foreach($pokeArray as $pokemon) { ?>
-				<?php echo $pokemon ?>
-			<?php } ?>
-			
-			</div>
 		</main>
 		<footer class="fondoNegro textoSerio letraBlanca dropSombraNegra">
-      		<p >©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAmarillo" onclick="location.href='<?php echo 'pokeCards.php' ?>'">Subir</button>
+      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAmarillo" onclick="location.href='pokeCards.html'">Subir</button>
     	</footer>
-    	<script>
-        function filtrarPokemons(tipoSeleccionado) {
-            var cartas = document.getElementsByClassName('cartaPokemon');
-
-            for (var i = 0; i < cartas.length; i++) {
-                var carta = cartas[i];
-
-                if (tipoSeleccionado === '' || carta.classList.contains(tipoSeleccionado)) {
-                    carta.style.display = 'block';
-                } else {
-                    carta.style.display = 'none';
-                }
-            }
-        }
-    </script>
+    	<script src="acciones.js"></script>
 	</body>
 </HTML>
