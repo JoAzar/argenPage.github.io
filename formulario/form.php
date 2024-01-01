@@ -1,5 +1,3 @@
-<?php include '../rutas.php';?>
-
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -65,10 +63,10 @@
 					</ul>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio" onclick="location.href='<?php echo nosotros ?>'">Acerca de</h1>
+					<h1 class="nav1 textoSerio" onclick="location.href='../nosotros.html'">Acerca de</h1>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio" onclick="location.href='<?php echo form ?>'">Formulario</h1>
+					<h1 class="nav1 textoSerio" onclick="location.href='form.html'">Formulario</h1>
 				</li>
 			</ul>
 		</nav>
