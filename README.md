@@ -4,7 +4,7 @@
 </div>
 <div align="center">
     <h3>¡Logro desbloqueado!</h3>
-    <kbd>
+    <kbd style="width: 100px;">
         <img src="https://github.com/JoAzar/logros/blob/main/logrosMonkey/logroProgramador.jpeg" width="20%"/>
     </kbd>
  </div>
