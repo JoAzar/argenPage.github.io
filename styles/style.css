@@ -1,0 +1,1326 @@
+@import url('https://fonts.cdnfonts.com/css/super-commando');
+@import url('https://fonts.cdnfonts.com/css/fff-tusj');
+@import url('https://fonts.cdnfonts.com/css/violina');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*-----------------------------------FUENTES--------------------------------------------*/
+
+.textoNova {
+	font-family: 'Nova Square', sans-serif;
+}
+
+.textoPixel {
+	font-family: 'Pixelify Sans', sans-serif;
+}
+
+.textoLilita {
+	font-family: 'Lilita One', sans-serif;
+}
+
+.textoDibujado {
+	font-family: 'FFF Tusj', sans-serif;
+}
+
+.textoComando {
+	font-family: 'Super Commando', sans-serif;
+}
+
+.textoSerio {
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+.textoFino {
+	font-family: 'Violina', sans-serif;
+}
+
+.textoChanga {
+	font-family: 'Changa', sans-serif;
+}
+
+/*-------------------------------------TAMAÑO---------------------------------------------*/
+
+.tamanioMed {
+	font-size: 3vh;
+}
+
+.tamaniopeq {
+	font-size: 2.2vh;
+}
+
+.tamanioMin {
+	font-size: 1.8vh;
+}
+
+.tamanioGran {
+	font-size: 5vh;
+}
+
+/*---------------------------------------SOMBRAS------------------------------------------------*/
+
+.cajaSombraNegra {
+	box-shadow: black 10px 10px 10px;
+}
+
+.cajaSombraBlanca {
+	box-shadow: white 10px 10px 10px;
+}
+
+.dropSombraNegra {
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+.dropSombraNegraHover:hover {
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+.dropSombraBlanca {
+	filter: drop-shadow(0 0 0.75rem white);
+}
+
+.dropSombraBlancaHover:hover {
+	filter: drop-shadow(0 0 0.75rem white);
+}
+
+.sombraBlanca {
+	text-shadow: white 2px 2px 2px;
+}
+
+.sombraGris {
+	text-shadow:  #d4d4d4 2px 2px 2px;
+}
+
+.sombraNegra {
+	text-shadow: black 1px 1px 1px;
+}
+
+.sombraNegraHover:hover {
+	text-shadow: black 1px 1px 1px;
+}
+
+/*--------------------------GAP----------------------------------------------------------*/
+
+.gap {
+	gap: 20px;
+}
+
+
+/*------------------------------------COLORES--------------------------------------------*/
+.fondoConImagen2 {
+	background-image: url('../images/teclado.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoMonkeyUSA {
+	background-image: url('imagenesMonkey/eeuu.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondoConImagenKlak {
+	background-image: url('../images/klak2.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenKlak2 {
+	background-image: url('../images/klak1.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagen {
+	background-image: url('../images/redes.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagen3 {
+	background-image: url('../images/chica.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagen4 {
+	background-image: url('../images/ia2.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagen5 {
+	background-image: url('../images/codegirl.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenTarjeta {
+	background-image: url('../images/tarjeta.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagen7 {
+	background-image: url('../images/ruby.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoImagenCiudad3 {
+	background-image: url('../images/city3.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoImagenCiudad2 {
+	background-image: url('../images/city2.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoImagenCiudad {
+	background-image: url('../images/city.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoImagen8 {
+	background-image: url('../images/leaf.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoImagenBlue {
+	background-image: url('../images/blue2.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+.bordeVidrio {
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, .18);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+}
+
+
+.fondoVidrio {
+	background: linear-gradient(135deg, rgba(255, 255, 255, .1) rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, .18);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+}
+
+.fondoVidrioHover:hover {
+	background: linear-gradient(135deg, rgba(255, 255, 255, .1) rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, .18);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+}
+
+.fondoNegroTransparente {
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.fondoBlancoTransparente {
+	background-color: rgba(255, 255, 255,.5);
+}
+
+.fondoNegroSuave {
+	background-color: #4f4f4f;
+}
+
+.fondoNegro {
+	background-color:  #292929;
+}
+
+.fondoBlanco {
+	background-color: white;
+}
+
+.fondoCeleste {
+	background-color: #58d9e8;
+}
+
+.fondoAmarillo {
+	background-color: #fff075;
+}
+
+.fondoVerde {
+	background-color: #b2e070;
+}
+
+.fondoAzul {
+	background-color: #3498db;
+}
+
+.fondoTiburon {
+	background-color: #6d8dbf;
+}
+
+.fondoVioleta {
+	 background-color: #d69ff1;
+}
+
+.fondoRosa {
+	background-color: #ff38a1;
+}
+
+.fondoNaranjeta {
+	background-color: #ffc176;
+}
+
+.fondoRojo {
+	background-color:  #ff6553;
+}
+
+.sinBorde {
+	border: none;
+}
+
+.bordeNaranja {
+	border: solid orange 1px;
+}
+
+.bordeNaranjeta {
+	borde: solid #ffc176 1px;
+}
+
+.bordeVerde {
+	border:  solid #b2e070 1px;
+}
+
+.bordeCeleste {
+	border: skyblue solid 5px;
+}
+
+.bordeCelesteFino {
+	border: skyblue solid 1px;
+}
+
+.bordeAzul {
+	border: #3498db solid 5px;
+}
+
+.bordeAzulFinoFocus:focus {
+	border: #3498db solid 2px;
+	outline: none;
+}
+
+.bordeAzulFino {
+	border: #3498db solid 1px;
+}
+
+.bordeTiburon {
+	border: #6d8dbf solid 5px;
+}
+
+.bordeTiburonFino {
+	border: #6d8dbf solid 1px;
+}
+
+.bordeRosa {
+	border: #ff38a1 solid 5px;
+}
+
+.bordeRosaFino {
+	border: #ff38a1 solid 1px;
+}
+
+.bordeRojoFino {
+	border:  #ff6553 solid 1px ;
+}
+
+.bordeRojo {
+	border:  #ff6553 solid 5px ;
+}
+
+.bordeNegro {
+	border: #4f4f4f solid 5px;
+}
+
+.bordeNegroGrueso {
+	border: black solid 50px;
+}
+
+.bordeNegroFino {
+	border: #4f4f4f solid 1px;
+}
+
+.bordeNegroTransparente {
+	border: rgba(0, 0, 0, .5) solid 5px;
+}
+
+.bordeNegroFinoTransparente {
+	border: rgba(0, 0, 0, .5) solid 1px;
+}
+
+.bordeBlanco {
+	border: white solid 4px;
+}
+
+.bordeBlancoFino {
+	border: white solid 1px;
+}
+
+.borderVioleta {
+	 border: #d69ff1 solid 5px;
+}
+
+.letraVioleta {
+	color:  #d69ff1;
+}
+
+.letraRoja {
+	color:  #ff6553;
+}
+
+.letraRosa {
+	color: #ff38a1;
+}
+
+.letraAmarilla {
+	color: #fff075;
+}
+
+.letraEpica {
+	color:  #ffd58c;
+}
+
+.letraTiburon {
+	color: #6d8dbf;
+}
+
+.letraAzul {
+	color: #3498db;
+	text-shadow: black 1px 1px 1px;
+}
+
+.letraNaranjetaHover {
+	color: #ffc176;
+	text-shadow: black 1px 1px 1px;
+}
+
+.letraAmarillaHover:hover {
+	color: #fff075;
+	text-shadow: black 1px 1px 1px;
+}
+
+.letraRojaHover:hover {
+	color:  #ff6553;
+	text-shadow: black 1px 1px 1px;
+}
+
+.letraAzulHover:hover {
+	color: #3498db;
+	text-shadow: black 1px 1px 1px;
+}
+
+.letraEpicaHover:hover {
+	color:  #ffd58c;
+}
+
+.letraRosaHover:hover {
+	color: #ff38a1;
+}
+
+.letraVioletaHover:hover {
+	color:  #d69ff1;
+}
+
+.letraTiburonHover:hover {
+	color: #6d8dbf;
+}
+
+.letraVerde {
+	color:  #b2e070;
+}
+
+.letraVerdeHover:hover {
+	color:  #b2e070;
+}
+
+.letraVerdeClaro {
+	color:    #b4f5b7 ;
+}
+
+.letraCeleste {
+	color: #b6edff;
+}
+
+.letraCelesteHover:hover {
+	color: #b6edff;
+}
+
+
+.letraNegra {
+	color: black;
+}
+
+.letraBlanca {
+	color: white;
+}
+
+.letraNaranja {
+	color: orange;
+}
+
+.letraNaranjeta {
+	color: #ffc176;
+}
+
+/*---------------------------------------EFECTOS-------------------------------*/
+
+.flash {
+	animation: iniciarColor 3s ease-in-out;
+}
+
+.flash2 {
+	animation: iniciarColor2 3s ease-in-out;
+}
+
+.radius {
+	border-radius: 30px 30px 30px 30px;
+}
+
+.subrayado {
+	text-decoration: underline;
+}
+
+.girar {
+	animation: rotar 2s linear infinite;
+
+}
+
+
+.girarHover:hover {
+	animation: rotar 2s linear infinite;
+
+}
+
+.girarInverso {
+	animation: rotarInverso 2s linear infinite;
+}
+
+.girarInversoHover:hover {
+	animation: rotarInverso 2s linear infinite;
+}
+
+.stretch {
+	align-items: stretch;
+}
+
+.centrarItem {
+	align-self: center;
+}
+
+.centrarItem2 {
+	justify-self: center;
+}
+
+.flotar {
+	position: absolute;
+}
+
+
+.subirArriba10 {
+	bottom: 10vh;
+}
+
+.subirArriba20 {
+	bottom: 20vh;
+}
+
+.subirArriba50 {
+	bottom: 50vh;
+}
+
+.noFlotar {
+	position: relative;
+}
+
+.atrasDe {
+	position: relative;
+	z-index: 1;
+}
+
+.adelanteDe {
+	position: relative;
+	z-index: 2;
+}
+
+.blur {
+	backdrop-filter: blur(10px);
+}
+
+.ocultarSobra {
+	overflow: hidden;
+}
+
+.grow {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.grow1 {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+.growHover:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.growMaxHover:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+.agrandarImagen {
+    width: 20%;
+    height: auto;
+    animation: animarPokemon 2s steps(3) infinite;
+}
+
+.avanzarLargo {
+	animation: moverDerLargo 30s linear infinite;
+}
+
+.avanzarLargoI {
+	animation: moverIzqLargo 30s linear infinite;
+}
+
+.avanzarGirandoLargo {
+	animation: avanzarGirandoLargo 30s linear infinite;
+}
+
+.subirCorto {
+	animation: saltar 5s linear infinite;
+}
+
+.subirCortoHover:hover {
+	animation: saltar 5s linear infinite;
+}
+
+.fondoColores1 {
+	animation: coloresA 5s linear infinite;
+}
+
+.fondoColores1Hover:hover {
+	animation: coloresA 5s linear infinite;
+}
+
+.letraColores1 {
+	animation: letraColoresA 5s linear infinite;
+}
+
+.letraColores1Hover:hover {
+	animation: letraColoresA 5s linear infinite;
+}
+
+/*---------------------------------------margenes-------------------------------*/
+
+.autoTextoCentrado {
+	align-self: center;
+}
+
+.textoCentrado {
+	text-align: center;
+}
+
+.margen2 {
+	margin: 2vw;
+}
+
+.margen1 {
+	margin: 1vw;
+}
+
+.margen0 {
+	margin: .2vw;
+}
+
+.margenIzq {
+	margin-left: 2vw;
+}
+
+.padding1 {
+	padding: 1vw;
+}
+
+.padding2 {
+	padding: 2vw;
+}
+
+.padding1 {
+	padding: .3vw;
+}
+
+.paddingTop30 {
+	padding-top: 30vh;
+}
+
+.paddingDer10 {
+	padding-right: 10vw;
+}
+
+.paddingDer15 {
+	padding-right: 15vw;
+}
+
+.paddingDer30 {
+	padding-right: 30vw;
+}
+
+.childCajaDerInf {
+	position: absolute;
+	bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.childCajaIzqInf {
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.widMax5 {
+	max-width: 5%;
+}
+
+.widMax10 {
+	max-width: 10%;
+}
+
+.widMax80 { 
+	max-width: 80%;
+}
+
+.widMax90 { 
+	max-width: 90%;
+}
+
+.widMax100 { 
+	max-width: 100%;
+}
+
+.wid10 { 
+	width: 10%;
+}
+
+.wid20 { 
+	width: 20%;
+}
+
+.wid30 { 
+	width: 30%;
+}
+
+.wid50 { 
+	width: 50%;
+}
+
+.heighMax {
+	height: 100%;
+}
+
+.overflowAuto {
+	overflow: auto;
+}
+
+.encuadrar {
+	width: 30vw;
+	height: 50vh;
+}
+
+.encuadrarAlto {
+	width: 30vw;
+	height: 50vh;
+}
+
+.encuadrarMedio {
+	width: 50vw;
+	height: 50vh;
+}
+
+.encuadrarGran {
+	width: 60vw;
+	height: 50vh;
+}
+
+.encuadrarGranAlto {
+	width: 50vw;
+	height: 70vh;
+}
+
+.encuadrarPeq {
+	width: 30%;
+	height: 30%;
+}
+
+.encuadrarPeqHover:hover {
+	width: 45%;
+	height: 45%;
+	cursor: pointer;
+	transition:  all 500ms ease;
+}
+
+.interlineado15 {
+	line-height: 1.5;
+}
+
+.manito {
+	cursor: pointer;
+}
+
+.pausarHover:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.sinSeleccion {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.conSeleccion {
+  -moz-user-select: all;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+
+/*---------------------------------------altura-------------------------------*/
+
+.altura50 {
+	height: 50vh;
+}
+
+.altura40 {
+	height: 40vh;
+}
+
+.altura30 {
+	height: 30vh;
+}
+
+.altura20 {
+	height: 20vh;
+}
+
+.altura3 {
+	height: 3vh;
+}
+
+/*-------------------------------COLORES DE BOTON-----------------------------*/
+
+.botonAmarillo:hover {
+	background-color: #fff075;
+	color: black;
+	border: black solid .5px;
+}
+
+
+
+.botonNaranjetaHover:hover {
+	background-color: #ffc176;
+	color: black;
+	border: black solid .5px;
+}
+
+.botonRojoHover:hover {
+	background-color:  #ff6553;
+	color: black;
+	border: black solid .5px;
+}
+
+.botonRosa:hover {
+    background-color: pink;
+}
+
+.botonCeleste:hover {
+	background-color: #2980b9;
+	color: white;
+}
+
+.botonVioleta:hover {
+	background-color: #d69ff1;
+	color: white;
+	border: white solid .5px;
+}
+
+
+
+.botonTiburon:hover {
+	background-color: #6d8dbf;
+	color: white;
+	border: white solid .5px;
+}
+
+
+.botonTiburon:hover {
+	background-color: #b2e070;
+	color: white;
+	border: white solid .5px;
+}
+
+/*-------------------------------ARMADO DE CAJAS-----------------------------*/
+
+.horizontal {
+	display: flex;
+	flex-direction: wrap;
+}
+
+.centrarCaja {
+	align-items: center;
+}
+
+
+
+.vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+/*-------------------------------BOTONES--------------------------------------*/
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+/*----------------------------------------------------------------------------*/
+
+header {
+    justify-content: center;
+    text-align: center;
+	padding: 2vh;
+}
+
+.icon {
+	position: absolute;
+	margin-left: 1vw;
+}
+
+.smallIcons {
+	max-width: 15%;
+	max-height: 15%;
+}
+
+.midIcons {
+	max-width: 30%;
+	max-height: 30%;
+}
+
+.menuIcon {
+	background-image: url('../icons/menuNegro.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.menuIcon:hover {
+	background-image: url('../icons/menu.png');
+}
+
+.menuIcon2 {
+	background-image: url('../icons/menu2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.menuIcon2:hover {
+	background-image: url('../icons/menu3.png');
+}
+
+.iconoAzul {
+	background-image: url('../icons/menu.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.nav1 {
+	text-align: center;
+	align-self: center;
+	display: flex;
+	align-content: wrap;
+	justify-content: space-evenly;
+	padding: 1.5vw;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav1:hover {
+	text-shadow: black 1px 1px 1px;
+	transition: background-color .3s, color 0.5s;
+	cursor: pointer;
+	color: #ffd58c;
+}
+
+
+ul.grilla {
+	padding-top: 2vh;
+}
+
+li.grilla{
+	list-style: none;
+	font-size: 2vh;
+	margin: .3vw;
+	padding: 1vw;
+}
+
+.navDesplegable {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navDesplegable .menu {
+	list-style: none;
+	align-items: center;
+}
+
+.navDesplegable .menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.navDesplegable h1 {
+    display: block;
+    padding: 10px 20px;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navDesplegable .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.navDesplegable .menu > li:hover .submenu {
+    display: block;
+}
+
+.navDesplegable .submenu li {
+	margin-right: 1vw;
+	padding-right: 2vw;
+}
+
+.navDesplegable .submenu li:hover {
+	cursor: pointer;
+}
+
+
+main {
+	background-color: #3b3b3b;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	min-height: 100vh;
+    align-items: center;
+}
+
+main2 {
+	background-color: #3b3b3b;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	min-height: 100vh;
+    align-items: center;
+}
+
+main.blanco {
+	background-color: #ededed;
+}
+
+main.negro {
+	background-color: #3b3b3b;
+}
+
+h2 {
+	margin-top: 4vh;
+	text-align: center;
+	padding: 3vh;
+}
+
+p {
+	margin: 6vw;
+	margin-bottom: 2vh;
+}
+
+p.contenedorTransparente {
+  	padding: 20px;
+}
+
+.espacioEntreEllos {
+	justify-content: space-evenly;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+}
+
+.link {
+	margin: 4vh;
+}
+
+h3.link:hover {
+	cursor: pointer;
+	color:  #6c8eff;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+footer {
+	text-align: center;
+	border-top: solid orange;
+	padding-bottom: 4vh;
+}
+
+/*-------------------------------------------------------------*/
+
+/*-------------------------------------------------------------*/
+
+@keyframes iniciarColor {
+    from {
+        color: #3b3b3b;
+    }
+    to {
+        color: #b6edff;
+    }
+}
+
+@keyframes iniciarColor2 {
+    from {
+        color: #3b3b3b;
+    }
+    to {
+        color: #ff9300;
+    }
+}
+
+/* animation: animate 4s linear infinite */
+
+@keyframes rotar {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotarInverso {
+	0%{
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes moverDerLargo {
+	from 
+	{
+		transform: translateX(-50%);
+	}
+	to {
+		transform: translateX(60%);
+	}
+}
+
+@keyframes moverIzqLargo {
+	from 
+	{
+		transform: translateX(60%);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@keyframes saltar {
+	from 
+	{
+		transform: translateY(-15%);
+	}
+	to {
+		transform: translateY(15%);
+	}
+}
+
+@keyframes coloresA {
+	 from 
+	 {
+	 	background-color: white;
+	 }
+	 50%
+	 {
+	 	background-color: yellow
+	 }
+	 to 
+	 {
+	 	background-color: orange;
+	 }
+}
+
+@keyframes letraColoresA {
+	 from 
+	 {
+	 	color: white;
+	 }
+	 50%
+	 {
+	 	color: yellow
+	 }
+	 to 
+	 {
+	 	color: orange;
+	 }
+}
+
+
+/*******************************POKEMON*************************************************/
+
+.mostrar {
+	display: block;
+}
+
+.ocultar {
+	display: none;
+}
+
+.fondoConImagenBosque {
+	background-image: url('../images/bosque.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenBosque2 {
+	background-image: url('../images/bosque2.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenBosque3 {
+	background-image: url('../images/bosque3.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenTenebroso {
+	background-image: url('../images/sombrio.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenOceano {
+	background-image: url('../images/oceano.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenLava {
+	background-image: url('../images/fuego.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenLava2 {
+	background-image: url('../images/bosqueIncendiado.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenNevado {
+	background-image: url('../images/nevado.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenNevado2 {
+	background-image: url('../images/nevado2.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenBosque4 {
+	background-image: url('../images/bosque4.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.fondoConImagenMistica {
+	background-image: url('../images/mistico.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+}
