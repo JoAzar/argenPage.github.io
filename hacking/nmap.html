@@ -1,17 +1,16 @@
-<?php include '../rutas.php'; ?> 
 
 <!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Redes</title>
+		<title>IAConversaciones</title>
 		<link rel="stylesheet" href="../styles/style.css">
 	</head>
 	<body>
 		
 	</body>
 		<header>
-			<h1>Redes</h1>
+			<h1>Nmap</h1>
 		</header>
 		<nav class="navDesplegable fondoBlanco">
 			<ul class="menu">
@@ -69,22 +68,16 @@
 			</ul>
 		</nav>
 		<main>
-			<h2>Información sobre redes</h2>
-			<p>
-				<b class="epico">Entiendase [012 345 67 89 xx] como los componentes de la interfaz de red</b><br><br>
-	          	<br><b class="blanco">012 -></b><b> indica que es una interfaz inalámbrica</b><br><br>
-	          	<br><b class="blanco">345 -></b><b> slot del bus PCI y la posición de la interfaz inalámbrica en el sistema</b><br><br>
-	          	<br><b class="blanco">67 -></b><b> interfaz Ethernet</b><br><br>
-	          	<br><b class="blanco">89 -></b><b> Corresponde al slot del bus PCI donde está ubicada la tarjeta de red</b><br><br>
-	          	<br><b class="blanco">xx -></b><b> Indica la interfaz número 0 en ese slot PCI. Si hubiera más de una interfaz en el mismo slot, se usarían s1, s2, y así sucesivamente</b><br>
-	          	
-	          	
-
-
-	        </p>
+			<h2>Descripción: NET = nombre de la network </h2>
+			<p><b class="pregunta negrita">Verbose Syn-scan System Op-></b><b class="respuesta"> sudo nmap -v -sS -O ip</b><br>
+			<br><b class="pregunta negrita">Dispositivos conectados -></b><b class="respuesta"> sudo arp-scan --interface=NET --localnet</b><br>
+			<br><b class="pregunta negrita">IA conversaciones -></b><b class="respuesta"> Es un historial de conversaciones con IAs</b><br>
+			</p>
+	        
+	        <div class="linea-centrada"></div>
 		</main>
 		<footer class="fondoNegro textoSerio letraBlanca">
-      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button onclick="location.href='<?php $ruta27 ?>'">Subir</button>
+      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button onclick="location.href='<?php $ruta22 ?>'">Subir</button>
     	</footer>
 	</body>
 </HTML>

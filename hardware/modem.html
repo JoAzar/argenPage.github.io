@@ -1,4 +1,4 @@
-<?php include '../rutas.php'; ?> 
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +11,7 @@
 		
 	</body>
 		<header>
-			<h1>Sql Injection</h1>
+			<h1>Modem</h1>
 		</header>
 		<nav class="navDesplegable fondoBlanco">
 			<ul class="menu">
@@ -44,7 +44,7 @@
 				<li>
 					<h1 class="nav1 textoSerio">Hardware</h1>
 					<ul class="submenu">
-						<?php foreach ($hardwarer as $ruta => $nombre): ?>
+						<?php foreach ($hardware as $ruta => $nombre): ?>
 							<li>
 								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
 								</h1>
@@ -55,7 +55,7 @@
 				<li>
 					<h1 class="nav1 textoSerio">Hacking</h1>
 					<ul class="submenu">
-						<?php foreach ($hacking as $ruta => $nombre): ?>
+						<?php foreach ($hackingr as $ruta => $nombre): ?>
 							<li>
 								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon smallIcons" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
 								</h1>
@@ -78,7 +78,7 @@
 	        <div class="linea-centrada"></div>
 		</main>
 		<footer class="fondoNegro textoSerio letraBlanca">
-      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button onclick="location.href='<?php $ruta24 ?>'">Subir</button>
+      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button onclick="location.href='<?php $ruta16 ?>'">Subir</button>
     	</footer>
 	</body>
 </HTML>
