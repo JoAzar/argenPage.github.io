@@ -132,12 +132,6 @@
 	background-repeat: no-repeat;
 }
 
-.fondoConImagenKlak2 {
-	background-image: url('../images/klak1.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
 .fondoConImagen {
 	background-image: url('../images/redes.jpeg');
 	background-size: cover;
@@ -164,12 +158,6 @@
 
 .fondoConImagenTarjeta {
 	background-image: url('../images/tarjeta.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagen7 {
-	background-image: url('../images/ruby.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
