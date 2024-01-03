@@ -195,17 +195,15 @@
 
 
 .bordeVidrio {
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+	/*backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);*/
 	border: 1px solid rgba(255, 255, 255, .18);
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
 }
 
 
 .fondoVidrio {
-	background: linear-gradient(135deg, rgba(255, 255, 255, .1) rgba(255, 255, 255, 0));
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
+	background: linear-gradient(rgba(49, 49, 49, 0.678), rgba(255, 255, 255, 0.322));
 	border: 1px solid rgba(255, 255, 255, .18);
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
 }
