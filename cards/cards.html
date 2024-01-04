@@ -3,14 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>PokeCards</title>
-		<link rel="stylesheet" href='../styles/style.css'>            
+		<link rel="stylesheet" href='../styles/style.css'>
+		<link rel="stylesheet" href='../card.css'>        
 	</head>
-	<body>
-	</body>
-		<header class="fondoAzul" >
-			<h1 class="letraAmarilla sombraNegra textoChanga dropSombraNegra sinSeleccion">Monkey Achievements</h1>
-			<div class="avanzarLargo"><img src="img/mono3.gif" width="8%"></div>
-		</header>
+	
+	<header class="fondoAzul" >
+		<h1 class="letraAmarilla sombraNegra textoChanga dropSombraNegra sinSeleccion">Monkey Achievements</h1>
+		<div class="avanzarLargo"><img src="img/mono3.gif" width="8%"></div>
 		<nav class="navDesplegable fondoBlanco dropSombraNegra">
 			<ul class="menu">
 				<li>
@@ -148,27 +147,35 @@
 				</li>
 			</ul>
 		</nav>
-		<main class="fondoConImagenBosque5">
-			<div class="margen2">
-				<select class="padding1 fondoBlanco radius bordeVidrio textoChanga tamaniopeq" name="Pokemons" onchange="filtrarPokemons(this.value)">
-					<option onclick="location.href='pokeCards.html'">Achievements</option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-				<div class="flex encuadrar bordeVidrio radius margen2 fondoConImagenBosque4 centrarCaja ocultarSombra">
-					<img class="margenIzq2 avanzarLargoRapido" src="img/mono2.gif" width="30%">
+	</header>
+	<body class="fondoConImagenBosque5">
+		<main class="horizontal">
+			<div class="flex encuadrar bordeVidrio radius margen2 fondoConImagenBosque4 centrarCaja ocultarSombra">
+				<img class="margenIzq2 avanzarLargoRapido" src="img/mono2.gif" width="30%">
+			</div>
+
+			<div class="card margen2">
+				<div class="lines"></div>
+				<div class="imgBx">
+					<img src="img/mono1.gif">
 				</div>
+				<div class="content">
+					<div class="details">
+						<h2 class="letraVerde dropSombraNegra tamaniopeq fondoVidrio">Super Monkey<br><span class="letraVerde sombraNegra tamaniopeq">Hero</span></h2>
+						<div class="data horizontal gap">
+							<h3 class="letraBlanca sombraNegra tamaniopeq">Be<br><span class="letraBlanca sombraNegra tamaniopeq">Brillant</span></h3>
+							<h3 class="letraBlanca sombraNegra tamaniopeq">Be<br><span class="letraBlanca sombraNegra tamaniopeq">Strong</span></h3>
+							<h3 class="letraBlanca sombraNegra tamaniopeq">Be<br><span class="letraBlanca sombraNegra tamaniopeq">Persistent</span></h3>
+						</div>
+					</div>  
+				</div>
+			</div>
 		</main>
-		<footer class="fondoNegro textoSerio letraBlanca dropSombraNegra">
-      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAmarillo" onclick="location.href='pokeCards.html'">Subir</button>
-    	</footer>
-    	<script src="acciones.js"></script>
 	</body>
+
+	<script src="acciones.js"></script>
+	<footer class="fondoNegro textoSerio letraBlanca dropSombraNegra">
+		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAmarillo" onclick="location.href='pokeCards.html'">Subir</button>
+	</footer>
+  	
 </HTML>
