@@ -913,11 +913,17 @@
 	align-items: center;
 }
 
-
-
 .vertical {
 	display: flex;
 	flex-direction: column;
+}
+
+.flex1 {
+	flex: 1;
+}
+
+.flex2 {
+	flex: 2;
 }
 
 /*-------------------------------BOTONES--------------------------------------*/
@@ -955,7 +961,10 @@ header {
 
 .icon {
 	position: absolute;
-	margin-left: 1vw;
+	margin: 0.5vw;
+	background-color: rgba(255, 255, 255, 0.356);
+	border: solid 4px rgba(0, 0, 0, 0.507) ;
+	border-radius: 30px 30px 30px 30px;
 }
 
 .smallIcons {
@@ -966,12 +975,6 @@ header {
 .midIcons {
 	max-width: 30%;
 	max-height: 30%;
-}
-
-.menuIcon {
-	background-image: url('../icons/menuNegro.png');
-	background-repeat: no-repeat;
-	background-size: contain;
 }
 
 .menuIcon:hover {
@@ -1060,11 +1063,16 @@ li.grilla{
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: white;
+	color: white;
+	text-shadow: 2px 2px 2px #3b3b3b;
+    background-color: rgba(103, 225, 255, 0.829);
+	border-radius: 30px 30px 30px 30px;
 }
 
+
 .navDesplegable .menu > li:hover .submenu {
-    display: block;
+    display: flex;
+	flex-direction: row;
 }
 
 .navDesplegable .submenu li {
@@ -1089,10 +1097,12 @@ main {
 main2 {
 	background-color: #3b3b3b;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row wrap;
+	flex-wrap: wrap;
 	text-align: center;
 	min-height: 100vh;
     align-items: center;
+	
 }
 
 main.blanco {
@@ -1162,7 +1172,20 @@ footer {
 	padding-bottom: 4vh;
 }
 
-/*-------------------------------------------------------------*/
+/*----------------------vista de página------------------------*/
+
+img {
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+	animation-timeline: --image;
+	animation-name: show;
+	animation-range: entry 25% cover 50%;
+	animation-fill-mode: both;
+}
+
+.repararTexto {
+	text-wrap: balance;
+}
 
 /*-------------------------------------------------------------*/
 
@@ -1278,8 +1301,19 @@ footer {
 	 }
 }
 
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
 
-/*******************************POKEMON*************************************************/
+
+/*******************************cards*************************************************/
 
 .mostrar {
 	display: block;
