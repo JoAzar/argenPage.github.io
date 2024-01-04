@@ -195,25 +195,23 @@
 
 
 .bordeVidrio {
-	/*backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);*/
-	border: 1px solid rgba(255, 255, 255, .18);
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.068);
+	box-shadow: 0 8px 32px 0 rgba(141, 141, 141, 0.37);
 }
 
 
 .fondoVidrio {
-	background: linear-gradient(rgba(49, 49, 49, 0.678), rgba(255, 255, 255, 0.322));
-	border: 1px solid rgba(255, 255, 255, .18);
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+	background: linear-gradient(rgba(255, 255, 255, 0.678), rgba(255, 255, 255, 0.171));
+	border: 1px solid rgba(53, 53, 53, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(48, 48, 48, 0.37);
 }
 
 .fondoVidrioHover:hover {
-	background: linear-gradient(135deg, rgba(255, 255, 255, .1) rgba(255, 255, 255, 0));
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, .18);
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+	background: linear-gradient(rgba(255, 255, 255, 0.678), rgba(255, 255, 255, 0.171));
+	border: 1px solid rgba(53, 53, 53, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(48, 48, 48, 0.37);
 }
 
 .fondoNegroTransparente {
@@ -269,7 +267,7 @@
 }
 
 .fondoRojo {
-	background-color:  #ff6553;
+	background-color:  hsl(6, 97%, 66%);
 }
 
 .sinBorde {
@@ -366,8 +364,9 @@
 }
 
 .letraVioleta {
-	color:  #d69ff1;
+	color:  #e5b0ff;
 }
+
 
 .letraRoja {
 	color:  #ff6553;
@@ -423,7 +422,7 @@
 }
 
 .letraVioletaHover:hover {
-	color:  #d69ff1;
+	color:  #e7b6ff;
 }
 
 .letraTiburonHover:hover {
@@ -510,6 +509,10 @@
 
 .centrarItem {
 	align-self: center;
+}
+
+.centrarImagen {
+	text-align: center;
 }
 
 .centrarItem2 {
@@ -764,7 +767,7 @@
 
 .encuadrar {
 	width: 30vw;
-	height: 50vh;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -852,7 +855,13 @@
 
 /*-------------------------------COLORES DE BOTON-----------------------------*/
 
-.botonAmarillo:hover {
+.botonAmarillo {
+	background-color: #ffea4a;
+	color: black;
+	border: black solid .5px;
+}
+
+.botonAmarilloHover:hover {
 	background-color: #fff075;
 	color: black;
 	border: black solid .5px;
@@ -881,7 +890,23 @@
 	color: white;
 }
 
+.botonAzul {
+	background-color: #a7dcff;
+	color: rgb(54, 54, 54);
+}
+
+.botonAzulHover:hover {
+	background-color: #3498db;
+	color: rgb(255, 255, 255);
+}
+
 .botonVioleta:hover {
+	background-color: #ebc4ff;
+	color: rgb(78, 78, 78);
+	border: rgb(82, 82, 82) solid .2px;
+}
+
+.botonVioleta {
 	background-color: #d69ff1;
 	color: white;
 	border: white solid .5px;
@@ -1065,7 +1090,7 @@ li.grilla{
     padding: 0;
 	color: white;
 	text-shadow: 2px 2px 2px #3b3b3b;
-    background-color: rgba(103, 225, 255, 0.829);
+    /*background-color: rgb(103, 225, 255);*/
 	border-radius: 30px 30px 30px 30px;
 }
 
