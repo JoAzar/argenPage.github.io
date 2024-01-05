@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 
 * {
 	padding: 0;
@@ -46,6 +49,15 @@
 	font-family: 'Changa', sans-serif;
 }
 
+.textoOlvalo {
+	font-family: 'Oswald', sans-serif;
+}
+
+.textoPt {
+	font-family: 'PT Serif', serif;
+}
+
+
 /*-------------------------------------TAMAÑO---------------------------------------------*/
 
 .tamanioMed {
@@ -80,6 +92,7 @@
 
 .dropSombraNegraHover:hover {
 	filter: drop-shadow(0 0 0.75rem black);
+	transition:  all 1.5s ease;
 }
 
 .dropSombraBlanca {
@@ -88,6 +101,7 @@
 
 .dropSombraBlancaHover:hover {
 	filter: drop-shadow(0 0 0.75rem white);
+	transition:  all 1.5s ease;
 }
 
 .sombraBlanca {
@@ -96,6 +110,7 @@
 
 .sombraBlancaHover:hover {
 	text-shadow: white 2px 2px 2px;
+	transition:  all 1.5s ease;
 }
 
 
@@ -119,6 +134,79 @@
 
 
 /*------------------------------------COLORES--------------------------------------------*/
+.fondoConImagenBosque {
+	background-image: url('../images/bosque.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenBosque2 {
+	background-image: url('../images/bosque2.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenBosque3 {
+	background-image: url('../images/bosque3.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenBosque4 {
+	background-image: url('../images/selva.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenTenebroso {
+	background-image: url('../images/sombrio.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenOceano {
+	background-image: url('../images/oceano.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenLava {
+	background-image: url('../images/fuego.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenLava2 {
+	background-image: url('../images/bosqueIncendiado.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenNevado {
+	background-image: url('../images/nevado.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenNevado2 {
+	background-image: url('../images/nevado2.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoConImagenBosque5 {
+	background-image: url('../images/bosque4.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.fondoConImagenMistica {
+	background-image: url('../images/mistico.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .fondoConImagen2 {
 	background-image: url('../images/teclado.jpeg');
 	background-size: cover;
@@ -217,6 +305,7 @@
 	background: linear-gradient(rgba(255, 255, 255, 0.678), rgba(255, 255, 255, 0.171));
 	border: 1px solid rgba(53, 53, 53, 0.18);
 	box-shadow: 0 8px 32px 0 rgba(48, 48, 48, 0.37);
+	transition:  all 1.5s ease;
 }
 
 .fondoNegroTransparente {
@@ -240,7 +329,8 @@
 }
 
 .fondoBlancoHover:hover {
-	background-color: rgba(255, 255, 255, 0.863);
+	background-color: rgba(255, 255, 255);
+	transition:  all 1.5s ease;
 }
 
 .fondoCeleste {
@@ -261,6 +351,12 @@
 
 .fondoAzulHover:hover {
 	background-color: #3498db;
+	transition:  all 1.5s ease;
+}
+
+.fondoAzulEspecialHover:hover {
+	background-color: #3498db;
+	transition:  all 1.5s ease;
 }
 
 .fondoTiburon {
@@ -296,7 +392,7 @@
 }
 
 .bordeNaranjeta {
-	borde: solid #ffc176 1px;
+	border: solid #ffc176 1px;
 }
 
 .bordeVerde {
@@ -590,11 +686,13 @@
 .growHover:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
+	transition:  all 1.5s ease;
 }
 
 .growMaxHover:hover {
     transform: scale(1.5);
     transition: transform 0.3s ease;
+	transition:  all 1.5s ease;
 }
 
 .agrandarImagen {
@@ -639,14 +737,6 @@
 
 .fondoColores1Hover:hover {
 	animation: coloresA 5s linear infinite;
-}
-
-.letraColores1 {
-	animation: letraColoresA 5s linear infinite;
-}
-
-.letraColores1Hover:hover {
-	animation: letraColoresA 5s linear infinite;
 }
 
 /*---------------------------------------margenes-------------------------------*/
@@ -816,11 +906,15 @@
 	width: 45%;
 	height: 45%;
 	cursor: pointer;
-	transition:  all 500ms ease;
+	transition:  all 1.5s ease;
 }
 
 .interlineado15 {
 	line-height: 1.5;
+}
+
+.interlineado2 {
+	line-height: 2em;
 }
 
 .manito {
@@ -881,6 +975,7 @@
 	background-color: #fff075;
 	color: black;
 	border: black solid .5px;
+	transition:  all 1.5s ease;
 }
 
 
@@ -889,21 +984,25 @@
 	background-color: #ffc176;
 	color: black;
 	border: black solid .5px;
+	transition:  all 1.5s ease;
 }
 
 .botonRojoHover:hover {
 	background-color:  #ff6553;
 	color: black;
 	border: black solid .5px;
+	transition:  all 1.5s ease;
 }
 
 .botonRosa:hover {
     background-color: pink;
+	transition:  all 1.5s ease;
 }
 
 .botonCeleste:hover {
 	background-color: #2980b9;
 	color: white;
+	transition:  all 1.5s ease;
 }
 
 .botonAzul {
@@ -920,6 +1019,7 @@
 	background-color: #ebc4ff;
 	color: rgb(78, 78, 78);
 	border: rgb(82, 82, 82) solid .2px;
+	transition:  all 1.5s ease;
 }
 
 .botonVioleta {
@@ -932,6 +1032,7 @@
 	background-color: #6d8dbf;
 	color: white;
 	border: white solid .5px;
+	transition:  all 1.5s ease;
 }
 
 
@@ -951,6 +1052,13 @@
 	flex-direction: column;
 }
 
+.adaptarALaCaja {
+	width: fit-content;
+}
+
+.mostrar {
+	display: block;
+}
 
 /*-------------------------------BOTONES--------------------------------------*/
 
@@ -1003,20 +1111,6 @@ header {
 	max-height: 30%;
 }
 
-.menuIcon:hover {
-	background-image: url('../icons/menu.png');
-}
-
-.menuIcon2 {
-	background-image: url('../icons/menu2.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.menuIcon2:hover {
-	background-image: url('../icons/menu3.png');
-}
-
 .iconoAzul {
 	background-image: url('../icons/menu.png');
 	background-repeat: no-repeat;
@@ -1032,20 +1126,13 @@ header {
 	padding: 1.5vw;
 }
 
-.nav2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .nav1:hover {
 	text-shadow: black 1px 1px 1px;
 	transition: background-color .3s, color 0.5s;
 	cursor: pointer;
 	color: #ffd58c;
+	transition:  all 600ms ease;
 }
-
 
 ul.grilla {
 	padding-top: 2vh;
@@ -1091,7 +1178,6 @@ li.grilla{
     padding: 0;
 	color: white;
 	text-shadow: 2px 2px 2px #3b3b3b;
-    /*background-color: rgb(103, 225, 255);*/
 	border-radius: 30px 30px 30px 30px;
 }
 
@@ -1190,7 +1276,6 @@ h3.link:hover {
 a {
 	text-decoration: none;
 }
-
 
 footer {
 	text-align: center;
@@ -1309,19 +1394,99 @@ img {
 	 }
 }
 
+
+.letraColores1 {
+	animation: letraColoresA 5s linear infinite;
+}
+
+.letraColores1Hover:hover {
+	animation: letraColoresA 5s linear infinite;
+}
+
 @keyframes letraColoresA {
 	 from 
 	 {
-	 	color: white;
+	 	color: rgb(58, 152, 206);
+		 text-shadow: 3px 2px 2px rgba(231, 231, 231, 0.308);
 	 }
-	 50%
+	 25%
 	 {
-	 	color: yellow
+		color: rgb(108, 120, 230);
+		text-shadow: 3px 2px 2px rgba(109, 109, 109, 0.671);
 	 }
-	 to 
+	 50% 
 	 {
-	 	color: orange;
+	 	color: rgb(120, 51, 199);
+		text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.836);
+		filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.692));
+		backdrop-filter: blur(10px);
+		border-radius: 50px 50px 50px 50px;
 	 }
+	 75%
+	 {
+		color: rgb(108, 120, 230);
+		text-shadow: 3px 2px 2px rgba(109, 109, 109, 0.671);
+	 }
+	 100% 
+	 {
+		color: rgb(58, 152, 206);
+		text-shadow: 3px 2px 2px rgba(231, 231, 231, 0.308);
+	 }
+}
+
+.letraColores2 {
+	animation: letraColores2 5s linear infinite;
+}
+
+.letraColores2Hover:hover {
+	animation: letraColores2 5s linear infinite;
+}
+
+@keyframes letraColores2 {
+	from 
+	{
+		color: rgb(255, 255, 255);
+		text-shadow: 3px 2px 2px rgba(255, 235, 192, 0.308);
+	}
+	25%
+	{
+	   	color: rgb(255, 241, 111);
+	   	text-shadow: 3px 2px 2px rgba(109, 109, 109, 0.822);
+	}
+	50% 
+	{
+		color: rgb(255, 198, 42);
+	   	text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.836);
+	   	filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.322));
+	   	backdrop-filter: blur(10px);
+	   	border-radius: 50px 50px 50px 50px;
+	}
+	75%
+	{
+		color: rgb(255, 241, 111);
+	   	text-shadow: 3px 2px 2px rgba(109, 109, 109, 0.671);
+	}
+	100% 
+	{
+		color: rgb(255, 247, 228);
+	   	text-shadow: 3px 2px 2px rgba(231, 231, 231, 0.308);
+	}
+}
+
+
+.textoGlicheado {
+	animation: textoGlitch1 5s linear infinite;
+}
+
+@keyframes textoGlitch1 {
+	0%
+	{
+		font-family: 'Oswald', sans-serif;
+	}
+	100%
+	{
+		font-family: 'Rubik Glitch', system-ui;
+	}
 }
 
 @keyframes show {
@@ -1336,85 +1501,4 @@ img {
 }
 
 
-/*******************************cards*************************************************/
 
-.mostrar {
-	display: block;
-}
-
-.ocultar {
-	display: none;
-}
-
-.fondoConImagenBosque {
-	background-image: url('../images/bosque.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque2 {
-	background-image: url('../images/bosque2.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque3 {
-	background-image: url('../images/bosque3.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque4 {
-	background-image: url('../images/selva.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenTenebroso {
-	background-image: url('../images/sombrio.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenOceano {
-	background-image: url('../images/oceano.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenLava {
-	background-image: url('../images/fuego.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenLava2 {
-	background-image: url('../images/bosqueIncendiado.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenNevado {
-	background-image: url('../images/nevado.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenNevado2 {
-	background-image: url('../images/nevado2.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque5 {
-	background-image: url('../images/bosque4.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-
-.fondoConImagenMistica {
-	background-image: url('../images/mistico.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
