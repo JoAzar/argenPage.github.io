@@ -65,7 +65,7 @@
 }
 
 .tamaniopeq {
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 
 .tamanioMin {
@@ -635,6 +635,18 @@
 	position: absolute;
 }
 
+.flotarHover:hover {
+	position: absolute;
+}
+
+.noFlotar {
+	position: relative;
+}
+
+.noFlotarHover:hover {
+	position: relative;
+}
+
 .bajar10 {
 	top: 10vh;
 }
@@ -651,9 +663,6 @@
 	bottom: 50vh;
 }
 
-.noFlotar {
-	position: relative;
-}
 
 .atrasDe {
 	position: relative;
