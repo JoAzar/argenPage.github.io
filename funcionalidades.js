@@ -116,3 +116,14 @@ function email(event) {
 padre4.addEventListener('click', email);
 
 //--------------------------------------------------------/
+
+function cambiarIconoMono() {
+  var mono = document.getElementById('mono');
+  mono.src = "icons/monoHover.png";
+}
+
+function restaurarIconoMono() {
+  var mono = document.getElementById('mono');
+  mono.src = "icons/mono.png";
+}
+

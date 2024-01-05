@@ -285,8 +285,6 @@
 	background-repeat: no-repeat;
 }
 
-
-
 .bordeVidrio {
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -1284,6 +1282,11 @@ h3.link:hover {
 
 a {
 	text-decoration: none;
+}
+
+#mono:hover {
+	animation: rotar 2s linear infinite;
+    transform: scale(0.8);
 }
 
 footer {
