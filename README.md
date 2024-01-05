@@ -14,7 +14,7 @@
     <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </div>
 <ul align="left">
-    <li>1. Reparar las rutas</li>
+    <li>1. <del>Reparar las rutas</del></li>
     <li>2. Verificar las imágenes</li>
     <li>3. Cambiar las imágenes de fondo y gif</li>
     <li>4. Cambiar la página pokemon por Monkey</li>
