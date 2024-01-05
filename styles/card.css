@@ -6,7 +6,7 @@
 }
 
 .card:hover {
-    height: 450px;
+    height: 350px;
 }
 
 .card .lines {
@@ -38,11 +38,11 @@
 
 .card .imgBx {
     position: absolute;
-    top: -50px;
+    top: -10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: 90%;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
@@ -51,8 +51,8 @@
 
 .card:hover .imgBx {
     
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    height: 25%;
 }
 
 .card .imgBx::before {
@@ -60,8 +60,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 500px;
-    height: 140px;
+    width: 200%;
+    height: 90%;
     transform: translate(-50%, -50%);
     background: linear-gradient(transparent, #eeffedf6, rgba(222, 255, 33, 0.966),   rgba(81, 255, 0, 0.966),transparent);
     animation: animateInterno 4s linear infinite;    

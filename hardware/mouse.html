@@ -7,67 +7,127 @@
 		<title>Mouse</title>
 		<link rel="stylesheet" href="../styles/style.css">
 	</head>
-	<body>
-		
-	</body>
-		<header class="fondoRosa">
-			<h1 class="sombraNegra letraBlanca">Mouse</h1>
-		</header>
-		<nav class="navDesplegable fondoBlanco dropSombraNegra">
+	<header class="fondoBlanco">
+		<h1 class="letraNegra sombraBlanca textoChanga dropSombraBlanca sinSeleccion margen1">Mouse</h1>
+		<nav class="navDesplegable fondoAzul dropSombraNegra radius letraBlanca">
 			<ul class="menu">
 				<li>
-					<h1 class="nav1 menuIcon" onclick="location.href='<?php echo iniciol ?>'"></h1>
+					<h1 class="nav1 textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio">Lenguajes</h1>
-					<ul class="submenu">
-						<?php foreach ($lenguajesr as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraRosaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Bitácora</h1>
-					<ul class="submenu">
-						<?php foreach ($bitacorar as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraRosaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hardware</h1>
-					<ul class="submenu">
-						<?php foreach ($hardware as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraRosaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hacking</h1>
-					<ul class="submenu">
-						<?php foreach ($hackingr as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraRosaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon smallIcons" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio dropSombraNegraHover tamaniopeq">Lenguajes</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/bash.html'">Bash<img class="icon" src="../icons/bash.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/herramientas.html'">Herramientas<img class="icon" src="../icons/tools.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/java.html'">Java<img class="icon"	src="../icons/java.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/javascript.html'">Javascript<img class="icon" src="../icons/javascript.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/mysql.html'">MySql<img class="icon" src="../icons/mysql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/php.html'">PHP<img class="icon" src="../icons/php.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/postgresql.html'">Posgresql<img class="icon" src="../icons/postgresql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../lenguajes/python.html'">Python<img class="icon" src="../icons/python.png">
+							</h1>
+						</li>
 					</ul>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio" onclick="location.href='<?php echo nosotrosl ?>'">Acerca de</h1>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio dropSombraNegraHover tamaniopeq">Bitácora</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../bitacora/conversaciones.html'">Conversaciones<img class="icon" src="../icons/conversaciones.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../bitacora/ideas.html'">Ideas<img class="icon" src="../icons/ideas.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../bitacora/inscripcion.html'">Inscripcion<img class="icon" src="../icons/inscripcion.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio dropSombraNegraHover tamaniopeq">Hardware</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hardware/disco.html'">Disco<img class="icon" src="../icons/disco.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hardware/modem.html'">Modem<img class="icon" src="../icons/modem.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hardware/mouse.html'">Mouse<img class="icon" src="../icons/mouse.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hardware/teclado.html'">Teclado<img class="icon" src="../icons/teclado.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hardware/usb.html'">USB<img class="icon" src="../icons/usb.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio dropSombraNegraHover tamaniopeq">Hacking</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hacking/aircrack.html'">Aircrack<img class="icon" src="../icons/aircrack.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hacking/wireshark.html'">Wireshark<img class="icon" src="../icons/wireshark.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hacking/ports.html'">Ports<img class="icon" src="../icons/ports.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hacking/nmap.html'">Nmap<img class="icon" src="../icons/nmap.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoBlancoHover radius textoSerio dropSombraNegraHover letraRosaHover tamaniopeq" onclick="location.href='../hacking/redes.html'">Redes<img class="icon" src="../icons/redes.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio dropSombraNegraHover tamaniopeq growHover" onclick="location.href='../nosotros.html'">Acerca de</h1>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio dropSombraNegraHover tamaniopeq growHover" onclick="location.href='../formulario/form.html'">Formulario</h1>
 				</li>
 			</ul>
 		</nav>
+	</header>
+	<body>
 		<main class="blanco contenedorTransparente">
 			<h2 class="letraRosa tamanioGran subrayado">Mouses</h2><img class="encuadrar bordeRosa radius cajaSombraNegra" src="../images/mouse.jpeg">
 			<p class="contenedorTransparente radius cajaSombraNegra fondoNegroSuave">
@@ -78,11 +138,13 @@
 
 				Desde entonces, el término "ratón" se ha vuelto estándar para referirse a este dispositivo de entrada en el mundo de la informática. Es interesante cómo un nombre informal y descriptivo llegó a ser la designación común para un componente tan esencial en nuestras computadoras.</b><br>
 			</p>
-	        
+	    
 	        <div class="linea-centrada"></div>
 		</main>
-		<footer class="fondoNegro textoSerio letraBlanca">
-      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonRosa" onclick="location.href='<?php $ruta18 ?>'">Subir</button>
-    	</footer>
 	</body>
+
+	<footer class="fondoNegro textoSerio dropSombraNegraHover letraBlanca">
+		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonRosa" onclick="location.href='mouse.html'">Subir</button>
+	</footer>
+
 </HTML>

@@ -3,81 +3,142 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>IAConversaciones</title>
+		<title>Nmap</title>
 		<link rel="stylesheet" href="../styles/style.css">
 	</head>
-	<body>
-		
-	</body>
-		<header>
-			<h1>Nmap</h1>
-		</header>
-		<nav class="navDesplegable fondoBlanco">
+	<header class="fondoTiburon dropSombraNegra">
+		<h1 class="dropSombraBlanca letraBlanca textoChanga tamanioGran">Nmap</h1>
+		<nav class="navDesplegable fondoNegroSuave letraBlanca dropSombraBlanca radius">
 			<ul class="menu">
 				<li>
-					<h1 class="nav1 menuIcon" onclick="location.href='<?php echo iniciol ?>'"></h1>
+					<h1 class="nav1 fondoAzulHover radius textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio">Lenguajes</h1>
-					<ul class="submenu">
-						<?php foreach ($lenguajesr as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Bitácora</h1>
-					<ul class="submenu">
-						<?php foreach ($bitacorar as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hardware</h1>
-					<ul class="submenu">
-						<?php foreach ($hardwarer as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hacking</h1>
-					<ul class="submenu">
-						<?php foreach ($hacking as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon smallIcons" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
+					<h1 class="nav1 textoSerio tamaniopeq">Lenguajes</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/bash.html'">Bash<img class="icon" src="../icons/bash.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/herramientas.html'">Herramientas<img class="icon" src="../icons/tools.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/java.html'">Java<img class="icon"	src="../icons/java.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/javascript.html'">Javascript<img class="icon" src="../icons/javascript.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/mysql.html'">MySql<img class="icon" src="../icons/mysql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/php.html'">PHP<img class="icon" src="../icons/php.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/postgresql.html'">Posgresql<img class="icon" src="../icons/postgresql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../lenguajes/python.html'">Python<img class="icon" src="../icons/python.png">
+							</h1>
+						</li>
 					</ul>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio" onclick="location.href='<?php echo nosotrosl ?>'">Acerca de</h1>
+					<h1 class="nav1 textoSerio tamaniopeq">Bitácora</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../bitacora/conversaciones.html'">Conversaciones<img class="icon" src="../icons/conversaciones.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../bitacora/ideas.html'">Ideas<img class="icon" src="../icons/ideas.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../bitacora/inscripcion.html'">Inscripcion<img class="icon" src="../icons/inscripcion.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq">Hardware</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../hardware/disco.html'">Disco<img class="icon" src="../icons/disco.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../hardware/modem.html'">Modem<img class="icon" src="../icons/modem.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../hardware/mouse.html'">Mouse<img class="icon" src="../icons/mouse.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../hardware/teclado.html'">Teclado<img class="icon" src="../icons/teclado.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='../hardware/usb.html'">USB<img class="icon" src="../icons/usb.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq">Hacking</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='aircrack.html'">Aircrack<img class="icon" src="../icons/aircrack.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='wireshark.html'">Wireshark<img class="icon" src="../icons/wireshark.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='ports.html'">Ports<img class="icon" src="../icons/ports.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='nmap.html'">Nmap<img class="icon" src="../icons/nmap.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="textoSerio letraEpicaHover fondoAzulHover radius growHover tamaniopeq" onclick="location.href='redes.html'">Redes<img class="icon" src="../icons/redes.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq growHover fondoAzulHover radius" onclick="location.href='../nosotros.html'">Acerca de</h1>
+				</li>
+				<li>
+					<h1 class="nav1 textoSerio tamaniopeq growHover fondoAzulHover radius" onclick="location.href='../formulario/form.html'">Formulario</h1>
 				</li>
 			</ul>
 		</nav>
-		<main>
-			<h2>Descripción: NET = nombre de la network </h2>
-			<p><b class="pregunta negrita">Verbose Syn-scan System Op-></b><b class="respuesta"> sudo nmap -v -sS -O ip</b><br>
-			<br><b class="pregunta negrita">Dispositivos conectados -></b><b class="respuesta"> sudo arp-scan --interface=NET --localnet</b><br>
-			<br><b class="pregunta negrita">IA conversaciones -></b><b class="respuesta"> Es un historial de conversaciones con IAs</b><br>
-			</p>
-	        
-	        <div class="linea-centrada"></div>
+	</header>
+
+	<body>
+		<main class="padding2">
+			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Comandos de Nmap</h1>
+			<div>
+			<h2 class="letraEpica">Descripción: NET = nombre de la network </h2>
+			<p><b class="letraAzul">Verbose Syn-scan System Op-></b><b class="letraBlanca"> sudo nmap -v -sS -O ip</b><br>
+			<br><b class="letraAzul">Dispositivos conectados -></b><b class="letraBlanca"> sudo arp-scan --interface=NET --localnet</b><br>
 		</main>
-		<footer class="fondoNegro textoSerio letraBlanca">
-      		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button onclick="location.href='<?php $ruta22 ?>'">Subir</button>
-    	</footer>
 	</body>
+
+	<footer class="fondoNegro textoSerio letraBlanca">
+		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAzulHover" onclick="location.href='nmap.html'">Subir</button>
+	</footer>
+	
 </HTML>

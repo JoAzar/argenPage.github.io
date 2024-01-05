@@ -49,19 +49,19 @@
 /*-------------------------------------TAMAÑO---------------------------------------------*/
 
 .tamanioMed {
-	font-size: 3vh;
+    font-size: 2vw;
 }
 
 .tamaniopeq {
-	font-size: 2vh;
+    font-size: 1vw;
 }
 
 .tamanioMin {
-	font-size: 1.8vh;
+    font-size: 1.4vw;
 }
 
 .tamanioGran {
-	font-size: 5vh;
+    font-size: 3vw;
 }
 
 /*---------------------------------------SOMBRAS------------------------------------------------*/
@@ -93,6 +93,11 @@
 .sombraBlanca {
 	text-shadow: white 2px 2px 2px;
 }
+
+.sombraBlancaHover:hover {
+	text-shadow: white 2px 2px 2px;
+}
+
 
 .sombraGris {
 	text-shadow:  #d4d4d4 2px 2px 2px;
@@ -234,8 +239,12 @@
 	background-color: white;
 }
 
+.fondoBlancoHover:hover {
+	background-color: rgba(255, 255, 255, 0.863);
+}
+
 .fondoCeleste {
-	background-color: #58d9e8;
+	background-color: #6edae9;
 }
 
 .fondoAmarillo {
@@ -250,7 +259,15 @@
 	background-color: #3498db;
 }
 
+.fondoAzulHover:hover {
+	background-color: #3498db;
+}
+
 .fondoTiburon {
+	background-color: #6d8dbf;
+}
+
+.fondoTiburonHover:hover {
 	background-color: #6d8dbf;
 }
 
@@ -367,13 +384,12 @@
 	color:  #e5b0ff;
 }
 
-
 .letraRoja {
 	color:  #ff6553;
 }
 
 .letraRosa {
-	color: #ff38a1;
+	color: #ff87c7;
 }
 
 .letraAmarilla {
@@ -418,7 +434,7 @@
 }
 
 .letraRosaHover:hover {
-	color: #ff38a1;
+	color: #ff4ac3;
 }
 
 .letraVioletaHover:hover {
@@ -766,29 +782,29 @@
 }
 
 .encuadrar {
-	width: 30vw;
+	width: 40%;
 	height: auto;
 	overflow: hidden;
 }
 
 .encuadrarAlto {
-	width: 30vw;
-	height: 50vh;
+	width: 30%;
+	height: 50%;
 }
 
 .encuadrarMedio {
-	width: 50vw;
-	height: 50vh;
+	width: 50%;
+	height: 50%;
 }
 
 .encuadrarGran {
-	width: 60vw;
-	height: 50vh;
+	width: 60%;
+	height: 50%;
 }
 
 .encuadrarGranAlto {
-	width: 50vw;
-	height: 70vh;
+	width: 50%;
+	height: 70%;
 }
 
 .encuadrarPeq {
@@ -912,20 +928,12 @@
 	border: white solid .5px;
 }
 
-
-
-.botonTiburon:hover {
+.botonTiburonHover:hover {
 	background-color: #6d8dbf;
 	color: white;
 	border: white solid .5px;
 }
 
-
-.botonTiburon:hover {
-	background-color: #b2e070;
-	color: white;
-	border: white solid .5px;
-}
 
 /*-------------------------------ARMADO DE CAJAS-----------------------------*/
 
@@ -943,13 +951,6 @@
 	flex-direction: column;
 }
 
-.flex1 {
-	flex: 1;
-}
-
-.flex2 {
-	flex: 2;
-}
 
 /*-------------------------------BOTONES--------------------------------------*/
 
@@ -1277,11 +1278,8 @@ img {
 	{
 		transform: translateX(150%);
 	}
-	100%{
-		position: absolute;
-	}
 	to {
-		transform: translateX(-400%);
+		transform: translateX(-300%);
 
 	}
 }

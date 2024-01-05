@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -7,75 +5,134 @@
 		<title>IAConversaciones</title>
 		<link rel="stylesheet" href="../styles/style.css">
 	</head>
-	<body>
-		
-	</body>
-		<header>
-			<h1>Modem</h1>
-		</header>
-		<nav class="navDesplegable fondoBlanco">
+	<header class="fondoBlanco">
+		<h1 class="letraNegra sombraBlanca textoChanga dropSombraBlanca sinSeleccion margen1">Módem</h1>
+		<nav class="navDesplegable fondoAzul dropSombraNegra radius letraBlanca">
 			<ul class="menu">
 				<li>
-					<h1 class="nav1 menuIcon" onclick="location.href='<?php echo iniciol ?>'"></h1>
+					<h1 class="nav1 textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio">Lenguajes</h1>
-					<ul class="submenu">
-						<?php foreach ($lenguajesr as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Bitácora</h1>
-					<ul class="submenu">
-						<?php foreach ($bitacorar as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hardware</h1>
-					<ul class="submenu">
-						<?php foreach ($hardware as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
-					</ul>
-				</li>
-				<li>
-					<h1 class="nav1 textoSerio">Hacking</h1>
-					<ul class="submenu">
-						<?php foreach ($hackingr as $ruta => $nombre): ?>
-							<li>
-								<h1 class="textoSerio letraEpicaHover" onclick="location.href='<?php echo $ruta ?>'"><?php echo $nombre ?><img class="icon smallIcons" 	src="../icons/<?php echo strtolower($nombre) ?>.png">
-								</h1>
-							</li>
-						<?php endforeach; ?>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio tamaniopeq">Lenguajes</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/bash.html'">Bash<img class="icon" src="../icons/bash.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/herramientas.html'">Herramientas<img class="icon" src="../icons/tools.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/java.html'">Java<img class="icon"	src="../icons/java.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/javascript.html'">Javascript<img class="icon" src="../icons/javascript.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/mysql.html'">MySql<img class="icon" src="../icons/mysql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/php.html'">PHP<img class="icon" src="../icons/php.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/postgresql.html'">Posgresql<img class="icon" src="../icons/postgresql.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/python.html'">Python<img class="icon" src="../icons/python.png">
+							</h1>
+						</li>
 					</ul>
 				</li>
 				<li>
-					<h1 class="nav1 textoSerio" onclick="location.href='<?php echo nosotrosl ?>'">Acerca de</h1>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio tamaniopeq">Bitácora</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../bitacora/conversaciones.html'">Conversaciones<img class="icon" src="../icons/conversaciones.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../bitacora/ideas.html'">Ideas<img class="icon" src="../icons/ideas.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../bitacora/inscripcion.html'">Inscripcion<img class="icon" src="../icons/inscripcion.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio tamaniopeq">Hardware</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/disco.html'">Disco<img class="icon" src="../icons/disco.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/modem.html'">Modem<img class="icon" src="../icons/modem.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/mouse.html'">Mouse<img class="icon" src="../icons/mouse.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/teclado.html'">Teclado<img class="icon" src="../icons/teclado.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hardware/usb.html'">USB<img class="icon" src="../icons/usb.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio tamaniopeq">Hacking</h1>
+					<ul class="submenu fondoNegroSuave">
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/aircrack.html'">Aircrack<img class="icon" src="../icons/aircrack.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/wireshark.html'">Wireshark<img class="icon" src="../icons/wireshark.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/ports.html'">Ports<img class="icon" src="../icons/ports.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/nmap.html'">Nmap<img class="icon" src="../icons/nmap.png">
+							</h1>
+						</li>
+						<li>
+							<h1 class="fondoVidrioHover radius textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../hacking/redes.html'">Redes<img class="icon" src="../icons/redes.png">
+							</h1>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio tamaniopeq growHover" onclick="location.href='../nosotros.html'">Acerca de</h1>
+				</li>
+				<li>
+					<h1 class="nav1 fondoVidrioHover radius textoSerio tamaniopeq growHover" onclick="location.href='../formulario/form.html'">Formulario</h1>
 				</li>
 			</ul>
 		</nav>
-		<main>
-			<h2>Bienvenido a MyNote 2.0</h2>
-			<p><b class="pregunta negrita">Bash -></b><b class="respuesta"> Esta página se compone de comandos bash</b><br>
-				<br><b class="pregunta negrita">Nosotros -></b><b class="respuesta"> Una breve descripción de quién soy y mis redes</b><br>
-				<br><b class="pregunta negrita">IA conversaciones -></b><b class="respuesta"> Es un historial de conversaciones con IAs</b><br>
-			</p>
-	        
-	        <div class="linea-centrada"></div>
+	</header>
+		<main class="padding2">
+			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Módem</h1>
+			<div>
+				<h2 class="letraBlanca sombraNegra letraNaranja">Estamos trabajando, sepa disculpar</h2>
+			</div>
+	        <div class="padding2 encuadrar radius fondoVidrio centrarImagen">
+				<img class="radius" src="../images/mono116.jpeg" width="100%">
+			</div>
 		</main>
 		<footer class="fondoNegro textoSerio letraBlanca">
       		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button onclick="location.href='<?php $ruta16 ?>'">Subir</button>
