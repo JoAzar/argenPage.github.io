@@ -1268,7 +1268,6 @@ p.contenedorTransparente {
     &::-webkit-scrollbar-thumb {
         background-color: transparent;
     }
-
 }
 
 .link {
@@ -1285,8 +1284,7 @@ a {
 }
 
 #mono:hover {
-	animation: rotar 2s linear infinite;
-    transform: scale(0.8);
+    transform: scale(1.3);
 }
 
 footer {
