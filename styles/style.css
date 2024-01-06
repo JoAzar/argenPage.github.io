@@ -82,6 +82,10 @@
 	box-shadow: black 10px 10px 10px;
 }
 
+.dropShadowNegro {
+	filter: drop-shadow(0 0 0.75rem rgba(61, 61, 61, 0.753));
+}
+
 .cajaSombraBlanca {
 	box-shadow: white 10px 10px 10px;
 }
@@ -661,7 +665,6 @@
 	bottom: 50vh;
 }
 
-
 .atrasDe {
 	position: relative;
 	z-index: 1;
@@ -1196,7 +1199,6 @@ li.grilla{
 
 .navDesplegable .submenu li {
 	margin-right: 1vw;
-	padding-right: 2vw;
 }
 
 .navDesplegable .submenu li:hover {

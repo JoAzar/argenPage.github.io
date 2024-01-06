@@ -3,6 +3,9 @@
     width: 350px;
     height: 190px;
     transition: 0.7s;
+    color: white;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10%;
 }
 
 .card:hover {
@@ -16,63 +19,47 @@
 }
 
 .card .lines::before {
-    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
     height: 120px;
-    background: linear-gradient(transparent, #eeffedf6, rgba(222, 255, 33, 0.966),   rgba(81, 255, 0, 0.966),transparent);
-    animation: animate 4s linear infinite;
-    
 }
 
 .card .lines::after {
     content: '';
     position: absolute;
     inset: 3px;
-    background: url(../images/bosque4.gif);
-    filter: blur(1px)
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
 }
 
 .card .imgBx {
     position: absolute;
-    top: -10%;
+    top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
-    height: 90%;
-    transition: 0.5s;
-    z-index: 10;
+    width: 110%;
+    height: 130%;
+    transition: 0.9s;
+    z-index: 0;
     overflow: hidden;
-    border-radius: 100px 100px 50px 50px;
+    border-radius: 30px 30px 20px 20px;
 }
 
 .card:hover .imgBx {
+    top: -20%;
+    width: 50%;
+    height: 50%;
     
-    width: 30%;
-    height: 25%;
-}
-
-.card .imgBx::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%;
-    height: 90%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(transparent, #eeffedf6, rgba(222, 255, 33, 0.966),   rgba(81, 255, 0, 0.966),transparent);
-    animation: animateInterno 4s linear infinite;    
 }
 
 .card .imgBx::after {
     content: '';
     inset: 3px;
     position: absolute;
-    background: url(../images/bosque4.gif);
-    
+    background: rgb(255, 255, 255);  
 }
 
 .card .imgBx img {
@@ -103,36 +90,33 @@
 }
 
 .card:hover .content .details {
-    transform: translateY(0px);
-    
+    transform: translateY(-10px);
 }
 
-.card .content .details .data {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+svg {
+	font-family: "Changa", sans-serif;
+	width: 100%; height: 2em;
+}
+svg text {
+	animation: stroke 3s infinite alternate;
+	stroke-width: 2;
+	stroke: #320000;
+	font-size: 150%;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgb(199, 199, 199); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgb(240, 203, 104); stroke: rgba(240, 204, 104, 0.815); }
+	80%  {fill: rgb(240, 203, 104); stroke: rgba(240, 204, 104, 0.815); stroke-width: 2; }
+	100% {
+		fill: rgb(255, 255, 255); stroke: rgba(255, 255, 255, 0.658);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
 }
 
-@keyframes animate
-{
-    0%
-    {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100%
-    {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-@keyframes animateInterno
-{
-    0%
-    {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-    100%
-    {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
+.wrapper {
+    background-color: #0000008f;
+    border-radius: 30px 30px 30px 30px;
 }
