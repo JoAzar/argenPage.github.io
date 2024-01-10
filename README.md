@@ -15,8 +15,8 @@
 </div>
 <ul align="left">
     <li>1. <del>Reparar las rutas</del></li>
-    <li>2. Verificar las imágenes</li>
-    <li>3. Cambiar las imágenes de fondo y gif</li>
+    <li>2. <del>Verificar las imágenes</del></li>
+    <li>3. <del>Cambiar las imágenes de fondo y gif</del></li>
     <li>4. <del>Cambiar la página pokemon por Monkey</del></li>
     <li>5. Revisar la conexión con el servidor</li>
     <li>6. Reparar la conexión con el servidor</li>
