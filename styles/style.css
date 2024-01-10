@@ -138,78 +138,6 @@
 
 
 /*------------------------------------COLORES--------------------------------------------*/
-.fondoConImagenBosque {
-	background-image: url('../images/bosque.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque2 {
-	background-image: url('../images/bosque2.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque3 {
-	background-image: url('../images/bosque3.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque4 {
-	background-image: url('../images/selva.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenTenebroso {
-	background-image: url('../images/sombrio.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenOceano {
-	background-image: url('../images/oceano.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenLava {
-	background-image: url('../images/fuego.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenLava2 {
-	background-image: url('../images/bosqueIncendiado.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenNevado {
-	background-image: url('../images/nevado.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenNevado2 {
-	background-image: url('../images/nevado2.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.fondoConImagenBosque5 {
-	background-image: url('../images/bosque4.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-
-.fondoConImagenMistica {
-	background-image: url('../images/mistico.gif');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 
 .fondoConImagen2 {
 	background-image: url('../images/teclado.jpeg');
@@ -221,12 +149,6 @@
 	background-image: url('imagenesMonkey/eeuu.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.fondoConImagenKlak {
-	background-image: url('../images/klak2.jpeg');
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .fondoConImagen {
@@ -327,7 +249,7 @@
 }
 
 .fondoBlanco {
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 }
 
 .fondoBlancoHover:hover {
@@ -348,7 +270,7 @@
 }
 
 .fondoAzul {
-	background-color: #3498db;
+	background-color: rgb(9, 118, 168);
 }
 
 .fondoAzulHover:hover {
@@ -617,10 +539,6 @@
 	animation: rotarInverso 2s linear infinite;
 }
 
-.stretch {
-	align-items: stretch;
-}
-
 .centrarItem {
 	align-self: center;
 }
@@ -757,6 +675,10 @@
 
 .textoCentrado {
 	text-align: center;
+}
+
+.margen5 {
+	margin: 5vw;
 }
 
 .margen2 {
@@ -975,6 +897,11 @@
 
 /*-------------------------------COLORES DE BOTON-----------------------------*/
 
+.botonBlanco {
+	color: rgb(35, 160, 218);
+	background-color: white;
+}
+
 .botonAmarillo {
 	background-color: #ffea4a;
 	color: black;
@@ -1016,12 +943,12 @@
 }
 
 .botonAzul {
-	background-color: #a7dcff;
+	background-color: rgb(35, 160, 218);
 	color: rgb(54, 54, 54);
 }
 
 .botonAzulHover:hover {
-	background-color: #3498db;
+	background-color: rgb(35, 160, 218);
 	color: rgb(255, 255, 255);
 }
 
@@ -1048,9 +975,38 @@
 
 /*-------------------------------ARMADO DE CAJAS-----------------------------*/
 
+.twitter, .instagram, .linkedin, .github, .youtube {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 3%;
+	height: auto;
+}
+
+.github {
+	background-image: url(../images/github.png);
+}
+
+.youtube {
+	background-image: url(../images/youtube.png);
+}
+
+.twitter {
+	background-image: url(../images/twitter.png);
+}
+
+.instagram {
+	background-image: url(../images/instagram.png);
+}
+
+.linkedin {
+	background-image: url(../images/linkedin.png);
+}
+
 .horizontal {
 	display: flex;
 	flex-direction: wrap;
+	justify-content: space-evenly;
 }
 
 .centrarCaja {
@@ -1072,9 +1028,14 @@
 
 /*-------------------------------BOTONES--------------------------------------*/
 
+.redes {
+	margin-top: 2%;
+}
+
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+	margin-top: 2%;
+	padding: 1%;
+    font-size: medium;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -1247,6 +1208,12 @@ p {
 
 p.contenedorTransparente {
   	padding: 20px;
+}
+
+.copyright {
+	font-size: small;
+	margin: 3vw;
+	margin-bottom: 2vh;
 }
 
 .espacioEntreEllos {

@@ -127,3 +127,5 @@ function restaurarIconoMono() {
   mono.src = "icons/mono.png";
 }
 
+/*--------------------VENTANAS EMERGENTES-----------------------------------*/
+

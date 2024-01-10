@@ -2,14 +2,15 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>PokeCards</title>
+		<title>Cards 🇦🇷</title>
 		<link rel="stylesheet" href='../styles/style.css'>
-		<link rel="stylesheet" href='../styles/card.css'>        
+		<link rel="stylesheet" href='../styles/card.css'>   
+		<link rel="stylesheet" href='../styles/popup.css'>        
 	</head>
 	
 	<header class="fondoAzul" >
-		<h1 class="letraAmarilla sombraNegra textoChanga dropSombraNegra sinSeleccion ">Monkey Achievements</h1>
-		<nav class="navDesplegable fondoBlanco dropSombraNegra radius margen2">
+		<h1 class="letraAmarilla sombraNegra textoChanga dropSombraNegra sinSeleccion">Monkey Achievements</h1>
+		<nav class="navDesplegable fondoBlanco dropSombraNegra radius margen2 sinSeleccion">
 			<ul class="menu">
 				<li>
 					<h1 class="nav1 textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
@@ -127,32 +128,10 @@
 			</ul>
 		</nav>
 	</header>
-	<body>
+	<body class="sinSeleccion">
 		<main2 class="horizontal fondoBlanco margen2">
 
-			<div class="card margen2 dropSombraNegraHover">
-				<div class="lines"></div>
-				<div class="imgBx">
-					<img class="dropShadowNegro" src="../images/nike7.png">
-				</div>
-				<div class="content">
-					<div class="details">
-						<div class="wrapper">
-							<svg>
-								<text x="50%" y="50%" dy=".35em" text-anchor="middle">
-									Zapatillas Nike Sport
-								</text>
-							</svg>
-						</div>
-						<div>
-							<h2 class="sombraNegra">Efectivo</h2>
-							<h1 class="sombraNegra">$ 142.000</h1>
-						</div>
-					</div>  
-				</div>
-			</div>
-
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/nike6.png">
@@ -174,7 +153,7 @@
 				</div>
 			</div>
 
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/nike5.png">
@@ -196,7 +175,7 @@
 				</div>
 			</div>
 
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/nike0.png">
@@ -218,7 +197,7 @@
 				</div>
 			</div>
 
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/nike1.png">
@@ -240,7 +219,7 @@
 				</div>
 			</div>
 
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/nike2.png">
@@ -262,7 +241,7 @@
 				</div>
 			</div>
 
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/nike3.png">
@@ -284,7 +263,7 @@
 				</div>
 			</div>
 
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/nike4.png">
@@ -306,7 +285,7 @@
 				</div>
 			</div>
 
-			<div class="card margen2 dropSombraNegraHover">
+			<div class="card margen1 manito dropSombraNegraHover">
 				<div class="lines"></div>
 				<div class="imgBx">
 					<img class="dropShadowNegro" src="../images/adidas1.png">
@@ -332,8 +311,50 @@
 	</body>
 
 	<script src="acciones.js"></script>
-	<footer class="fondoNegro textoSerio letraBlanca dropSombraNegra">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAmarillo" onclick="location.href='cards.html'">Subir</button>
+
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='cards.html'">Subir</button>
+
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+				<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Twitter</div>
+				</a>
+				<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Instagram</div>
+				</a>
+				<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Linkedin</div>
+				</a>
+				<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Github</div>
+				</a>
+				<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">YouTube</div>
+				</a>
+		</div>
+		
 	</footer>
   	
 </HTML>

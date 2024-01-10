@@ -4,8 +4,9 @@
 		<meta charset="utf-8">
 		<title>Inicio</title>
 		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href='../styles/popup.css'> 
 	</head>
-	<header class="fondoAzul dropSombraNegra vertical">
+	<header class="fondoAzul dropSombraNegra vertical sinSeleccion">
 		<h1 class="textoOsvaldo tamanioGran sombraNegra letraBlanca margen2">Bienvenido a ArgenPage</h1>
 		
 		<nav class="navDesplegable fondoBlanco dropSombraNegra radius adaptarALaCaja centrarItem">
@@ -136,8 +137,8 @@
 		</nav>
 	</header>
 
-	<body>
-		<main>
+	<body class="margen2 sinSeleccion">
+		<main class="padding2">
 			<h2 class="textoPt tamanioGran letraColores1">¿Qué, cómo, cuándo y dónde?</h2>
 			<p>
 				<b class="letraEpica textoPt tamanioMed">¿Qué es Argenpage? </b><b class="letraCeleste textoPt tamaniopeq"> Es un almacenamiento de código explicado y simplificado</b><br>
@@ -155,8 +156,49 @@
 	</body>
 	<script src="funcionalidades.js"></script>
 	
-	<footer class="fondoNegro letraBlanca textoSerio">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonNaranjetaHover" onclick="location.href='index.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='index.html'">Subir</button>
+
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+				<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Twitter</div>
+				</a>
+				<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Instagram</div>
+				</a>
+				<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Linkedin</div>
+				</a>
+				<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">Github</div>
+				</a>
+				<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube">
+					<div class="letraBlanca textoChanga tamaniopeq desaparecer">YouTube</div>
+				</a>
+		</div>
+		
 	</footer>
 	
 </HTML>
