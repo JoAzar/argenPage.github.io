@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>IAConversaciones</title>
+		<title>IA Conversaciones 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoVioleta dropSombraBlanca">
-		<h1 class="letraVioleta textoNova dropSombraNegra letraBlanca margen1">Conversaciones con IA</h1>
+
+	<header class="fondoVioleta dropSombraBlanca padding2 superiorRadius">
+		<h1 class="textoChanga dropSombraNegra letraBlanca tamanioGran">Conversaciones con IA</h1>
 		<nav class="navDesplegable fondoBlanco dropSombraNegra radius">
-			<ul class="menu ">
+			<ul class="menu">
 				<li>
 					<h1 class="nav1 textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
 				</li>
@@ -125,7 +127,7 @@
 			</ul>
 		</nav>
 	</header>
-	<body>
+	<body class="margen2">
 		<main class="fondoConImagen4">
 			<h2 class="letraNaranja tamanioMed textoSerio subrayado">Conversación 1</h2>
 			<div class="encuadrarGran interlineado15 fondoNegroTransparente padding2 radius">
@@ -162,8 +164,34 @@
 		</main>
 	</body>
 
-	<footer class="fondoNegro letraBlanca">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonVioleta" onclick="location.href='conversaciones.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='conversaciones.html'">Subir</button>
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin"></a>
+			<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github"></a>
+			<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube"></a>
+		</div>
 	</footer>
 
 </HTML>

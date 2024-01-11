@@ -1,14 +1,15 @@
 
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>Postgresql</title>
+		<title>Postgresql 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
 
-	<header class="fondoAzul dropSombraNegra">
+	<header class="fondoAzul dropSombraNegra padding2 superiorRadius">
 		<h1 class="textoChanga letraBlanca sombraNegra tamanioGran dropSombraBlanca">Postgresql</h1>
 		<nav class="navDesplegable fondoBlanco dropSombraNegra radius">
 			<ul class="menu">
@@ -128,7 +129,7 @@
 			</ul>
 		</nav>
 	</header>
-	<body>
+	<body class="margen2">
 		<main class="padding2">
 			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Código PostgreSql</h1>
 			<div>
@@ -140,8 +141,34 @@
 		</main>
 	</body>
 
-	<footer class="fondoNegro textoSerio letraBlanca dropSombraNegra">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAzul botonAzulHover" onclick="location.href='postgresql.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='postgresql.html'">Subir</button>
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin"></a>
+			<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github"></a>
+			<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube"></a>
+		</div>
 	</footer>
 	
 </HTML>

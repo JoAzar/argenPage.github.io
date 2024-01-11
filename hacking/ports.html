@@ -1,14 +1,15 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>Ports</title>
+		<title>Ports 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoCeleste dropSombraNegra">
-		<h1 class="dropSombraBlanca letraBlanca textoChanga tamanioGran">Ports</h1>
-		<nav class="navDesplegable fondoNegroSuave letraBlanca dropSombraBlanca radius">
+	<header class="fondoTiburon dropSombraNegra padding2 superiorRadius">
+		<h1 class="letraBlanca sombraNegra textoChanga tamanioGran">Puertos</h1>
+		<nav class="navDesplegable fondoNegroSuave letraBlanca radius">
 			<ul class="menu">
 				<li>
 					<h1 class="nav1 fondoAzulHover radius textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
@@ -127,55 +128,94 @@
 		</nav>
 	</header>
 
-	<body>
+	<body class="margen2">
 		<main class="padding2">
 			<div class="textoCentrado">
-				<h1 class="margen2 textoSerio letraAmarilla tamanioGran subrayado">Puertos y protocolos</h1>
-				<div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">FTP (20, 21) -></b><b class="textoSerio letraNaranja tamaniopeq"> Protocolo de Transferencia de Archivos</b>
-		          	<br><b class="letraCeleste tamaniopeq">(FTP opera en un modelo cliente-servidor, donde un cliente se conecta a un servidor para enviar o recibir archivos)</b>
+				<h1 class="margen2 textoSerio letraAmarilla tamanioGran subrayado dropSombraBlanca">Puertos y protocolos</h1>
+
+				<div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">FTP (20, 21)</div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1">Protocolo de Transferencia de Archivos</div>
+		          	<div class="letraCeleste tamaniopeq padding1">(FTP opera en un modelo cliente-servidor, donde un cliente se conecta a un servidor para enviar o recibir archivos)</div>
 		        </div>
 
-		        <div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">SSH (22) -></b><b class="textoSerio letraNaranja tamaniopeq"> Secure Shell</b>
-		          	<br><b class="letraCeleste tamaniopeq">(SSH utiliza técnicas de cifrado para proteger la integridad y confidencialidad de los datos transmitidos a través de la red. Simétrico, asimétrico con autenticación de claves e integridad de datos con hash SHA-256)</b>
+		        <div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">SSH (22) </div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1"> Secure Shell</div>
+		          	<br><div class="letraCeleste tamaniopeq padding1">(SSH utiliza técnicas de cifrado para proteger la integridad y confidencialidad de los datos transmitidos a través de la red. Simétrico, asimétrico con autenticación de claves e integridad de datos con hash SHA-256)</div>
 		        </div>
 
-		        <div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">SMB (139, 137, 445) -></b><b class="textoSerio letraNaranja tamaniopeq"> Bloque de Mensajes del Servidor</b>
-		          	<br><b class="letraCeleste tamaniopeq">(Incluye características como el cifrado de datos, la detección y corrección de errores, y mejoras en la eficiencia de la transferencia de archivos)</b>
-		        </div>
-		        <div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">DNS (53) -></b><b class="textoSerio letraNaranja tamaniopeq"> Sistema de Nombres de Dominio</b><br>
-		          	<br><b class="letraCeleste tamaniopeq">(El DNS ha sido objeto de preocupaciones de seguridad, incluido el envenenamiento de caché (cache poisoning) y ataques de suplantación de identidad (DNS spoofing). Se han implementado extensiones como DNSSEC (DNS Security Extensions) para abordar algunas de estas preocupaciones)</b>
-		        </div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">HTTP/HTTPS (443, 80, 8080, 8443) -><b class="textoSerio letraNaranja tamaniopeq"> Protocolo de Transferencia de Hipertexto/Seguro</b>
-		          	<br><b class="letraCeleste tamaniopeq">(HTTP utiliza el puerto 80 de manera predeterminada para la comunicación sin cifrar)</b>
-		        </div class="textoCentrado margen2">
-
-		        <div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">Telnet (23) -><b class="textoSerio letraNaranja tamaniopeq"> teletype network</b>
-		          	<br><b class="letraCeleste tamaniopeq">(Es importante señalar que Telnet no cifra los datos transmitidos, lo que significa que la información, incluyendo nombres de usuario y contraseñas, se envía en texto claro)</b>
-		        </div>
-		        <div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">SMTP (25) -><b class="textoSerio letraNaranja tamaniopeq"> Protocolo Simple de Transferencia de Correo</b>
-		          	<br><b class="letraCeleste tamaniopeq">(La comunicación SMTP en el puerto 25 es típicamente no cifrada. Esto significa que la información, incluidos los datos del correo electrónico y las credenciales, se transmite en texto claro, lo que puede ser un riesgo de seguridad)</b>
-		        </div>
-		        <div class="textoCentrado margen2">
-		          	<b class="letraBlanca tamanioMed">TFTP (69) -><b class="textoSerio letraNaranja tamaniopeq"> Protocolo de Transferencia de Archivos Trivial</b>
-		          	<br><b class="letraCeleste tamaniopeq">(TFTP no proporciona mecanismos sólidos de autenticación ni cifrado de datos. Esto lo hace adecuado para situaciones donde la simplicidad es más importante que la seguridad. Sin embargo, esta falta de seguridad también lo hace vulnerable a ataques, por lo que su uso se limita a entornos de confianza)</b>
+		        <div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">SMB (139, 137, 445) </div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1"> Bloque de Mensajes del Servidor</div>
+		          	<br><div class="letraCeleste tamaniopeq padding1">(Incluye características como el cifrado de datos, la detección y corrección de errores, y mejoras en la eficiencia de la transferencia de archivos)</div>
 		        </div>
 
-		        <h1 class="textoSerio tamanioGran letraAmarilla dropSombraBlanca margen2">Comandos para escuchar puertos</h1>
-		        <div class="margen2">
-		          	<b class="letraBlanca tamanioMed">Escuchar los puertos abiertos -> </b><b class="textoformal letraNaranja tamaniopeq">sudo lsof -i -P -n | grep LISTEN</b>
+		        <div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">DNS (53)</div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1"> Sistema de Nombres de Dominio</div>
+		          	<br><div class="letraCeleste tamaniopeq padding1">(El DNS ha sido objeto de preocupaciones de seguridad, incluido el envenenamiento de caché (cache poisoning) y ataques de suplantación de identidad (DNS spoofing). Se han implementado extensiones como DNSSEC (DNS Security Extensions) para abordar algunas de estas preocupaciones)</div>
+		        </div class="textoCentrado margen2 padding2">
+
+				<div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">HTTP/HTTPS (443, 80, 8080, 8443)</div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1"> Protocolo de Transferencia de Hipertexto/Seguro</div>
+		          	<br><div class="letraCeleste tamaniopeq padding1">(HTTP utiliza el puerto 80 de manera predeterminada para la comunicación sin cifrar)</div>
+		        </div class="textoCentrado margen2 padding2">
+
+		        <div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">Telnet (23)</div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1"> teletype network</div>
+		          	<br><div class="letraCeleste tamaniopeq padding1">(Es importante señalar que Telnet no cifra los datos transmitidos, lo que significa que la información, incluyendo nombres de usuario y contraseñas, se envía en texto claro)</div>
+		        </div>
+		        <div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">SMTP (25)</div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1"> Protocolo Simple de Transferencia de Correo</div>
+		          	<br><div class="letraCeleste tamaniopeq padding1">(La comunicación SMTP en el puerto 25 es típicamente no cifrada. Esto significa que la información, incluidos los datos del correo electrónico y las credenciales, se transmite en texto claro, lo que puede ser un riesgo de seguridad)</div>
+		        </div>
+		        <div class="textoCentrado margen2 padding2">
+		          	<div class="letraBlanca tamanioMed padding1">TFTP (69)</div>
+					<div class="textoSerio letraNaranja tamaniopeq padding1"> Protocolo de Transferencia de Archivos Trivial</div>
+		          	<br><div class="letraCeleste tamaniopeq padding1">(TFTP no proporciona mecanismos sólidos de autenticación ni cifrado de datos. Esto lo hace adecuado para situaciones donde la simplicidad es más importante que la seguridad. Sin embargo, esta falta de seguridad también lo hace vulnerable a ataques, por lo que su uso se limita a entornos de confianza)</div>
+		        </div>
+
+		        <h1 class="textoSerio tamanioGran letraAmarilla dropSombraBlanca margen2 padding2">Comandos para escuchar puertos</h1>
+		        <div class="margen2 padding2">
+		          	<div class="letraBlanca tamanioMed">Escuchar los puertos abiertos </div>
+					<div class="textoformal letraNaranja tamaniopeq">sudo lsof -i -P -n | grep LISTEN</div>
 		        </div>
 		    </div>
 		</main>
 	</body>
 
-	<footer class="fondoNegro textoSerio letraBlanca tamaniopeq">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonCeleste" onclick="location.href='ports.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='ports.html'">Subir</button>
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin"></a>
+			<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github"></a>
+			<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube"></a>
+		</div>
 	</footer>
 
 </HTML>

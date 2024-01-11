@@ -1,14 +1,15 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>Nmap</title>
+		<title>Nmap 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoTiburon dropSombraNegra">
-		<h1 class="dropSombraBlanca letraBlanca textoChanga tamanioGran">Nmap</h1>
-		<nav class="navDesplegable fondoNegroSuave letraBlanca dropSombraBlanca radius">
+	<header class="fondoTiburon dropSombraNegra padding2 superiorRadius">
+		<h1 class="letraBlanca sombraNegra textoChanga tamanioGran">Nmap</h1>
+		<nav class="navDesplegable fondoNegroSuave letraBlanca radius">
 			<ul class="menu">
 				<li>
 					<h1 class="nav1 fondoAzulHover radius textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
@@ -127,18 +128,64 @@
 		</nav>
 	</header>
 
-	<body>
+	<body class="margen2">
 		<main class="padding2">
-			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Comandos de Nmap</h1>
+			<h1 class="margen2 padding2 letraBlanca sombraNegra subrayado textoChanga tamanioGran letraColores3">Comandos de Nmap</h1>
 			<div>
-			<h2 class="letraEpica">Descripción: NET = nombre de la network </h2>
-			<p><b class="letraAzul">Verbose Syn-scan System Op-></b><b class="letraBlanca"> sudo nmap -v -sS -O ip</b><br>
-			<br><b class="letraAzul">Dispositivos conectados -></b><b class="letraBlanca"> sudo arp-scan --interface=NET --localnet</b><br>
+				<h2 class="padding2 margen2 letraCeleste">Descripción: NET = nombre de la network </h2>
+
+				<div class="letraEpica tamaniopeq padding1">Verbose Syn-scan System Op</div>
+				<div class="letraBlanca padding1"> sudo nmap -v -sS -O ip</div><br>
+
+				<br><div class="letraEpica tamaniopeq padding1">Dispositivos conectados</div>
+				<div class="letraBlanca padding1"> sudo arp-scan --interface=NET --localnet</div>
+			</div>
+
+			<div>
+				<h2 class="padding2 margen2 letraCeleste">Escaner de vulnerabilidades</h2>
+				<div class="letraEpica tamaniopeq padding1">Escanear puertos</div>
+				<div class="letraBlanca padding1"> sudo nmap -sV scanme.nmap.org</div>
+			</div>
+
+			<div>
+				<h2 class="padding2 margen2 letraCeleste">Versiones y puertos</h2>
+				<div class="letraEpica tamaniopeq padding1">Escanear puertos y versiones de sistema</div>
+				<div class="letraBlanca padding1"> sudo nmap -O scanme.nmap.org -v</div><br>
+				<div class="letraEpica tamaniopeq padding1">Escanear datos de una IP</div>
+				<div class="letraBlanca padding1"> sudo nmap -sV (Dirección IP) -p 80 -O -T4</div>
+			</div>             
+
 		</main>
 	</body>
 
-	<footer class="fondoNegro textoSerio letraBlanca">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAzulHover" onclick="location.href='nmap.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='nmap.html'">Subir</button>
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin"></a>
+			<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github"></a>
+			<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube"></a>
+		</div>
 	</footer>
 	
 </HTML>

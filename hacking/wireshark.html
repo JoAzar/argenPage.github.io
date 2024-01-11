@@ -1,14 +1,14 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>Wireshark</title>
+		<title>Wireshark 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoTiburon dropSombraNegra">
-		<h1 class="dropSombraBlanca letraBlanca textoChanga tamanioGran">Wireshark</h1>
-		<nav class="navDesplegable fondoNegroSuave letraBlanca dropSombraBlanca radius">
+	<header class="fondoTiburon dropSombraNegra padding2 superiorRadius">
+		<h1 class="letraBlanca sombraGris textoChanga tamanioGran">Wireshark</h1>
+		<nav class="navDesplegable fondoBlanco letraNegra radius">
 			<ul class="menu">
 				<li>
 					<h1 class="nav1 fondoTiburonHover radius textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
@@ -126,20 +126,44 @@
 			</ul>
 		</nav>
 	</header>
-	<body>
-		<main class="fondoTiburon">
+	<body class="margen2">
+		<main class="fondoNegroSuave padding2">
 			<h2 class="subrayado letraBlanca sombraNegra textoLilita tamanioGran">Wireshark tool</h2><img class="encuadrar bordeBlanco radius cajaSombraNegra" src="../images/wireshark.jpeg">
-			
 			<p class="fondoTiburon sombraNegra padding2 radius bordeBlanco textoLilita dropSombraBlanca">
-				<b class="letraBlanca sombraNegra">EN CONTRUCCIÓN</b>
+				<b class="letraBlanca sombraNegra">En construcción</b>
 			</p>
-	        
 	        <div class="linea-centrada"></div>
 		</main>
 	</body>
 
-	<footer class="fondoNegro textoSerio letraBlanca dropSombraBlanca">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonTiburonHover" onclick="location.href='wireshark.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='wireshark.html'">Subir</button>
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram"></a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin"></a>
+			<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github"></a>
+			<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube"></a>
+		</div>
 	</footer>
 	
 </HTML>
