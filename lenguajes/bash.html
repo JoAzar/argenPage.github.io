@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>[ Bash ]</title>
-		<link rel="stylesheet" href="../styles/style.css">            
+		<title>Bash 🇦🇷</title>
+		<link rel="stylesheet" href="../styles/style.css">   
+		<link rel="stylesheet" href="../styles/popup.css">         
 	</head>
-	<header class="fondoNegroSuave dropSombraNegra vertical">
+	<header class="fondoNegroSuave dropSombraNegra vertical superiorRadius padding2">
 		<h1 class="dropSombraNegra letraBlanca textoChanga tamanioGran">Bash</h1>
 		<nav class="navDesplegable fondoBlanco dropSombraNegra radius adaptarALaCaja centrarItem">
 			<ul class="menu ">
@@ -126,8 +127,8 @@
 		</nav>
 	</header>
 
-	<body>
-		<main>
+	<body class="margen2">
+		<main class="padding2">
 			<h2 class="subrayado letraEpica subrayado">¿Cómo comenzar?</h2>
 			<p>
 				<b class="letraBlanca textoFino tamanioMed">Ejecuta el comando: </b><b class="letraNaranja textoFino tamaniopeq">nano ~/.bashrc</b><b class="letraBlanca"> Para ver todos los alias, una vez dentro de archivo </b><b class="letraNaranja textoFino tamaniopeq">.bashrc</b><b class="letraBlanca"> vas a encontrar algo así: </b>
@@ -264,8 +265,44 @@
 		</main>
 	</body>
 
-	<footer class="fondoNegro textoSerio letraBlanca dropSombraNegra">
-		<p >©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="girarHover botonTiburon"onclick="location.href='bash.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='bash.html'">Subir</button>
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Twitter</div>
+			</a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Instagram</div>
+			</a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Linkedin</div>
+			</a>
+			<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Github</div>
+			</a>
+			<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">YouTube</div>
+			</a>
+		</div>
 	</footer>
 	
 </HTML>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>Formulario</title>
+		<title>Formulario 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
 
-	<header class="fondoNegroSuave dropSombraNegra fondoAzul">
+	<header class="fondoNegroSuave dropSombraNegra fondoAzul superiorRadius">
 		<h1 class="textoSerio tamanioGran sombraNegra letraBlanca subirCorto sinSeleccion">Formulario</h1>
 
 		<div class="avanzarLargoI letraBlanca dropSombraBlanca sinSeleccion ocultarSombra">
@@ -22,35 +23,35 @@
 					<h1 class="nav1 textoSerio tamaniopeq">Lenguajes</h1>
 					<ul class="submenu fondoAzul">
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='bash.html'">Bash<img class="icon" src="../icons/bash.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/bash.html'">Bash<img class="icon" src="../icons/bash.png">
 							</h1>
 						</li>
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='herramientas.html'">Herramientas<img class="icon" src="../icons/tools.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/herramientas.html'">Herramientas<img class="icon" src="../icons/tools.png">
 							</h1>
 						</li>
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='java.html'">Java<img class="icon"	src="../icons/java.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/java.html'">Java<img class="icon"	src="../icons/java.png">
 							</h1>
 						</li>
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='javascript.html'">Javascript<img class="icon" src="../icons/javascript.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/javascript.html'">Javascript<img class="icon" src="../icons/javascript.png">
 							</h1>
 						</li>
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='mysql.html'">MySql<img class="icon" src="../icons/mysql.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/mysql.html'">MySql<img class="icon" src="../icons/mysql.png">
 							</h1>
 						</li>
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='php.html'">PHP<img class="icon" src="../icons/php.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/php.html'">PHP<img class="icon" src="../icons/php.png">
 							</h1>
 						</li>
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='postgresql.html'">Posgresql<img class="icon" src="../icons/postgresql.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/postgresql.html'">Posgresql<img class="icon" src="../icons/postgresql.png">
 							</h1>
 						</li>
 						<li>
-							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='python.html'">Python<img class="icon" src="../icons/python.png">
+							<h1 class="textoSerio letraEpicaHover tamaniopeq" onclick="location.href='../lenguajes/python.html'">Python<img class="icon" src="../icons/python.png">
 							</h1>
 						</li>
 					</ul>
@@ -132,9 +133,9 @@
 		</nav>
 	</header>
 
-	<body>
+	<body class="margen2 fondoNegroSuave">
 		<main class="fondoBlanco fondoImagenBlue">
-			<form class="margen2 bordeVidrio fondoBlancoTransparente sombraNegra wid50 radius" action="procesarForm1.php" method="POST" />
+			<form class="margen2 bordeVidrio fondoBlancoTransparente sombraNegra wid50 radius" action="procesarForm1.php" method="POST">
 				<h1 class="letraBlanca dropSombraBlancaHover textoSerio margen2 sombraNegra bordeBlancoFino fondoTiburon sinSeleccion"><p class="margen1">Dejanos tu mensaje</p></h1>
 				<div>
 					<h1 id="padre2" class="padding1 letraBlanca tamanioMed textoChanga sombraNegra manito">Ingrese su nombre</h1>
@@ -206,8 +207,44 @@
 		</main>
 	</body>
 
-	<footer class="fondoNegro letraBlanca textoSerio">
-		<p>©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</p><button class="botonAzulHover" onclick="location.href='form.html'">Subir</button>
+	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
+		<div class="redes horizontal">
+			<div class="copyright">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<button class="botonBlanco botonAzulHover margen2" onclick="location.href='form.html'">Subir</button>
+			<div class="contenedorPopup sinSeleccion">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoChanga subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer">Sigueme en:</div>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover twitter">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Twitter</div>
+			</a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover instagram">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Instagram</div>
+			</a>
+			<a href="https://twitter.com/lIRIIID3ll" class="dropSombraBlancaHover linkedin">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Linkedin</div>
+			</a>
+			<a href="https://github.com/JoAzar" class="dropSombraBlancaHover github">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">Github</div>
+			</a>
+			<a href="https://www.youtube.com/@SuperMonkeyHero" class="dropSombraBlancaHover youtube">
+				<div class="letraBlanca textoChanga tamaniopeq desaparecer">YouTube</div>
+			</a>
+		</div>
 	</footer>
 	<script src="../funcionalidades.js"></script>
 
