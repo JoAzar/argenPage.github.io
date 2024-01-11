@@ -129,139 +129,234 @@
 
 	<body class="margen2">
 		<main class="padding2">
-			<h2 class="subrayado letraEpica subrayado">¿Cómo comenzar?</h2>
-			<p>
-				<b class="letraBlanca textoFino tamanioMed">Ejecuta el comando: </b><b class="letraNaranja textoFino tamaniopeq">nano ~/.bashrc</b><b class="letraBlanca"> Para ver todos los alias, una vez dentro de archivo </b><b class="letraNaranja textoFino tamaniopeq">.bashrc</b><b class="letraBlanca"> vas a encontrar algo así: </b>
-				<b class="letraNaranja textoFino tamanioMed">alias actualizar=sudo apt update && apt full-upgrade</b>
-				</p>
-			</p>
-
-			<h2 class="textoSerio tamanioMed letraVerde subrayado">Comandos editados de BASH</h2>
-			<p>
-	          	<br><b class="letraBlanca tamaniopeq"> iniciar apache =</b><b class="letraNaranja tamaniopeq"> apacheini</b><br>
-				<br></b><b class="letraBlanca tamaniopeq">cerrar apache =</b><b class="letraNaranja tamaniopeq"> apachefin</b><br>
-				<br><b class="letraBlanca tamaniopeq">reiniciar apache =</b><b class="letraNaranja tamaniopeq"> apacheres</b><br>
-
-				<br><b class="letraBlanca tamaniopeq">iniciar postgresql =</b><b class="letraNaranja tamaniopeq"> postgresini</b><br>
-				<br><b class="letraBlanca tamaniopeq">finalizar postgresql =</b><b class="letraNaranja tamaniopeq"> postgresfin</b><br>
-
-				<br><b class="letraBlanca tamaniopeq">sudo apt update && apt full-upgrade = </b><b class="letraNaranja tamaniopeq">actualizar</b><br>
-				<br><b class="letraBlanca tamaniopeq">history -c && history -w && rm ~/.bash_history = </b><b class="letraNaranja tamaniopeq">rmhistorial</b><br>
-				<br><b class="letraBlanca tamaniopeq">sudo sync && sudo sysctl vm.drop_caches=3 = </b><b class="letraNaranja tamaniopeq">liberar</b><br>
-				<br><b class="letraBlanca tamaniopeq">xdotool getmouselocation = </b><b class="letraNaranja tamaniopeq">mousefind</b><br>
-				<br><b class="letraBlanca tamaniopeq">sudo service mysql start = </b><b class="letraNaranja tamaniopeq">sqlini</b><br>
-				<br><b class="letraBlanca tamaniopeq">sudo service mysql stop  = </b><b class="letraNaranja tamaniopeq">sqlfin</b>
-	        </p>
-	        
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Cambiar case sensitive de la terminal</h2>
-			<p>
-				<b class='letraBlanca tamaniopeq'>shopt -s nocaseglob = </b><b class="letraNaranja tamaniopeq">Activar modo case-insensitive</b><br>
-				<br><b class='letraBlanca tamaniopeq'>shopt -u nocaseglob = </b><b class="letraNaranja tamaniopeq">Volver al modo case-sensitive</b><br>
-	        </p>
-
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Copiar archivos de una carpeta a otra</h2>
-			<p>
-				<b class='letraBlanca tamaniopeq'>sudo cp </b><b class="letraNaranja tamaniopeq">/llenar/llenar/DondeEstá/archivo.txt /llenar/llenar/DondeLoLLevo</b><br>
+			<div class="margen2 padding2">
+				<h2 class="subrayado letraBlanca tamanioGran margen2 padding2">¿Cómo comenzar?</h2>
+				<div class="letraBlanca textoFino tamanioMed padding1">Ejecuta el comando:</div>
+				<div class="letraNaranja textoFino tamaniopeq padding1">nano ~/.bashrc</div>
+				<div class="letraBlanca tamaniopeq padding1">Para ver todos los alias una vez dentro del archivo </div>
+				<div class="letraNaranja textoFino tamaniopeq padding1">.bashrc</div>
+				<div class="letraBlanca tamaniopeq padding1"> vas a encontrar algo así: </div>
+				<div class="letraNaranja textoFino tamaniopeq padding1">alias actualizar=sudo apt update && apt full-upgrade</div>
+			</div>
 			
-	        </p>
+			<h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Comandos editados de BASH</h2>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">iniciar apache = </div><div class="letraNaranja tamaniopeq">apacheini</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">cerrar apache = </div><div class="letraNaranja tamaniopeq"> apachefin</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">reiniciar apache =</div><div class="letraNaranja tamaniopeq"> apacheres</div>
+			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Ver archivos modificados</h2>
-			<p>
-				<b class='letraBlanca tamaniopeq'>en los últimos 3 días -> </b><b class="letraNaranja tamaniopeq">find / -type f -mtime -3</b><br>
-	          	<br><b class='letraBlanca tamaniopeq'>en los últimos 30min -> </b><b class="letraNaranja tamaniopeq">find / -type f -mmin -30</b><br>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">iniciar postgresql =</div><div class="letraNaranja tamaniopeq"> postgresini</div>
+			</div>
 
-	        </p>
-	       
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Copiar archivos de una carpeta a otra</h2>
-			<p>
-				<b class='letraBlanca tamaniopeq'>Abrir nueva terminal -> </b><b class="letraNaranja tamaniopeq">Ctrl + Alt + T</b><br>
-	          	<br><b class='letraBlanca tamaniopeq'>Ver numeración de lineas en nano -> </b><b class="letraNaranja tamaniopeq">alt + ctrl + 3</b><br>
-	          	<br><b class='letraBlanca tamaniopeq'>Ocultar menu de terminal -> </b><b class="letraNaranja tamaniopeq">gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false</b><br>
-	        </p>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">finalizar postgresql =</div><div class="letraNaranja tamaniopeq"> postgresfin</div>
+			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Cambiar MAC</h2>
-			<p>
-	          	<b class="tamaniopeq letraBlanca">Dar de baja la MAC -> </b><b class="letraNaranja tamaniopeq">sudo ifconfig (NOMBRE DE LA NET) down</b><br>
-	          	<br><b class="tamaniopeq letraBlanca">Cambiar la MAC -> </b><b class="letraNaranja tamaniopeq">sudo macchanger -r (NOMBRE DE LA NET)</b><br>
-	          	<br><b class="tamaniopeq letraBlanca">Dar de alta la MAC -> </b><b class="letraNaranja tamaniopeq">sudo ifconfig (NOMBRE DE LA NET) up</b><br>
-	        </p>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">sudo apt update && apt full-upgrade = </div><div class="letraNaranja tamaniopeq">actualizar</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">history -c && history -w && rm ~/.bash_history = </div><div class="letraNaranja tamaniopeq">rmhistorial</div>
+			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Codificaciones Base64 y Hex</h2>
-	        <p>
-	        	<b class="tamaniopeq letraBlanca">Códificar texto base 64 -></b><b class="letraNaranja tamaniopeq"> echo "MI TEXTO" | base64</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Decodificar texto base 64 -></b><b class="letraNaranja tamaniopeq"> base64 -d</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Códificar Hexadecimal -></b><b class="letraNaranja tamaniopeq"> echo "MI TEXTO" | xxd</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Decodificar Hexadecimal -></b><b class="letraNaranja tamaniopeq"> echo "TEXTO HEXA" | xxd -r</b><br>
-	        </p>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">sudo sync && sudo sysctl vm.drop_caches=3 = </div><div class="letraNaranja tamaniopeq">liberar</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">xdotool getmouselocation = </div><div class="letraNaranja tamaniopeq">mousefind</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">sudo service mysql start = </div><div class="letraNaranja tamaniopeq">sqlini</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">sudo service mysql stop  =</div><div class="letraNaranja tamaniopeq">sqlfin</div>
+			</div>
+	        
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Cambiar case sensitive de la terminal</h2>
+			<div class="horizontal padding1">
+				<div class='letraBlanca tamaniopeq margenDer1'>shopt -s nocaseglob</div><div class="letraNaranja tamaniopeq">Activar modo case-insensitive</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class='letraBlanca margenDer1 tamaniopeq'>shopt -u nocaseglob = </div><div class="letraNaranja tamaniopeq">Volver al modo case-sensitive</div>
+			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Conectarse a dispositivos por ADB</h2>
-	        <p>
-	        	<br><b class="letraEpica tamanioMed">¡Debes estar en la misma red WiFi!</b><br><br>
-	        	<b class="tamaniopeq letraBlanca">Buscar dispositivos -></b><b class="letraNaranja tamaniopeq"> adb devices</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Conectados por cable/usb -></b><b class="letraNaranja tamaniopeq"> adb -s CÓDIGO_DEL_DISPOSITIVO shell</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Ejecuto el script -></b><b class="letraNaranja tamaniopeq"> ./adbRecon.sh</b><br><br>
-	        	<br><b class="letraEpica tamanioMed">Comandos para ejecutar</b><br><br>
-	        	<br><b class="tamaniopeq letraBlanca">Abrir una página web -></b><b class="letraNaranja tamaniopeq"> adb shell am start -a android.intent.action.VIEW -d "PAGINA WEB"</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Realizar una llamada-></b><b class="letraNaranja tamaniopeq"> adb shell am start -a android.intent.action.CALL -d tel:NUMERO DE TEL</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Ver cámara Frontal -></b><b class="letraNaranja tamaniopeq"> adb shell am start -a android.media.action.IMAGE_CAPTURE</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Grabar audio -></b><b class="letraNaranja tamaniopeq"> adb shell am start -a android.provider.MediaStore.RECORD_SOUND</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Sonar alarma -></b><b class="letraNaranja tamaniopeq"> adb shell am broadcast -a</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Apagar dispositivo -></b><b class="letraNaranja tamaniopeq"> android.intent.action.ACTION_REQUEST_SHUTDOWN</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Reiniciar dispositivo -></b><b class="letraNaranja tamaniopeq"> adb shell reboot -p</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Botón de retroceso -></b><b class="letraNaranja tamaniopeq"> adb shell input keyevent KEYCODE_BACK</b><br><br>
-	        	<br><b class="tamaniopeq letraBlanca">Tomar captura del dispositivo -></b><b class="letraNaranja tamaniopeq"> adb shell screencap -p /sdcard/captura_de_pantalla.png</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Guardar captura en PC -></b><b class="letraNaranja tamaniopeq"> adb pull /sdcard/captura_de_pantalla.png /carpeta/donde/quieras/</b><br>
-	        </p>
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Copiar archivos de una carpeta a otra</h2>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">sudo cp </div><div class="letraNaranja tamaniopeq">/llenar/llenar/DondeEstá/archivo.txt /llenar/llenar/DondeLoLLevo</div>
+			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Identificar Sistema Operativo</h2>
-	        <p>
-	        	<b><b class="tamaniopeq letraBlanca">Buscar dispositivos -></b><b class="letraNaranja tamaniopeq"> ping -c 1 IP</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Windows -></b><b class="letraNaranja tamaniopeq"> ttl 118</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Linux -></b><b class="letraNaranja tamaniopeq"> ttl 60/70</b><br>
-	        </p>
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Ver archivos modificados</h2>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">en los últimos 3 días</div><div class="letraNaranja tamaniopeq">find / -type f -mtime -3</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">en los últimos 30min</div><div class="letraNaranja tamaniopeq">find / -type f -mmin -30</div>
+			</div>
 
-	        <br><h2 class="textoSerio tamanioMed letraVerde subrayado">Netdiscover</h2>
-	        <p>
-	        	<b class="tamanioMed letraEpica">Netdiscover es una herramienta de escaneo de red que se utiliza para descubrir y mostrar dispositivos en una red local (con esta se puede optener la MAC)</b><br><br>
-	        	<br><b class="tamaniopeq letraBlanca">Obtener interfaz -></b><b class="letraNaranja tamaniopeq"> ifconfig</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Linux -></b><b class="letraNaranja tamaniopeq"> netdiscover -i Interfaz -r IpPrivada</b><br>
-	        </p>
+			<h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Copiar archivos de una carpeta a otra</h2>
+			<div class="horizontal padding1">
+	        	<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">Ver numeración de lineas en nano</div><div class="letraNaranja tamaniopeq">alt + ctrl + 3</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">Abrir nueva terminal</div><div class="letraNaranja tamaniopeq">Ctrl + Alt + T</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">Ocultar menu de terminal</div><div class="letraNaranja tamaniopeq">gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false</div><br>
+			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde subrayado">Virus total scanner</h2>
-	        <p>
-	        	<b class="tamanioMed letraEpica">Sirve para escanear archivos y detectar si es malicioso</b><br><br>
-	        	<br><b class="tamaniopeq letraBlanca">Escaneo -></b><b class="letraNaranja tamaniopeq"> vtscan ruta/del/archivo</b><br>
-	        </p>
-	        <br><h2 class="textoSerio tamanioMed letraVerde subrayado">Host request</h2>
-	        <p>
-	        	<b class="tamanioMed letraEpica">Sirve para escanear una página web y obtener la ip</b><br><br>
-	        	<br><b class="tamaniopeq letraBlanca">Escaneo de la página web -></b><b class="letraNaranja tamaniopeq"> host www.mipaginaweb.com</b><br>
-	        </p>
-	        <br><h2 class="textoSerio tamanioMed letraVerde subrayado">Arpscanner</h2>
-	        <p>
-	        	<b class="tamanioMed letraEpica">Sirve para obtener la MAC de una red mediante la ip (eth -> MAC)</b><br><br>
-	        	<br><b class="tamaniopeq letraBlanca">Busqueda de MAC -></b><b class="letraNaranja tamaniopeq"> Ip link show</b><br>
-	        </p>
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Cambiar MAC</h2>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Dar de baja la MAC</div><div class="letraNaranja tamaniopeq">sudo ifconfig (NOMBRE DE LA NET) down</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Cambiar la MAC</div><div class="letraNaranja tamaniopeq">sudo macchanger -r (NOMBRE DE LA NET)</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Dar de alta la MAC</div><div class="letraNaranja tamaniopeq">sudo ifconfig (NOMBRE DE LA NET) up</div>
+			</div>
 
-	        <br><h2 class="textoSerio tamanioMed letraVerde subrayado">Activar/Desactivar SSH</h2>
-	        <p>
-	        	<b class="tamaniopeq letraBlanca">Detener SSH -></b><b class="letraNaranja tamaniopeq"> sudo systemctl stop ssh</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Iniciar SSH -></b><b class="letraNaranja tamaniopeq"> sudo systemctl start ssh</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Detener SSH -></b><b class="letraNaranja tamaniopeq"> sudo service ssh start</b><br>
-	        	<br><b class="tamaniopeq letraBlanca">Iniciar SSH -></b><b class="letraNaranja tamaniopeq"> sudo service ssh stop</b>
-	        </p>
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Codificaciones Base64 y Hex</h2>
+			<div class="horizontal padding1">
+	        	<div class="letraBlanca margenDer1 tamaniopeq">Códificar texto base 64</div><div class="letraNaranja tamaniopeq"> echo "MI TEXTO" | base64</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Decodificar texto base 64</div><div class="letraNaranja tamaniopeq"> base64 -d</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Códificar Hexadecimal -></div><div class="letraNaranja tamaniopeq"> echo "MI TEXTO" | xxd</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Decodificar Hexadecimal -></div><div class="letraNaranja tamaniopeq"> echo "TEXTO HEXA" | xxd -r</div>
+			</div>
 
-	        <br><h2 class="textoSerio tamanioMed letraVerde subrayado">Desactivar ipv6</h2>
-	        <p>
-	        	<b class="tamaniopeq letraBlanca">Detener ipv6 -></b><b class="letraNaranja tamaniopeq"> sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1</b><br>
-	        </p>
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Conectarse a dispositivos por ADB</h2>
+			<div class="horizontal padding1">
+				<h2 class="letraEpica tamanioMed">¡Debes estar en la misma red WiFi!</h2>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Buscar dispositivos</div><div class="letraNaranja tamaniopeq"> adb devices</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Conectados por cable/usb</div><div class="letraNaranja tamaniopeq"> adb -s CÓDIGO_DEL_DISPOSITIVO shell</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Ejecuto el script</div><div class="letraNaranja tamaniopeq"> ./adbRecon.sh</div>
+			</div>
+			<div class="horizontal padding1">
+				<h2 class="letraEpica tamanioMed">Comandos para ejecutar</h2>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Abrir una página web</div><div class="letraNaranja tamaniopeq"> adb shell am start -a android.intent.action.VIEW -d "PAGINA WEB"</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Realizar una llamada</div><div class="letraNaranja tamaniopeq"> adb shell am start -a android.intent.action.CALL -d tel:NUMERO DE TEL</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Ver cámara Frontal</div><div class="letraNaranja tamaniopeq"> adb shell am start -a android.media.action.IMAGE_CAPTURE</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Grabar audio</div><div class="letraNaranja tamaniopeq"> adb shell am start -a android.provider.MediaStore.RECORD_SOUND</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Sonar alarma</div><div class="letraNaranja tamaniopeq"> adb shell am broadcast -a</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Apagar dispositivo</div><div class="letraNaranja tamaniopeq"> android.intent.action.ACTION_REQUEST_SHUTDOWN</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Reiniciar dispositivo</div><div class="letraNaranja tamaniopeq"> adb shell reboot -p</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Botón de retroceso</div><div class="letraNaranja tamaniopeq"> adb shell input keyevent KEYCODE_BACK</div>
+			</div>
+				<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq">Tomar captura del dispositivo</div><div class="letraNaranja tamaniopeq"> adb shell screencap -p /sdcard/captura_de_pantalla.png</div>
+			</div>
+				<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Guardar captura en PC</div><div class="letraNaranja tamaniopeq"> adb pull /sdcard/captura_de_pantalla.png /carpeta/donde/quieras/</div>
+			</div>
 
-	        <br><h2 class="textoSerio tamanioMed letraVerde subrayado">Network Manager</h2>
-	        <p>
-	        	<b class="tamaniopeq letraBlanca">Var conexiones de red activas -></b><b class="letraNaranja tamaniopeq"> nmcli connection show --active</b><br>
-	        	<b class="tamaniopeq letraBlanca">Var redes WiFi -></b><b class="letraNaranja tamaniopeq"> nmcli device wifi list</b><br>
-	        	<b class="tamaniopeq letraBlanca">Var redes WiFi a la que estamos conectados -></b><b class="letraNaranja tamaniopeq"> nmcli d</b>
-	        </p>
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Identificar Sistema Operativo</h2>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Buscar dispositivos</div><div class="letraNaranja tamaniopeq"> ping -c 1 IP</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Windows</div><div class="letraNaranja tamaniopeq"> ttl 118</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Linux</div><div class="letraNaranja tamaniopeq"> ttl 60/70</div>
+			</div>
+
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Netdiscover</h2>
+			<div class="horizontal padding1">
+				<div class="tamanioMed letraEpica">Netdiscover es una herramienta de escaneo de red que se utiliza para descubrir y mostrar dispositivos en una red local (con esta se puede optener la MAC)</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Obtener interfaz</div><div class="letraNaranja tamaniopeq"> ifconfig</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Linux</div><div class="letraNaranja tamaniopeq"> netdiscover -i Interfaz -r IpPrivada</div>
+			</div>
+
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Virus total scanner</h2>
+			<div class="horizontal padding1">
+				<div class="tamanioMed letraEpica">Sirve para escanear archivos y detectar si es malicioso</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Escaneo</div><div class="letraNaranja tamaniopeq"> vtscan ruta/del/archivo</div>
+			</div>
+
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Host request</h2>
+			<div class="horizontal padding1">
+				<div class="tamanioMed letraEpica">Sirve para escanear una página web y obtener la ip</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Escaneo de la página web</div><div class="letraNaranja tamaniopeq"> host www.mipaginaweb.com</div>
+	        </div>
+
+			<h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Arpscanner</h2>
+			<div class="horizontal padding1">
+				<div class="tamanioMed letraEpica">Sirve para obtener la MAC de una red mediante la ip (eth -> MAC)</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Busqueda de MAC</div><div class="letraNaranja tamaniopeq"> Ip link show</div>
+			</div>
+
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Activar/Desactivar SSH</h2>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Detener SSH </div><div class="letraNaranja tamaniopeq"> sudo systemctl stop ssh</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Iniciar SSH </div><div class="letraNaranja tamaniopeq"> sudo systemctl start ssh</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Detener SSH </div><div class="letraNaranja tamaniopeq"> sudo service ssh start</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Iniciar SSH </div><div class="letraNaranja tamaniopeq"> sudo service ssh stop</div>
+			</div>
+
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Desactivar ipv6</h2>
+			<div class="horizontal padding1">
+	        	<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Detener ipv6 </div><div class="letraNaranja tamaniopeq"> sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1</div>
+			</div>
+
+	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Network Manager</h2>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Var conexiones de red activas </div><div class="letraNaranja tamaniopeq"> nmcli connection show --active</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Var redes WiFi </div><div class="letraNaranja tamaniopeq"> nmcli device wifi list</div>
+			</div>
+			<div class="horizontal padding1">
+				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Var redes WiFi a la que estamos conectados </div><div class="letraNaranja tamaniopeq"> nmcli d</div>
+			</div>
 		</main>
 	</body>
 
