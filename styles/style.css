@@ -1259,6 +1259,20 @@ a {
 	text-decoration: none;
 }
 
+#subir, #bajar {
+	left: 90%;
+	z-index: 100;
+	position: fixed;
+}
+
+#subir {
+	bottom: 2%;
+}
+
+#bajar {
+	bottom: 9%;
+}
+
 footer {
 	text-align: center;
 	border-top: solid orange;
