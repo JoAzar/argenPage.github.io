@@ -1,0 +1,50 @@
+
+.juego {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item {
+    width: 7vw;
+    height: 12vh;
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0px;
+    border-radius: 30px 30px 30px 30px;
+    border: solid white 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.692));
+}
+
+.boxOpen {
+    font-size: 5vw;
+    background-color: #ffee8f;
+    transform: rotateY(180deg);
+}
+
+.boxMatch {
+    visibility: hidden;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+    width: 31vw;
+    height: 10vh;
+    background-color: white;
+}
+
+.oculto {
+    transform: rotateY(180deg);
+    visibility: hidden;
+}

@@ -2,13 +2,15 @@
 <html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>Inscripciones 🇦🇷</title>
+		<title>Juegos🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
+		<link rel="stylesheet" href="juegos.css">
+		
 	</head>
 	<header class="fondoImagenCiudad3 dropSombraBlanca padding2 superiorRadius">
-		<h1 class="letraBlanca sombraNegra textoChanga tamanioGran">Materias Inscritas</h1>
-		<nav class="navDesplegable fondoBlanco dropSombraNegra radius">
+		<h1 class="letraBlanca sombraNegra textoChanga tamanioGran">Juegos</h1>
+		<nav class="navDesplegable fondoBlanco radius">
 			<ul class="menu">
 				<li>
 					<h1 class="nav1 textoChanga tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
@@ -124,17 +126,23 @@
 	</header>
 	<body class="margen2">
 		<main class="padding2">
-			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Código PostgreSql</h1>
+			<h1 class="margen2 letraBlanca sombraNegra subrayado textoSerio tamanioGran">Bienvenidos a los Juegos</h1>
 			<div>
-				<h2 class="letraBlanca sombraNegra letraNaranja">Estamos trabajando, sepa disculpar</h2>
+				<div class="letraBlanca sombraNegra tamanioGran textoSerio margen2">Juego de parejas</div>
+				<div class="letraAzul tamaniopeq textoSerio margen2">Tiene que encontrar las parejas de cada animal</div>
 			</div>
-	        <div class="padding2 encuadrar radius fondoVidrio centrarImagen">
-				<img class="radius" src="../images/mono116.jpeg" width="100%">
+	        <div class="padding2 encuadrar radius centrarImagen">
+				<div class="juego"></div>
+				<div class="contador textoSerio letraAzul tamanioGran radius">Parejas encontradas: 0</div>
+				<div id="mensajeGanaste" class="oculto radius fondoBlanco letraAzul tamanioGran textoSerio">GANASTE</div>
+				<button class="botonBlanco botonAzulHover margen2" onclick="reiniciarJuego()">Reiniciar Juego</button>
 			</div>
 		</main>
 		<button class="botonBlanco botonAzulHover margen2" id="subir">Subir</button>
 		<button class="botonBlanco botonAzulHover margen2" id="bajar">Bajar</button>
+		
 	</body>
+	<script src="juegos.js"></script>
 	<script src="../funcionalidades.js"></script>
 	<footer class="fondoAzul textoSerio letraBlanca dropSombraNegra sinSeleccion inferiorRadius">
 		<div class="redes horizontal">
@@ -166,4 +174,4 @@
 		</div>
 	</footer>
 
-</HTML>
+</html>
