@@ -646,6 +646,10 @@
 	animation: moverDerLargo 30s linear infinite;
 }
 
+.avanzarLargoDRapido {
+	animation: moverDerLargo 3s linear infinite;
+}
+
 .avanzarLargoRapido {
 	animation: moverIzqLargo2 3s linear infinite;
 }
