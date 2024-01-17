@@ -49,7 +49,7 @@
 	font-family: 'Changa', sans-serif;
 }
 
-.textoOlvalo {
+.textoOsvaldo {
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -303,6 +303,11 @@
 	background-color: #ffc176;
 }
 
+.fondoNaranja {
+	background-color: #FECEAB;
+
+}
+
 .fondoRojo {
 	background-color:  hsl(6, 97%, 66%);
 }
@@ -413,7 +418,7 @@
 }
 
 .letraAmarilla {
-	color: #fff075;
+	color: #FECEAB;
 }
 
 .letraEpica {
@@ -430,7 +435,7 @@
 }
 
 .letraNaranjetaHover {
-	color: #ffc176;
+	color: #ff847c;
 	text-shadow: black 1px 1px 1px;
 }
 
@@ -487,7 +492,7 @@
 
 
 .letraNegra {
-	color: black;
+	color: #424242;
 }
 
 .letraBlanca {
@@ -1390,15 +1395,15 @@ img {
 @keyframes coloresA {
 	 from 
 	 {
-	 	background-color: white;
+	 	background-color: rgba(243, 198, 113, 0.932);
 	 }
 	 50%
 	 {
-	 	background-color: yellow
+	 	background-color: rgb(255, 183, 90)
 	 }
 	 to 
 	 {
-	 	background-color: orange;
+		background-color: rgba(243, 198, 113, 0.897);
 	 }
 }
 
