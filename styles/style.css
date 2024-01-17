@@ -429,6 +429,10 @@
 	color: #6d8dbf;
 }
 
+.letraTiburonHover:hover {
+	color: #6d8dbf;
+}
+
 .letraAzul {
 	color: #3498db;
 	text-shadow: black 1px 1px 1px;
@@ -1079,7 +1083,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-
 /*----------------------------------------------------------------------------*/
 
 header {
@@ -1095,6 +1098,8 @@ header {
 	border: solid 4px rgba(0, 0, 0, 0.507) ;
 	border-radius: 30px 30px 30px 30px;
 }
+
+
 
 .smallIcons {
 	max-width: 15%;
@@ -1189,7 +1194,63 @@ li.grilla{
 .navDesplegable .submenu li:hover {
 	cursor: pointer;
 }
+/*--------------------------nav2-----------------*/
 
+.navDesplegable2 {
+	padding: 1vw;
+	width: fit-content;
+	display: flex;
+	justify-content: start;
+	position: absolute;
+}
+
+.navDesplegable2 .menu {
+	list-style: none;
+	align-items: center;
+}
+
+.navDesplegable2 h1 {
+    display: block;
+    padding: .5em 1em;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navDesplegable2 .submenu {
+    display: none;
+    position: relative;
+    right: 30%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	color: white;
+	text-shadow: 2px 2px 2px #3b3b3b;
+	border-radius: 30px 30px 30px 30px;
+}
+
+
+.navDesplegable2 .menu > li:hover .submenu {
+    display: flex;
+	flex-direction: column;
+}
+
+.navDesplegable2 .menu li {
+	display: flex;
+	justify-content: end;
+	
+}
+
+.navDesplegable2 .submenu li {
+	margin-right: 1vw;
+}
+
+.navDesplegable2 .submenu li:hover {
+	cursor: pointer;
+}
+
+
+/*-----------------------------------------------*/
 
 main {
 	background-color: #3b3b3b;
@@ -1270,7 +1331,7 @@ a {
 
 #subir, #bajar {
 	left: 90%;
-	z-index: 100;
+	z-index: 1;
 	position: fixed;
 }
 
@@ -1294,6 +1355,8 @@ footer {
 	text-align: center;
 	border-top: solid orange;
 	padding-bottom: 4vh;
+	position: relative;
+	z-index: 2;
 }
 
 /*----------------------vista de página------------------------*/
