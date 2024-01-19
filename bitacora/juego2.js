@@ -43,26 +43,13 @@ var sandiaMinY = 20;
 var sandiaMaxY = 100;
 var interactuables = [];
 var nombre = [];
-var saltarAudio;
-var muerteAudio;
-var comida1Audio;
-var comida2Audio;
-var comida3Audio;
-var fondoAudio;
 var tiempoCabraObstaculoMin = 6;
 var tiempoCabraObstaculoMax = 12;
 var obstaculoCabraPosY = 16;
 var colisionRegistrada;
-var vidas = 4;
-var detecto=0;
-/*
-let saltarAudio = new Audio('../sonidos/salto.wav');
-let muerteAudio = new Audio('../sonidos/muerte.wav');
-let comida1Audio = new Audio('../sonidos/comida1.wav');
-let comida2Audio = new Audio('../sonidos/comida2.wav');
-let comida3Audio = new Audio('../sonidos/comida3.wav');
-let fondoAudio = new Audio('../sonidos/fondo.wav');
-*/
+var vidas = 4;              /* cant de vidas iniciales */
+var detecto = 0;
+var reiniciarJuego;
 
 if(document.readyState === "complete" || document.readyState === "interactive") {
   setTimeout(Init,1);
@@ -79,7 +66,6 @@ function Init() {
 function Loop() {
   deltaTime = (new Date() - time) /1000;
   time = new Date();
-  /*fondoAudio.play();*/
   update();
   requestAnimationFrame(Loop);
 }
@@ -92,18 +78,11 @@ function start() {
   textomanzana = document.querySelector(".manzanaVal");
   textobanana = document.querySelector(".bananaVal");
   textosandia = document.querySelector(".sandiaVal");
+  textovida = document.querySelector(".textovida");
   textonombre = document.querySelector(".name");
   cerdo = document.querySelector(".cerdo");
   document.addEventListener("keydown", handleKeyDown);
-  /*
-  saltarAudio = document.querySelector(".audio-salto");
-  muerteAudio = new Audio('../sonidos/muerte.wav');
-  comida1Audio = new Audio('../sonidos/comida1.wav');
-  comida2Audio = new Audio('../sonidos/comida2.wav');
-  comida3Audio = new Audio('../sonidos/comida3.wav');
-  fondoAudio = new Audio('../sonidos/fondo.wav');
-  fondoAudio =  document.querySelector(".fondoAudio");
-  */
+  reiniciarJuego = document.querySelector(".nuevoJuego");
 }
 
 function update() {
@@ -132,8 +111,6 @@ function saltar() {
   if(cerdoPosY === sueloY) {
     saltando = true;
     velY = impulso;
-    /*saltarAudio = 0;
-    saltarAudio.play();*/
     cerdo.classList.remove("cerdoMovement");
   }
 }
@@ -158,7 +135,6 @@ function calcularDesplazamiento() {
 function estrellarse() {
   cerdo.classList.remove("cerdoMovement");
   cerdo.classList.add("cerdoMuerte");
-  muerteAudio.play();
   parado = true;
 }
 
@@ -307,12 +283,51 @@ function ganarbanana(){
 
 function GameOver() {
   estrellarse();
-  gameOver.style.display = "block";
-  fondoAudio.pause();
+  gameOver.style.display = "flex";
+  reiniciarJuego.addEventListener('click', reiniciarjuego);
 }
 
-function actualizarVidas() {
+// Función para reiniciar el juego
+function reiniciarjuego() {
+  // Restablecer todas las variables del juego a sus valores iniciales
+  time = new Date();
+  score = 0;
+  manzanas = 0;
+  banana = 0;
+  sandia = 0;
+  vidas = 4;
+  colisiones = 0;
+  eliminarTodosLosObstaculos();
+  eliminarTodosLosInteractuables();
+  textoScore.innerText = score;
+  textomanzana.innerText = manzanas;
+  textobanana.innerText = banana;
+  textosandia.innerText = sandia;
   textovida.innerText = vidas;
+  suelo.style.animationDuration = "3s";
+  cerdoPosY = sueloY;
+  cerdo.style.bottom = cerdoPosY + "px";
+  cerdo.classList.remove("cerdoMuerte");
+  cerdo.classList.add("cerdoMovement");
+  gameOver.style.display = "none";
+  parado = false;
+  Loop();
+}
+
+
+// Funciones para eliminar todos los obstáculos e interactuables
+function eliminarTodosLosObstaculos() {
+  for (var i = obstaculos.length - 1; i >= 0; i--) {
+    obstaculos[i].parentNode.removeChild(obstaculos[i]);
+    obstaculos.splice(i, 1);
+  }
+}
+
+function eliminarTodosLosInteractuables() {
+  for (var i = interactuables.length - 1; i >= 0; i--) {
+    interactuables[i].parentNode.removeChild(interactuables[i]);
+    interactuables.splice(i, 1);
+  }
 }
 
 // Función para restar una vida
@@ -321,6 +336,10 @@ function restarVida() {
     vidas--;
     actualizarVidas(); // Actualiza la cantidad de vidas en pantalla
   }
+}
+
+function actualizarVidas() {
+  textovida.innerText = vidas;
 }
 
 function detectarColision() {
@@ -342,8 +361,8 @@ function detectarColision() {
 // Función para eliminar un obstáculo específico
 function eliminarObstaculo(index) {
   if (index >= 0 && index < obstaculos.length) {
-    obstaculos[index].parentNode.removeChild(obstaculos[index]); // Elimina del DOM
-    obstaculos.splice(index, 1); // Elimina de la lista de obstáculos
+    obstaculos[index].parentNode.removeChild(obstaculos[index]);  // Elimina del DOM
+    obstaculos.splice(index, 1);                                  // Elimina de la lista de obstáculos
   }
 }
 
@@ -354,17 +373,14 @@ function detectarColisionmanzanas() {
       if(IsCollision(cerdo, interactuables[i], 10, 25, 10, 20)) {
         
           if(interactuables[i].classList.contains("manzana")){
-              /*comida1Audio.play();*/
               interactuables[i].parentNode.removeChild(interactuables[i]);
               interactuables.splice(i, 1);
               ganarmanzanas();
           }else if (interactuables[i].classList.contains("banana")){
-              /*comida2Audio.play();*/
               interactuables[i].parentNode.removeChild(interactuables[i]);
               interactuables.splice(i, 1);
               ganarbanana();
           } else if (interactuables[i].classList.contains("sandia")){
-            /*comida3Audio.play();*/
             interactuables[i].parentNode.removeChild(interactuables[i]);
             interactuables.splice(i, 1);
             ganarsandia();
