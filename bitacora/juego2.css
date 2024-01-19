@@ -1,0 +1,510 @@
+.granContenedor 
+{
+    width: 100%;
+    height: 900px;
+    background-color: #363636;
+}
+
+.info {
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 200px;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(202, 202, 202);
+}
+
+.redes {
+    height: 130px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.linkedin1 {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/linkedinGris.png);
+    align-items: center;
+    height: 70px;
+    width: 50px;
+    margin-left: 30px;
+}
+
+.linkedin2 {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/linkedinGris.png);
+    align-items: center;
+    height: 70px;
+    margin-left: 30px;
+    width: 50px;
+}
+
+.link1 {
+    color: rgb(203, 247, 255);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.link2 {
+    color: rgb(203, 247, 255);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.link1:hover {
+    text-shadow: 1px 1px 5px rgb(128, 226, 243);
+}
+
+.link2:hover {
+    text-shadow: 1px 1px 5px rgb(128, 226, 243);
+}
+
+.linkedin1:hover {
+    background-image: url(../images/linkedinColor.png);
+}
+
+.linkedin2:hover {
+    background-image: url(../images/linkedinColor.png);
+}
+
+.cafecito {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url(../images/cafeVacio.png);
+    align-items: center;
+    height: 70px;
+    margin-left: 30px;
+    width: 50px;
+}
+
+.cafecito:hover {
+    background-image: url(../images/cafeLleno.png);
+}
+
+.cafecitoLink {
+    color: rgb(252, 185, 99);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.cafecitoLink:hover {
+    text-shadow: 1px 1px 5px rgb(236, 162, 78);
+}
+
+
+.contenedor
+{
+    position: relative;
+    width: 100%;
+    height: 530px;
+    overflow: hidden;
+    background: linear-gradient(#b7d6c7, transparent) #ffe2d1;
+}
+
+.suelo
+{
+    margin-top: 275px;
+    width: 200%;
+    height: 400px;
+    position: absolute;
+    background: url(../images/pasto2.png);
+}
+
+.mediodia {
+    background-color: #f1f099;
+}
+
+.tarde {
+    background-color: #8562b3;
+}
+
+.noche {
+    background-color: #181818;
+}
+
+.infierno {
+    background-color: rgb(165, 17, 49);
+    animation: infierno 0.25s inherit;
+}
+
+/*===============FRUTAS QUE APARECEN EN PANTALLA===========*/
+
+.manzana{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    background: url(../images/manzana.png) no-repeat;
+    background-size: 30px;
+}
+
+.banana{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    background: url(../images/banana.png) no-repeat;
+    background-size: 30px;
+}
+
+.sandia{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    background: url(../images/sandia.png) no-repeat;
+    background-size: 30px;
+}
+
+.pez {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    background: url(../images/pez.png), url(../images/pezColor.png) no-repeat;
+    background-size: 30px;
+    animation: pezCambioDeColores 5s ease-in-out infinite;
+}
+
+/*===============FRUTAS QUE APARECEN EN PANTALLA===========*/
+
+.manzanaVal  /*valores hamburguesas*/
+{
+    font-family: 'Roboto Slab', serif;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 42px;
+    right: 264px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.manzanaName /*VALORES hamburguesa texto*/
+{
+    margin-left: 30px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 190px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.bananaVal /*valores zanahoria*/
+{
+    height: 30px;
+    position: absolute;
+    top: 42px;
+    right: 700px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.bananaName /*valores zanahoria texto*/
+{
+    margin-left: 30px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 615px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.sandiaVal  /*valores cereza*/
+{
+    height: 30px;
+    position: absolute;
+    top: 42px;
+    right: 500px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.sandiaName /*valores cereza texto*/
+{
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 430px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.puntos /*valores puntos texto*/
+{
+    height: 30px;
+    position: absolute;
+    right: 1300px;
+    top: 5px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.puntosNum /*valores puntos texto*/
+{
+    height: 30px;
+    position: absolute;
+    right: 1380px;
+    top: 42px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(202, 202, 202);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.vida {
+    height: 30px;
+    position: absolute;
+    right: 1100px;
+    top: 5px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.textoVidas {
+    height: 30px;
+    position: absolute;
+    right: 1135px;
+    top: 42px;
+    z-index: 10;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(202, 202, 202);
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(29, 29, 29);
+}
+
+.game-over {
+    position: relative;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    text-align: center;
+    color: #c5c5c5;
+    font-family: 'Roboto Slab', serif;
+    font-size: 90px;
+    background-color: rgb(51, 51, 51);
+    height: 200px;
+    margin: 0px;
+}
+
+.lose {
+    font-size: 50px;
+}
+
+.lose:hover {
+    text-shadow: 1px 1px 5px rgb(243, 148, 172);
+}
+
+.nuevoJuego {
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 1;
+}
+
+.nuevoJuego:hover {
+    text-shadow: 1px 1px 5px rgb(243, 148, 172);
+}
+
+.agradecimiento {
+    height: 0px;
+    text-align: right;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.agradecimiento:hover {
+    text-shadow: 1px 1px 5px rgb(243, 148, 172);
+}
+
+.gato {
+    width: 50px;
+    height: 50px;
+    background: url(../images/gato.png)no-repeat;
+    position: absolute;
+    bottom: 20px;
+    background-size: 50px;
+}
+
+.puercoespin {
+    width: 2vw;
+    height: 3vh;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 20px;
+    background: url(../images/pezColor.png)no-repeat;
+}
+
+.meteorito1 {
+    width: 31px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../images/meteorito.png)no-repeat;
+}
+
+.meteorito2 {
+    width: 31px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../images/meteoro.png)no-repeat;
+}
+
+.meteorito3 {
+    width: 31px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../images/lluviaMeteoros.png)no-repeat;
+}
+
+.cerdo
+{
+    width: 75px;
+    height: 50px;
+    overflow: hidden;
+    background-image: url(../images/animals3.png);
+    position: absolute;
+    z-index: 2;
+    background-size: 1000px 600px;
+    background-position-x: 0px;
+    background-position-y: -480px;
+    filter: drop-shadow(rgb(0, 0, 0));
+    filter: drop-shadow(rgb(29, 29, 29));
+}
+
+.cerdoMovement {
+   animation: cerdoMovimiento 0.25s steps(2) infinite;
+}
+
+.cerdoMuerte {
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: 75px 50px;
+    background-image: url(../images/tumba.png);
+    animation: cerdoMuerto 0.25s steps(2);
+}
+
+@keyframes cerdoMuerto {
+    from
+    {
+        background-size: 400px;
+    }
+    to
+    {
+        background-size: 500px;
+    }
+}
+
+@keyframes pezCambioDeColores {
+    0%, 50%{
+        background-image: url(../images/pez.png), url(../images/pezColor.png);
+    }
+    50.1%, 100%{
+        background-image: url(../images/pezColor.png), url(../images/pez.png);
+    }
+}
+
+@keyframes cerdoMovimiento
+{
+    from
+    {
+        background-position-x: 0px;
+    }
+    to
+    {
+        background-position-x: -350px; 
+    }
+}
+
+@keyframes infierno {
+    from
+    {
+        background-size: 75 50px;
+    }
+    to 
+    {
+        background-size: 0px 0px;
+    }
+}
+
+@keyframes cuadro_ran {
+    from
+    {
+        top: -165px;   
+    }
+    to 
+    {
+        top: 65px;
+    }
+}
