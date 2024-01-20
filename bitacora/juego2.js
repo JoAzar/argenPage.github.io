@@ -112,6 +112,7 @@ function saltar() {
   if (isMobile) {
     cerdo.addEventListener("touchstart", onTouchStart);
   }
+  
   if(cerdoPosY === sueloY) {
     saltando = true;
     velY = impulso;
