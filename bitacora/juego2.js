@@ -108,12 +108,26 @@ function handleKeyDown(ev) {
 }
 
 function saltar() {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if (isMobile) {
+    cerdo.addEventListener("touchstart", onTouchStart);
+  }
   if(cerdoPosY === sueloY) {
     saltando = true;
     velY = impulso;
     cerdo.classList.remove("cerdoMovement");
   }
 }
+
+function onTouchStart() {
+  if (cerdoPosY === sueloY) {
+    saltando = true;
+    velY = impulso;
+    cerdo.classList.remove("cerdoMovement");
+  }
+  cerdo.removeEventListener("touchstart", onTouchStart);
+}
+
 
 function moverCerdo() {
   cerdoPosY += velY*deltaTime;

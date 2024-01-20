@@ -477,3 +477,160 @@
         top: 65px;
     }
 }
+
+/* Reglas de medios para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .granContenedor {
+        height: auto;
+    }
+
+    .info {
+        padding-top: 15px;
+        height: auto;
+        font-size: small;
+    }
+
+    .redes {
+        height: auto; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor > * {
+        font-size: medium;
+    }
+
+    .game-over > * {
+        font-size: medium;
+    }
+
+    .manzanaVal {
+        font-family: 'Roboto Slab', serif;
+        position: absolute;
+        top: 42px;
+        right: 18%;
+        color: rgb(226, 226, 226);
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .bananaVal {
+        position: absolute;
+        top: 42px;
+        right: 45%;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .sandiaVal {
+        position: absolute;
+        top: 42px;
+        right: 68%;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size:  medium;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .manzanaName {
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        right: 10%;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+   
+    .bananaName {
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        right: 35%;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .sandiaName {
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 60%;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .puntos {
+        position: absolute;
+        right: 80%;
+        top: 15px;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .puntosNum {
+        position: absolute;
+        right: 86%;
+        top: 42px;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 1px 1px 1px rgb(202, 202, 202);
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .vida {  
+        position: absolute;
+        right: 15%;
+        top: 95px;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+    .textoVidas {
+        position: absolute;
+        right: 20%;
+        top: 120px;
+        color: rgb(226, 226, 226);
+        font-family: 'Roboto Slab', serif;
+        font-size: medium;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 1px 1px 1px rgb(202, 202, 202);
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(29, 29, 29);
+    }
+
+}
