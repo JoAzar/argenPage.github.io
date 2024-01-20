@@ -101,9 +101,13 @@ function update() {
 }
 
 function handleKeyDown(ev) {
-  if(ev.keyCode==32)
-  {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if (isMobile || ev.key === 'e' || ev.key === 'E') {
     saltar();
+  }
+
+  if(ev.key === 'r' || ev.key === 'R' ) {
+    reiniciarjuego();
   }
 }
 
@@ -112,7 +116,6 @@ function saltar() {
   if (isMobile) {
     cerdo.addEventListener("touchstart", onTouchStart);
   }
-  
   if(cerdoPosY === sueloY) {
     saltando = true;
     velY = impulso;
@@ -128,7 +131,6 @@ function onTouchStart() {
   }
   cerdo.removeEventListener("touchstart", onTouchStart);
 }
-
 
 function moverCerdo() {
   cerdoPosY += velY*deltaTime;
@@ -193,6 +195,7 @@ function DecidirCrearbanana() {
       Crearbanana();
   }
 }
+
 function Crearbanana() {
   var banana = document.createElement("div");
   contenedor.appendChild(banana);
@@ -200,10 +203,10 @@ function Crearbanana() {
   banana.posX = contenedor.clientWidth;
   banana.style.left = contenedor.clientWidth+"px";
   banana.style.bottom = bananaMinY + (bananaMaxY - bananaMinY) * Math.random() + "px";
-
   interactuables.push(banana);
   tiempoHastabanana = tiempobananaMin + Math.random() * (tiempobananaMax-tiempobananaMin) / gameVel;
 }
+
 function DecidirCrearsandia() {
   tiempoHastasandia -= deltaTime;
   if(tiempoHastasandia <= 0) {
@@ -218,7 +221,6 @@ function Crearsandia() {
   sandia.posX = contenedor.clientWidth;
   sandia.style.left = contenedor.clientWidth+"px";
   sandia.style.bottom = sandiaMinY + (sandiaMaxY - sandiaMinY) * Math.random() + "px";
-
   interactuables.push(sandia);
   tiempoHastasandia = tiemposandiaMin + Math.random() * (tiemposandiaMax-tiemposandiaMin) / gameVel;
 }
@@ -304,7 +306,6 @@ function GameOver() {
 
 // Función para reiniciar el juego
 function reiniciarjuego() {
-  // Restablecer todas las variables del juego a sus valores iniciales
   time = new Date();
   score = 0;
   manzanas = 0;
@@ -328,7 +329,6 @@ function reiniciarjuego() {
   parado = false;
   Loop();
 }
-
 
 // Funciones para eliminar todos los obstáculos e interactuables
 function eliminarTodosLosObstaculos() {
