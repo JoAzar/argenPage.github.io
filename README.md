@@ -18,7 +18,7 @@
     <li>2. <del>Verificar las imágenes</del></li>
     <li>3. <del>Cambiar las imágenes de fondo y gif</del></li>
     <li>4. <del>Cambiar la página pokemon por Monkey</del></li>
-    <li>5. Revisar la conexión con el servidor</li>
-    <li>6. Reparar la conexión con el servidor</li>
+    <li>5. <del>Revisar la conexión con el servidor</del>del></li>
+    <li>6. <del>Reparar la conexión con el servidor</del>del></li>
 </ul>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
