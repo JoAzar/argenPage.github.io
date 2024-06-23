@@ -1010,12 +1010,15 @@
 
 /*-------------------------------ARMADO DE CAJAS-----------------------------*/
 
-.twitter, .instagram, .linkedin, .github, .youtube {
+.twitter, .instagram, .linkedin, .github, .youtube, .tiktok{
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 3%;
 	height: auto;
+}
+.tiktok {
+	background-image: url(../images/tiktok.png);
 }
 
 .github {
