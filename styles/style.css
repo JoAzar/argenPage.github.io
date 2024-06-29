@@ -449,7 +449,7 @@
 	text-shadow: black 1px 1px 1px;
 }
 
-.letraNaranjetaHover {
+.letraNaranjetaHover:hover {
 	color: #ff847c;
 	text-shadow: black 1px 1px 1px;
 }
@@ -1144,7 +1144,7 @@ header {
 	text-shadow: black 1px 1px 1px;
 	transition: background-color .3s, color 0.5s;
 	cursor: pointer;
-	color: #ffd58c;
+	color: #ffffff;
 	transition:  all 600ms ease;
 }
 
