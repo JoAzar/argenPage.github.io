@@ -2,19 +2,19 @@
 <html lang="es" class="sinSeleccion">
 	<head>
 		<meta charset="utf-8">
-		<title>Formulario 🇦🇷</title>
+		<title>Red Monkey 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
 
-	<header class="fondoNegroSuave dropSombraNegra fondoAzul superiorRadius">
-		<h1 class="textoSerio tamanioGran sombraNegra letraBlanca subirCorto sinSeleccion">Formulario</h1>
+	<header class="fondoNegroSuave dropSombraNegra fondoRojo superiorRadius">
+		<h1 class="textoSerio tamanioGran sombraNegra letraBlanca subirCorto sinSeleccion">Red Monkey</h1>
 
 		<div class="avanzarLargoI letraBlanca dropSombraBlanca sinSeleccion ocultarSombra">
 			<img class="widMax5 " src="../images/dog.gif" >
 		</div>
 
-		<nav class="navDesplegable fondoNegro radius centrarItem letraAzul dropSombraNegra">
+		<nav class="navDesplegable fondoNegro radius centrarItem letraRoja dropSombraNegra">
 			<ul class="menu">
 				<li>
 					<h1 class="nav1 textoLato tamaniopeq growHover" onclick="location.href='../index.html'">Inicio</h1>
@@ -133,12 +133,36 @@
 	<body class="margen2 fondoNegroSuave">
 		<main class="fondoBlanco fondoImagenBlue">
 			<div>
-				<h2 class="textoLato sombraNegra letraNaranja">Estamos trabajando, sepa disculpar</h2>
+				<h2 class="textoLato sombraNegra letraRoja">El juego continua</h2>
 			</div>
-			<div class="padding2 encuadrar radius fondoVidrio centrarImagen margen2">
-				<img class="radius" src="../images/mono1.jpeg" width="100%" >
-			</div>
+			<pre id="redMonkey" class="letraRoja fondoNegro radius">
+			</pre>
+			<script>
+				// Función para actualizar el contador cada segundo
+				function actualizarContador() {
+				  var contador = 31536000;
+				  var preElement = document.getElementById('redMonkey'); // Corregido: quitado el punto antes de 'redMonkey'
+    				if (preElement) {
+      					setInterval(function() {
+        			contador--;
+        // Actualizar el contenido del <pre> con el contador
+        preElement.textContent = 
+`
+_/ .-.-. \\_
+(  ( *   * ) )
+\\  / " \\  /
+|\\......./|
 
+#RedMonkey
+
+Hora de emosión: 14:30
+Contador Antes del día: ${contador}
+					  `;
+					}, 1000);
+				  }
+				}
+				  actualizarContador();
+			  </script>
 		</main>
 		<button class="botonBlanco botonAzulHover margen2" id="subir">Subir</button>
 		<button class="botonBlanco botonAzulHover margen2" id="bajar">Bajar</button>
