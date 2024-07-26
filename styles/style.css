@@ -460,7 +460,7 @@
 }
 
 .letraRojaHover:hover {
-	color:  #ff6553;
+	color:  #ff6553 !important;
 	text-shadow: black 1px 1px 1px;
 }
 
@@ -1275,7 +1275,7 @@ main {
     align-items: center;
 }
 
-main2 {
+.main2 {
 	background-color: #3b3b3b;
 	display: flex;
 	flex-direction: row wrap;
