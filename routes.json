@@ -63,7 +63,64 @@
       "url": "../lenguajes/postgresql.html",
       "descripcion": "Es un sistema de gestión de bases de datos relacional de código abierto, conocido por su fiabilidad y soporte para datos complejos."
     }
+  ],
+
+  "bitacora": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver al inicio de la página"
+    },
+    {
+      "nombre": "Conversaciones",
+      "url": "conversaciones.html",
+      "descripcion": "Conversaciones con IA y otras charlas interesantes"
+    },
+    {
+      "nombre": "Ideas",
+      "url": "ideas.html",
+      "descripcion": "Ideas para desarrollar o análizar"
+    },
+    {
+      "nombre": "Free Pig",
+      "url": "juegos2.html",
+      "descripcion": "Juego interactivo"
+    },
+    {
+      "nombre": "Encontrar pares",
+      "url": "juegos.html",
+      "descripcion": "Juego de encontrar parejas de animales"
+    }
+  ],
+
+  "hacking": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver al inicio de la página"
+    },
+    {
+      "nombre": "Aircrack",
+      "url": "aircrack.html",
+      "descripcion": "Herramienta de auditoría de redes Wi-Fi, enfocada en descifrar contraseñas de redes protegidas con WEP y WPA/WPA2"
+    },
+    {
+      "nombre": "Nmap",
+      "url": "nmap.html",
+      "descripcion": "Escáner de red, servicios y puertos, utilizado para identificar vulnerabilidades y realizar auditorías de seguridad"
+    },
+    {
+      "nombre": "Puertos",
+      "url": "ports.html",
+      "descripcion": "Los puertos de red permiten la comunicación entre dispositivos y aplicaciones en una red"
+    },
+    {
+      "nombre": "Wireshark",
+      "url": "wireshark.html",
+      "descripcion": "Analizador de protocolos de red que captura y examina el tráfico en tiempo real, ayudando a detectar problemas y amenazas en la red."
+    }
   ]
+
 
   
 }
