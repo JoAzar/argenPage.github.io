@@ -1,0 +1,70 @@
+{
+  "sigueme_en": [
+    {
+      "plataforma": "TikTok",
+      "url": "https://tiktok.com/@super.monkey.hero"
+    },
+    {
+      "plataforma": "Instagram",
+      "url": "https://instagram.com/ired_monkey"
+    },
+    {
+      "plataforma": "YouTube",
+      "url": "https://www.youtube.com/@IRedMonkey"
+    },
+    {
+      "plataforma": "GitHub",
+      "url": "https://github.com/JoAzar"
+    }
+  ],
+  "lenguajes": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver al inicio de la página"
+    },
+    {
+      "nombre": "Bash",
+      "url": "../lenguajes/bash.html",
+      "descripcion": "es un shell de Unix que permite ejecutar comandos y automatizar tareas mediante scripts."
+    },
+    {
+      "nombre": "Herramientas",
+      "url": "../lenguajes/herramientas.html",
+      "descripcion": "Páginas útiles para el desarrollo de tus tareas"
+    },
+    {
+      "nombre": "Java",
+      "url": "../lenguajes/java.html",
+      "descripcion": "Es un lenguaje de programación orientado a objetos que permite desarrollar aplicaciones portátiles y escalables."
+    },
+    {
+      "nombre": "Python",
+      "url": "../lenguajes/python.html",
+      "descripcion": "Es un lenguaje de programación de alto nivel, fácil de aprender y utilizado en desarrollo web, ciencia de datos e inteligencia artificial."
+    },
+    {
+      "nombre":"Javascript",
+      "url": "../lenguajes/javascript.html",
+      "descripcion": "Es un lenguaje de programación que permite agregar interactividad y dinámicas a las páginas web."
+    },
+    {
+      "nombre": "Mysql",
+      "url": "../lenguajes/mysql.html",
+      "descripcion": "Es un sistema de gestión de bases de datos relacional de código abierto, popular en aplicaciones web por su rapidez y fiabilidad."
+    },
+    {
+      "nombre": "Php",
+      "url": "../lenguajes/php.html",
+      "descripcion": "Ees un lenguaje de programación del lado del servidor, ampliamente utilizado para desarrollar aplicaciones web dinámicas y trabajar con bases de datos."
+    },
+    {
+      "nombre": "Postgresql",
+      "url": "../lenguajes/postgresql.html",
+      "descripcion": "Es un sistema de gestión de bases de datos relacional de código abierto, conocido por su fiabilidad y soporte para datos complejos."
+    }
+  ]
+
+  
+}
+  

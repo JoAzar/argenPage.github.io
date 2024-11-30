@@ -5,11 +5,14 @@ footer
     align-content: center;
     align-items: center;
     justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 .botonModal {
-    display: flex;
-    background-color: rgb(255, 255, 255);
+    width: 7vw;
+    height: 3vh;
+    padding: 0.5vw;
 }
 
 .botonModal, .botonModal label, .btnCerrar label, .contenedorModal {
@@ -23,27 +26,22 @@ footer
 .botonModal label {
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(35, 160, 218);
     transition: all 300ms ease;
     padding: 5%;
 }
 
 .botonModal label:hover {
-    background-color: rgb(35, 160, 218);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 160, 218);
 }
 
 .btnCerrar label {
     background-color: rgb(255, 255, 255);
     color: rgb(35, 160, 218);
     transition: all 300ms ease;
+    font-size: smaller;
+    padding: 0.4vw;
     cursor: pointer;
-}
-
-.btnCerrar label:hover {
-    background-color: rgb(35, 160, 218);
-    color: rgb(255, 255, 255);
 }
 
 #btnModal {
@@ -52,12 +50,13 @@ footer
 }
 
 .contenedorModal {
+    background-color: rgb(35, 160, 218);
     position: absolute;
     width: 30%;
     height: 80%;
     top: 0%;
     left: 0%;
-    background-color: rgb(255, 255, 255);
+
     display: none;
     justify-content: center;
     align-items: center;
@@ -73,23 +72,25 @@ footer
     max-width: 70%;
 }
 
+/*titulo subrayado*/
 .tituloPopup {
-    color: rgb(35, 160, 218);
+    color: rgb(255, 255, 255);
     font-size: medium;
     margin-bottom: 3%;
 }
 
+/*texto debajo del titulo*/
 .subtituloPopup {
-    color: rgb(80, 80, 80);
+    color: rgb(228, 228, 228);
     margin-bottom: 5%;
     font-size: small;
 }
 
-#bajar, #subir {
-    display: none !important;
+/*BOTON DE CERRRAR*/
+.btnCerrar label:hover {
+    background-color: rgb(35, 160, 218);
+    color: rgb(255, 255, 255);
 }
-
-
 
 .botonModal {
     margin-left: 0%;
@@ -99,32 +100,15 @@ footer
     height: auto;
 }
 
-.tituloPopup {
-    font-size: small;
-}
-
-.subtituloPopup {
-    margin-bottom: 1%;
-    font-size: small;
-}
-
 .contenedorModal {
     position: absolute;
     width: 40%;
     height: 80%;
     top: 0%;
     left: 0%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(9, 118, 168);
     display: none;
     justify-content: center;
     align-items: center;
-    margin: 1%;
-}
-
-.desaparecer {
-    font-size: 0;
-}
-
-.h1 {
-    font-size: large;
+    margin: 2vh;
 }
