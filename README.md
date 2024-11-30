@@ -18,7 +18,11 @@
     <li>2. <del>Verificar las imágenes</del></li>
     <li>3. <del>Cambiar las imágenes de fondo y gif</del></li>
     <li>4. <del>Cambiar la página pokemon por Monkey</del></li>
-    <li>5. <del>Revisar la conexión con el servidor</del>del></li>
-    <li>6. <del>Reparar la conexión con el servidor</del>del></li>
+    <li>5. <del>Revisar la conexión con el servidor</del></li>
+    <li>6. <del>Reparar la conexión con el servidor</del></li>
+    <li>7. <del>Agregar landing page</del>del></li>
+    <li>8. <del>Construir un nuevo sistema de navegación</del></li>
+    <li>9. Reparar todas las url y el sistema de navenación</li>
+    <li>10. Agregar más contenido</li>
 </ul>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
