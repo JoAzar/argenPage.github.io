@@ -130,10 +130,12 @@ fetch('../routes.json')
 
 function obtenerRuta(relativa) {
     const currentPath = window.location.pathname;
-    const pathParts = currentPath.split("/");
-    const base = pathParts.slice(0, pathParts.length - 1).join("/");
-    return (base.endsWith("/") ? "" : "" ) + relativa;
-    }
+    const base = "/argenPage.github.io";
+    if (currentPath.startsWith(base)) return base + (relativa.startsWith("/") ? relativa : "/" + relativa);
+    else
+        return (relativa.startsWith("/") ? relativa : "/" + relativa);
+}
+
     
 fetch('../routesAbsolute.json')
     .then(response => response.json())
