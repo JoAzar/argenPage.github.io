@@ -117,7 +117,45 @@
     {
       "nombre": "Wireshark",
       "url": "wireshark.html",
-      "descripcion": "Analizador de protocolos de red que captura y examina el tráfico en tiempo real, ayudando a detectar problemas y amenazas en la red."
+      "descripcion": "Analizador de protocolos de red que captura y examina el tráfico en tiempo real, ayudando a detectar problemas y amenazas en la red"
+    },
+    {
+      "nombre": "Redes",
+      "url": "redes.html",
+      "descripcion": "Info, software y herramientas relacionadas"
+    }
+  ],
+
+  "hardware": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver al inicio de la página"
+    },
+    {
+      "nombre": "Disco duro",
+      "url": "disco.html",
+      "descripcion": "Modelos, software y herramientas relacionadas"
+    },
+    {
+      "nombre": "Modem",
+      "url": "modem.html",
+      "descripcion": "Modelos, software y herramientas relacionadas"
+    },
+    {
+      "nombre": "Mouse",
+      "url": "mouse.html",
+      "descripcion": "Modelos, software y herramientas relacionadas"
+    },
+    {
+      "nombre": "Teclado",
+      "url": "teclado.html",
+      "descripcion": "Modelos, software y herramientas relacionadas"
+    },
+    {
+      "nombre": "Periféricos",
+      "url": "perifericos.html",
+      "descripcion": "Modelos, software y herramientas relacionadas"
     }
   ]
 

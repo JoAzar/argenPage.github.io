@@ -198,6 +198,18 @@
 	background-repeat: no-repeat;
 }
 
+.fondoImagenPerro {
+	background-image: url('../images/fondoPerro.jpg');
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+.fondoImagenMadera {
+	background-image: url('../images/madera.jpg');
+	background-size: contain;
+	background-repeat: repeat;
+}
+
 .bordeVidrio {
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -499,6 +511,10 @@
 	color: #424242;
 }
 
+.letraNegraHover:hover {
+	color: #292929;
+}
+
 .letraBlanca {
 	color: white;
 }
@@ -694,6 +710,7 @@
 	animation: coloresA 5s linear infinite;
 }
 
+
 /*---------------------------------------margenes-------------------------------*/
 
 .autoTextoCentrado {
@@ -794,6 +811,10 @@
 	max-width: 10%;
 }
 
+.widMax20 {
+	max-width: 20%;
+}
+
 .widMax80 { 
 	max-width: 80%;
 }
@@ -824,6 +845,10 @@
 
 .wid90 {
 	width: 90%;
+}
+
+.wid100 {
+	width: 100%;
 }
 
 .heighMax {

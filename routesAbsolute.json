@@ -1,0 +1,32 @@
+{
+  "links": [
+    {
+      "name": "Lenguajes",
+      "url": "/lenguajes/lenguajes.html"
+    },
+    {
+      "name": "Bitácora",
+      "url": "/bitacora/bitacora.html"
+    },
+    {
+      "name": "Hardware",
+      "url": "/hardware/hardware.html"
+    },
+    {
+      "name": "Hacking",
+      "url": "/hacking/hacking.html"
+    },
+    {
+      "name": "Acerca de",
+      "url": "nosotros.html"
+    },
+    {
+      "name": "Formulario",
+      "url": "/formulario/form.html"
+    },
+    {
+      "name": "Tienda",
+      "url": "/indumentaria/tienda.html"
+    }
+  ]
+}
