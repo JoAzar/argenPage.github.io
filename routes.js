@@ -126,15 +126,31 @@ fetch('../routes.json')
     })
 
 
-    /*------------------------- RUTEO DE LAS RUTAS ABSOLUTAS -----------------------------*/
+/*------------------------- RUTEO DE LAS RUTAS ABSOLUTAS -----------------------------*/
 
 function obtenerRuta(relativa) {
     const currentPath = window.location.pathname;
-    const base = "/argenPage.github.io";
-    if (currentPath.startsWith(base)) return base + (relativa.startsWith("/") ? relativa : "/" + relativa);
-    else
-        return (relativa.startsWith("/") ? relativa : "/" + relativa);
+    const repoBase = "/argenPage.github.io";
+    if (currentPath.startsWith(repoBase)) {
+        const pathParts = currentPath.split("/");
+        const subFolder = pathParts[2];
+        if (relativa.startsWith("/")) {
+            return repoBase + "/" + relativa.slice(1) + ".html";
+        } else {
+            return repoBase + "/" + subFolder + "/" + relativa + ".html";
+        }
+    } else {
+        let rutaFinal = (relativa.startsWith("/") ? relativa : "/" + relativa);
+        
+        if (!rutaFinal.endsWith(".html")) {
+            rutaFinal += ".html";
+        }
+
+        return rutaFinal;
+    }
 }
+
+
 
     
 fetch('../routesAbsolute.json')
