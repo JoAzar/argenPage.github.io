@@ -156,6 +156,12 @@
 	background-repeat: no-repeat;
 }
 
+.fondoConImagenHover:hover {
+	background-image: url('../images/redes.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .fondoConImagen3 {
 	background-image: url('../images/chica.jpeg');
 	background-size: cover;
@@ -246,6 +252,11 @@
 .fondoNegro {
 	background-color:  #292929;
 }
+
+.fondoNegroHover:hover {
+	background-color:  #292929;
+}
+
 
 .fondoBlanco {
 	background-color: rgb(255, 255, 255);
@@ -1245,62 +1256,6 @@ li.grilla{
 .navDesplegable .submenu li:hover {
 	cursor: pointer;
 }
-/*--------------------------nav2-----------------*/
-/*
-.navDesplegable2 {
-	padding: 1vw;
-	width: fit-content;
-	display: flex;
-	justify-content: start;
-	position: absolute;
-}
-
-.navDesplegable2 .menu {
-	list-style: none;
-	align-items: center;
-}
-
-.navDesplegable2 h1 {
-    display: block;
-    padding: .5em 1em;
-    margin: 0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.navDesplegable2 .submenu {
-    display: none;
-    position: relative;
-    right: 30%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-	color: white;
-	text-shadow: 2px 2px 2px #3b3b3b;
-	border-radius: 30px 30px 30px 30px;
-}
-
-
-.navDesplegable2 .menu > li:hover .submenu {
-    display: flex;
-	flex-direction: column;
-}
-
-.navDesplegable2 .menu li {
-	display: flex;
-	justify-content: end;
-	
-}
-
-.navDesplegable2 .submenu li {
-	margin-right: 1vw;
-}
-
-.navDesplegable2 .submenu li:hover {
-	cursor: pointer;
-}
-
-/*-----------------------------------------------*/
 
 main {
 	background-color: #3b3b3b;
@@ -1320,6 +1275,15 @@ main {
 	min-height: 100vh;
     align-items: center;
 	
+}
+
+.mainTarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -1678,4 +1642,5 @@ img {
 .shadow-inset-center {-webkit-animation:shadow-inset-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-inset-center .4s cubic-bezier(.25,.46,.45,.94) both}
 .shadow-inset-center-hover:hover {-webkit-animation:shadow-inset-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-inset-center .4s cubic-bezier(.25,.46,.45,.94) both}
 .rebote{-webkit-animation:jello-horizontal .9s both;animation:jello-horizontal .9s both}
-.acercamiento{-webkit-animation:kenburns-right 5s ease-out both;animation:kenburns-right 5s ease-out both}
+.reboteHover:hover{-webkit-animation:jello-horizontal .9s both;animation:jello-horizontal .9s both}
+.acercamientoHover:hover{-webkit-animation:kenburns-right 5s ease-out both;animation:kenburns-right 5s ease-out both}

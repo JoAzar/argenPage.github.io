@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('../routes.json')
+    const jsonFilePath = window.location.pathname.includes('/carpeta1/') ? '../routes.json' : '../../routes.json';
+    cargarRedesSociales(jsonFilePath);
+});
+
+function cargarRedesSociales(filePath) {
+    fetch(filePath)
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('redes-sociales');
@@ -11,7 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 container.appendChild(a);
             });
         })
-});
+        .catch(error => {
+            console.error("Error al cargar el archivo:", error);
+        });
+}
 
 fetch('../routes.json')
     .then(response => response.json())
@@ -98,32 +106,88 @@ fetch('../routes.json')
     })
 
 fetch('../routes.json')
-    .then(response => response.json())
-    .then(data => {
-        const contenedorHardware = document.getElementById('contenedor-hardware');
-        data.hardware.forEach(hardware => {
-            const div = document.createElement('div');
-            div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
-            div.onclick = () => {
-                location.href = hardware.url;
-            };
-            const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+.then(response => response.json())
+.then(data => {
+    const contenedorHardware = document.getElementById('contenedor-hardware');
+    data.hardware.forEach(hardware => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = hardware.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
 
-            const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
-            p.textContent = hardware.descripcion || 'Descripción no disponible';
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.textContent = hardware.descripcion || 'Descripción no disponible';
 
-            const h1 = document.createElement('h1');
-            h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
-            h1.textContent = hardware.nombre;
-            
-            innerDiv.appendChild(h1);
-            div.appendChild(innerDiv);
-            contenedorHardware.appendChild(div);
-            innerDiv.appendChild(p);
-        });
-    })
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.textContent = hardware.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorHardware.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('../routes.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorTienda = document.getElementById('contenedor-tienda');
+    data.tienda.forEach(tienda => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = tienda.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.textContent = tienda.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.textContent = tienda.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorTienda.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('routesAccesorios.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorTienda = document.getElementById('contenedor-tienda');
+    data.tienda.forEach(tienda => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = tienda.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.textContent = tienda.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.textContent = tienda.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorTienda.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
 
 
 /*------------------------- RUTEO DE LAS RUTAS ABSOLUTAS -----------------------------*/
@@ -145,7 +209,6 @@ function obtenerRuta(relativa) {
         if (!rutaFinal.endsWith(".html")) {
             rutaFinal += ".html";
         }
-
         return rutaFinal;
     }
 }

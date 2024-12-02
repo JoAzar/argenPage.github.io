@@ -1,0 +1,55 @@
+{
+    "accesorio1": [
+        {
+            "nombre": "Anillo Angelical",
+            "imagen": "imagenes/accesorio1.jpeg",
+            "modo de pago": "Efectivo",
+            "precio": "$1000",
+            "codigoProducto": "A00001"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio2.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00002"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio3.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00003"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio4.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00004"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio5.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00005"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio6.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00006"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio7.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00007"
+        }
+    ]
+
+
+}

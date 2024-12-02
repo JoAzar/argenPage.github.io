@@ -157,9 +157,44 @@
       "url": "perifericos.html",
       "descripcion": "Modelos, software y herramientas relacionadas"
     }
+  ],
+  "tienda": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver al inicio de la página"
+    },
+    {
+      "nombre": "Tienda",
+      "url": "../indumentaria/tienda.html",
+      "descripcion": "Volver al inicio de la tienda"
+    },
+    {
+      "nombre": "accesorios",
+      "url": "../indumentaria/accesorios/accesorios.html",
+      "descripcion": "Los accesorios más hermosos están acá"
+    },
+    {
+      "nombre": "zapatillas",
+      "url": "../indumentaria/zapatillas/zapatillas.html",
+      "descripcion": "Los mejores calzados jamás vistos"
+    },
+    {
+      "nombre": "remeras",
+      "url": "../indumentaria/remeras/remeras.html",
+      "descripcion": "Las remeras de mejor calidad"
+    },
+    {
+      "nombre": "pantalones",
+      "url": "../indumentaria/pantalones/pantalones.html",
+      "descripcion": "Esos pantalones que buscabas hace rato"
+    },
+    {
+      "nombre": "ropainterior",
+      "url": "../indumentaria/ropainterior/ropainterior.html",
+      "descripcion": "Garantizamos que tu intimidad sea hermosa y éxitosa"
+    }
   ]
-
-
   
 }
   
