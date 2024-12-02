@@ -192,20 +192,30 @@ fetch('routesAccesorios.json')
 
 /*------------------------- RUTEO DE LAS RUTAS ABSOLUTAS -----------------------------*/
 
+
 function obtenerRuta(relativa) {
     const currentPath = window.location.pathname;
     const repoBase = "/argenPage.github.io";
-    if (currentPath.startsWith(repoBase)) {
+    const isGitHubPages = currentPath.startsWith(repoBase);
+
+    if (isGitHubPages) {
         const pathParts = currentPath.split("/");
-        const subFolder = pathParts[2];
+        const subFolder = pathParts.length > 2 ? pathParts[2] : '';
         if (relativa.startsWith("/")) {
-            return repoBase + "/" + relativa.slice(1) + ".html";
+            if (!relativa.endsWith(".html")) {
+                return repoBase + "/" + relativa.slice(1) + ".html";
+            } else {
+                return repoBase + "/" + relativa.slice(1);
+            }
         } else {
-            return repoBase + "/" + subFolder + "/" + relativa + ".html";
+            let ruta = repoBase + "/" + subFolder + "/" + relativa;
+            if (!ruta.endsWith(".html")) {
+                ruta += ".html";
+            }
+            return ruta;
         }
     } else {
         let rutaFinal = (relativa.startsWith("/") ? relativa : "/" + relativa);
-        
         if (!rutaFinal.endsWith(".html")) {
             rutaFinal += ".html";
         }
