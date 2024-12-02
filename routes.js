@@ -222,9 +222,6 @@ function obtenerRuta(relativa) {
         return rutaFinal;
     }
 }
-
-
-
     
 fetch('../routesAbsolute.json')
     .then(response => response.json())
