@@ -170,30 +170,64 @@
       "descripcion": "Volver al inicio de la tienda"
     },
     {
-      "nombre": "accesorios",
+      "nombre": "Accesorios",
       "url": "../indumentaria/accesorios/accesorios.html",
       "descripcion": "Los accesorios más hermosos están acá"
     },
     {
-      "nombre": "zapatillas",
+      "nombre": "Zapatillas",
       "url": "../indumentaria/zapatillas/zapatillas.html",
       "descripcion": "Los mejores calzados jamás vistos"
     },
     {
-      "nombre": "remeras",
+      "nombre": "Remeras",
       "url": "../indumentaria/remeras/remeras.html",
       "descripcion": "Las remeras de mejor calidad"
     },
     {
-      "nombre": "pantalones",
+      "nombre": "Pantalones",
       "url": "../indumentaria/pantalones/pantalones.html",
       "descripcion": "Esos pantalones que buscabas hace rato"
     },
     {
-      "nombre": "ropainterior",
+      "nombre": "Ropa interior",
       "url": "../indumentaria/ropainterior/ropainterior.html",
       "descripcion": "Garantizamos que tu intimidad sea hermosa y éxitosa"
     }
+  ],
+  "formulario": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver al inicio de la página"
+    },
+    {
+      "nombre": "Hardware",
+      "url": "../hardware/hardware.html",
+      "descripcion": "Todo lo relacionado a hardware de computadoras está acá"
+    },
+    {
+      "nombre": "Hacking",
+      "url": "../hacking/hacking.html",
+      "descripcion": "Info y herramientas de hacking"
+    },
+    {
+      "nombre": "Bitácora",
+      "url": "../bitacora/bitacora.html",
+      "descripcion": "Juegos y más"
+    }
+    ,
+    {
+      "nombre": "Tienda",
+      "url": "../tienda/tienda.html",
+      "descripcion": "Encuentra los productos que estás buscando"
+    },
+    {
+      "nombre": "Lenguajes",
+      "url": "../lenguajes/lenguajes.html",
+      "descripcion": "Lenguajes de programación"
+    }
+
   ]
   
 }

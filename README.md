@@ -20,12 +20,13 @@
     <li>4. <del>Cambiar la página pokemon por Monkey</del></li>
     <li>5. <del>Revisar la conexión con el servidor</del></li>
     <li>6. <del>Reparar la conexión con el servidor</del></li>
-    <li>7. <del>Agregar landing page</del>del></li>
+    <li>7. <del>Agregar landing page</del></li>
     <li>8. <del>Construir un nuevo sistema de navegación</del></li>
     <li>9. <del>Reparar todas las url y el sistema de navenación</del></li>
     <li>10. Agregar más contenido</li>
-    <li>11. Cambiar el nav de formulario para que sólo vuelva a inicio</li>
-    <li>12. Cambiar el diseño de botónes de subir y bajar</li>
+    <li>11. <del>Cambiar el nav de formulario para que sólo vuelva a inicio</del></li>
+    <li>12. <del>Cambiar el diseño de botónes de subir y bajar</del></li>
     <li>13. Modificar toda la tienda</li>
+    <li>14. Reparar todas las secciones de tienda</li>
 </ul>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">

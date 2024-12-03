@@ -192,6 +192,24 @@
 	background-repeat: no-repeat;
 }
 
+.fondoBajar {
+	background-image: url('../images/bajar.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoSubir {
+	background-image: url('../images/subir.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fondoTienda {
+	background-image: url('../images/tienda.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .fondoImagenCiudad2 {
 	background-image: url('../images/city2.jpeg');
 	background-size: cover;

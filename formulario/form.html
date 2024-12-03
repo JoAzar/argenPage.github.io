@@ -7,13 +7,10 @@
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
 
-	<header class="fondoNegroSuave dropSombraNegra superiorRadius fondoImagenMadera">
+	<header class="dropSombraNegra superiorRadius fondoImagenMadera">
 		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">Formulario</h1>
-		<nav class="navDesplegable fondoNegro radius centrarItem letraBlanca dropSombraNegra margen2">
-			<ul class="menu" id="navMenu"></ul>
-		</nav>
 	</header>
-	<body class="margen2 fondoNegro">
+	<body class="margen2 fondoImagenCiudad">
 		<main class="fondoBlanco">
 			<div class="fondoImagenPerro wid100 dropSombraNegra">
 				<div class="avanzarLargoI">
@@ -24,13 +21,20 @@
 				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-1dSFRavrVFbnvsTuXApyTFbjgMzW7zVXVrLYpRcD7VAuWw/viewform?embedded=true" width="640" height="1142" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>		
 			</div>
 		</main>
+		<main class="padding2 fondoNegro">
+            <div id="contenedor-formulario" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
+		<button class="margen2 fondoSubir" id="subir"></button>
+		<button class="margen2 fondoBajar" id="bajar"></button>
 	</body>
 	<footer class="fondoImagenMadera letraBlanca dropSombraNegra inferiorRadius">
 		<div class="redes horizontal">
 			<div class="contenedorPopup centrarItem">
-                <div style="display: inline-block;" class="copyright textoLato">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+                <div style="display: inline-block;" class="copyright textoOsvaldo">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 				<div class="botonModal">
-					<label for="btnModal">Términos y condiciones</label>
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -45,7 +49,7 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-            <script src="funcionalidades.js"></script>
+            <script src="../funcionalidades.js"></script>
 		</div>
 	</footer>
 </HTML>

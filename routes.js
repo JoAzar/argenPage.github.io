@@ -189,6 +189,34 @@ fetch('routesAccesorios.json')
     });
 })
 
+fetch('../routes.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorFormulario = document.getElementById('contenedor-formulario');
+    data.formulario.forEach(formulario => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = formulario.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.textContent = formulario.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.textContent = formulario.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorFormulario.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
 
 /*------------------------- RUTEO DE LAS RUTAS ABSOLUTAS -----------------------------*/
 
