@@ -32,14 +32,14 @@ fetch('../routes.json')
                 location.href = lenguaje.url;
             };
             const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
             p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
             p.textContent = lenguaje.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
-            h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+            h1.classList.add('textoLato', 'letraBlanca');
             h1.textContent = lenguaje.nombre;
             
             innerDiv.appendChild(h1);
@@ -60,14 +60,14 @@ fetch('../routes.json')
                 location.href = bitacora.url;
             };
             const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
             p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
             p.textContent = bitacora.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
-            h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+            h1.classList.add('textoLato', 'letraBlanca');
             h1.textContent = bitacora.nombre;
             
             innerDiv.appendChild(h1);
@@ -88,14 +88,14 @@ fetch('../routes.json')
                 location.href = hacking.url;
             };
             const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
             p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
             p.textContent = hacking.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
-            h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+            h1.classList.add('textoLato', 'letraBlanca');
             h1.textContent = hacking.nombre;
             
             innerDiv.appendChild(h1);
@@ -116,14 +116,14 @@ fetch('../routes.json')
             location.href = hardware.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = hardware.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
-        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.classList.add('textoLato', 'letraBlanca');
         h1.textContent = hardware.nombre;
         
         innerDiv.appendChild(h1);
@@ -144,14 +144,14 @@ fetch('../routes.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = tienda.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
-        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.classList.add('textoLato', 'letraBlanca');
         h1.textContent = tienda.nombre;
         
         innerDiv.appendChild(h1);
@@ -172,14 +172,14 @@ fetch('routesAccesorios.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = tienda.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
-        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.classList.add('textoLato', 'letraBlanca');
         h1.textContent = tienda.nombre;
         
         innerDiv.appendChild(h1);
@@ -200,14 +200,14 @@ fetch('../routes.json')
             location.href = formulario.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'tamanioMed', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = formulario.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
-        h1.classList.add('textoLato', 'letraBlanca', 'tamanioMed');
+        h1.classList.add('textoLato', 'letraBlanca');
         h1.textContent = formulario.nombre;
         
         innerDiv.appendChild(h1);

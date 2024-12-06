@@ -69,11 +69,11 @@
 }
 
 .tamaniopeq {
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .tamanioMin {
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 
 .tamanioGran {
@@ -1079,6 +1079,7 @@
 	width: 3%;
 	height: auto;
 }
+
 .tiktok {
 	background-image: url(../images/tiktok.png);
 }
@@ -1320,7 +1321,7 @@ p.contenedorTransparente {
 }
 
 .copyright {
-	font-size: small;
+	font-size: 0.9vw;
 	margin: 3vw;
 	margin-bottom: 2vh;
 }
@@ -1646,7 +1647,7 @@ img {
 
 
 
-/*---------- EFECTOS / ANIMACIONES ----------------------*/
+/*---------------------------------------------------- EFECTOS / ANIMACIONES ---------------------------------------------------------------------*/
 
 @-webkit-keyframes rotate-diagonal-1{0%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg)}50%{-webkit-transform:rotate3d(1,1,0,-180deg);transform:rotate3d(1,1,0,-180deg)}100%{-webkit-transform:rotate3d(1,1,0,-360deg);transform:rotate3d(1,1,0,-360deg)}}@keyframes rotate-diagonal-1{0%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg)}50%{-webkit-transform:rotate3d(1,1,0,-180deg);transform:rotate3d(1,1,0,-180deg)}100%{-webkit-transform:rotate3d(1,1,0,-360deg);transform:rotate3d(1,1,0,-360deg)}}
 @-webkit-keyframes slide-fwd-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}100%{-webkit-transform:translateZ(160px);transform:translateZ(160px)}}@keyframes slide-fwd-center{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}100%{-webkit-transform:translateZ(160px);transform:translateZ(160px)}}
@@ -1662,3 +1663,96 @@ img {
 .rebote{-webkit-animation:jello-horizontal .9s both;animation:jello-horizontal .9s both}
 .reboteHover:hover{-webkit-animation:jello-horizontal .9s both;animation:jello-horizontal .9s both}
 .acercamientoHover:hover{-webkit-animation:kenburns-right 5s ease-out both;animation:kenburns-right 5s ease-out both}
+
+/*------------------------------------------------------- AFTER | BEFORE PARA TEXTOS ------------------------------------------------------------*/
+
+.texto1, .texto2, .texto3, .texto4 {
+	position: relative;
+}
+
+.texto1::after, .texto2::after, .texto3::after, .texto4::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 90%;
+	opacity: 0;
+	transform: translateY(20px);
+	color: skyblue;
+	font-size: 0.7em;
+	margin: 0.1em;
+	transition: opacity 1.5s ease, transform 1.5s ease, margin 1.5s ease;
+}
+
+
+.texto1:hover::after {
+	content: " Es un almacenamiento de código explicado y simplificado";
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.texto2:hover::after {
+	content: " Es una fuente de código directo con una explicación resumida pensada para profesionales que ya conocen del tema y sólo precisan recordar fragmentos específicos de código";
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+.texto3:hover::after {
+	content: " La página busca maximizar recursos y eficiencia por lo que la mejor opción es Ctrl + F (no, acá no hay buscador interno, ¿para qué?)";
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.texto4:hover::after {
+	content: " Recorré toda la página hasta encontrar algo que te sirva o interese";
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.texto4:hover::after {
+	content: " ";
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/*---------------------------------------------------------------------- ICONOS -------------------------------------------------------------------*/
+
+.icono1{
+	background-image: url(../images/almacenar.gif);
+	background-size: cover;
+	background-position: center;
+	width: 2vw;
+	height: 2vw;
+	background-repeat: no-repeat;
+}
+
+.icono2{
+	background-image: url(../images/almacenar2.gif);
+	background-size: cover;
+	background-position: center;
+	width: 2vw;
+	height: 2vw;
+	background-repeat: no-repeat;
+}
+
+.icono3{
+	background-image: url(../images/almacenar3.gif);
+	background-size: cover;
+	background-position: center;
+	width: 2vw;
+	height: 2vw;
+	background-repeat: no-repeat;
+}
+
+.icono4{
+	background-image: url(../images/almacenar4.gif);
+	background-size: cover;
+	background-position: center;
+	width: 2vw;
+	height: 2vw;
+	background-repeat: no-repeat;
+}
+
+
+
+/*---------------------------------------------------------------------- ICONOS -------------------------------------------------------------------*/
