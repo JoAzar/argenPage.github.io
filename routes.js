@@ -258,7 +258,7 @@ fetch('../routesAbsolute.json')
         data.links.forEach(link => {
         const li = document.createElement('li');
         const h1 = document.createElement('h1');
-        h1.className = 'nav1 textoLato tamaniopeq growHover';
+        h1.className = 'nav1 textoLato tamaniopeq growHover shadow-inset-center-hover fina letraBlanca sombraNegra bordeRojoIzqHover radiusDerHover';
         h1.textContent = link.name;
         h1.onclick = () => location.href = obtenerRuta(link.url);
     

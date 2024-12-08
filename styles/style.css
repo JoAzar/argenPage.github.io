@@ -77,7 +77,7 @@
 }
 
 .tamanioGran {
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 /*---------------------------------------SOMBRAS------------------------------------------------*/
@@ -340,112 +340,6 @@
 	background-color:  hsl(6, 97%, 66%);
 }
 
-.sinBorde {
-	border: none;
-}
-
-.bordeNaranja {
-	border: solid orange 1px;
-}
-
-.bordeNaranjeta {
-	border: solid #ffc176 1px;
-}
-
-.bordeVerde {
-	border:  solid #b2e070 1px;
-}
-
-.bordeCeleste {
-	border: skyblue solid 5px;
-}
-
-.bordeCelesteFino {
-	border: skyblue solid 1px;
-}
-
-.bordeAzul {
-	border: #3498db solid 5px;
-}
-
-.bordeAzulFinoFocus:focus {
-	border: #3498db solid 2px;
-	outline: none;
-}
-
-.bordeAzulFino {
-	border: #3498db solid 1px;
-}
-
-.bordeTiburon {
-	border: #6d8dbf solid 5px;
-}
-
-.bordeTiburonFino {
-	border: #6d8dbf solid 1px;
-}
-
-.bordeRosa {
-	border: #ff38a1 solid 5px;
-}
-
-.bordeRosaFino {
-	border: #ff38a1 solid 1px;
-}
-
-.bordeRojoFino {
-	border:  #ff6553 solid 1px ;
-}
-
-.bordeRojo {
-	border:  #ff6553 solid 5px ;
-}
-
-.bordeNegro {
-	border: #4f4f4f solid 5px;
-}
-
-.bordeNegroGrueso {
-	border: black solid 50px;
-}
-
-.bordeNegroFino {
-	border: #4f4f4f solid 1px;
-}
-
-.bordeNegroTransparente {
-	border: rgba(0, 0, 0, .5) solid 5px;
-}
-
-.bordeNegroFinoTransparente {
-	border: rgba(0, 0, 0, .5) solid 1px;
-}
-
-.bordeBlanco {
-	border: white solid 4px;
-}
-
-.bordeBlancoFino {
-	border: white solid 1px;
-}
-
-.borderVioleta {
-	 border: #d69ff1 solid 5px;
-}
-
-.bordeAzulIzqHover:hover {
-	border-left: #60bfffa8 solid 0.1px;
-}
-
-.bordeAzulAbajoHover:hover {
-	border-bottom: #a2daff6b solid 0.1px;
-}
-
-.bordeGrisArriba {
-	border-top: #ffffff solid 1px;
-	padding-top: 4vh;
-}
-
 .letraVioleta {
 	color:  #e5b0ff;
 }
@@ -535,13 +429,12 @@
 	color: #b6edff;
 }
 
-
 .letraNegra {
 	color: #424242;
 }
 
 .letraNegraHover:hover {
-	color: #292929;
+	color: #424242;
 }
 
 .letraBlanca {
@@ -554,6 +447,121 @@
 
 .letraNaranjeta {
 	color: #ffc176;
+}
+/*--------------------------------------- BORDE COLOR ---------------------------------------------------*/
+
+.sinBorde {
+	border: none;
+}
+
+.bordeNaranja {
+	border: solid orange 1px;
+}
+
+.bordeNaranjeta {
+	border: solid #ffc176 1px;
+}
+
+.bordeVerde {
+	border:  solid #b2e070 1px;
+}
+
+.bordeCeleste {
+	border: skyblue solid 5px;
+}
+
+.bordeCelesteFino {
+	border: skyblue solid 1px;
+}
+
+.bordeAzul {
+	border: #3498db solid 5px;
+}
+
+.bordeAzulFinoFocus:focus {
+	border: #3498db solid 2px;
+	outline: none;
+}
+
+.bordeAzulFino {
+	border: #3498db solid 1px;
+}
+
+.bordeTiburon {
+	border: #6d8dbf solid 5px;
+}
+
+.bordeTiburonFino {
+	border: #6d8dbf solid 1px;
+}
+
+.bordeRosa {
+	border: #ff38a1 solid 5px;
+}
+
+.bordeRosaFino {
+	border: #ff38a1 solid 1px;
+}
+
+.bordeRojoFino {
+	border:  #ff6553 solid 1px ;
+}
+
+.bordeRojo {
+	border:  #ff6553 solid 5px ;
+}
+
+.bordeRojoIzq {
+	border-left: #ff6553 solid 3px;
+}
+
+.bordeRojoIzqHover:hover {
+	border-left: #ff6553 solid 3px;
+}
+
+.bordeNegro {
+	border: #4f4f4f solid 5px;
+}
+
+.bordeNegroGrueso {
+	border: black solid 50px;
+}
+
+.bordeNegroFino {
+	border: #4f4f4f solid 1px;
+}
+
+.bordeNegroTransparente {
+	border: rgba(0, 0, 0, .5) solid 5px;
+}
+
+.bordeNegroFinoTransparente {
+	border: rgba(0, 0, 0, .5) solid 1px;
+}
+
+.bordeBlanco {
+	border: white solid 4px;
+}
+
+.bordeBlancoFino {
+	border: white solid 1px;
+}
+
+.borderVioleta {
+	 border: #d69ff1 solid 5px;
+}
+
+.bordeAzulIzqHover:hover {
+	border-left: #60bfffa8 solid 0.1px;
+}
+
+.bordeAzulAbajoHover:hover {
+	border-bottom: #a2daff6b solid 0.1px;
+}
+
+.bordeGrisArriba {
+	border-top: #ffffff solid 1px;
+	padding-top: 4vh;
 }
 
 /*---------------------------------------EFECTOS-------------------------------*/
@@ -576,6 +584,14 @@
 
 .superiorRadius {
 	border-radius: 30px 30px 0px 0px;
+}
+
+.radiusDer {
+	border-radius: 0px 0px 30px 30px;
+}
+
+.radiusDerHover:hover {
+	border-radius: 0px 30px 0px 30px;
 }
 
 .subrayado {
@@ -1320,12 +1336,6 @@ p.contenedorTransparente {
   	padding: 20px;
 }
 
-.copyright {
-	font-size: 0.9vw;
-	margin: 3vw;
-	margin-bottom: 2vh;
-}
-
 .espacioEntreEllos {
 	justify-content: space-evenly;
 }
@@ -1390,6 +1400,18 @@ footer {
 	padding-bottom: 4vh;
 	position: relative;
 	z-index: 2;
+}
+
+.fina {
+	font-weight: 450;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.gruesa {
+	font-weight: bold;
 }
 
 
@@ -1509,10 +1531,6 @@ img {
 	animation: letraColoresA 5s linear infinite;
 }
 
-.letraColores1Hover:hover {
-	animation: letraColoresA 5s linear infinite;
-}
-
 @keyframes letraColoresA {
 	 from 
 	 {
@@ -1618,22 +1636,6 @@ img {
 	}
 }
 
-
-.textoGlicheado {
-	animation: textoGlitch1 5s linear infinite;
-}
-
-@keyframes textoGlitch1 {
-	0%
-	{
-		font-family: 'Oswald', sans-serif;
-	}
-	100%
-	{
-		font-family: 'Rubik Glitch', system-ui;
-	}
-}
-
 @keyframes show {
 	from {
 		opacity: 0;
@@ -1679,13 +1681,14 @@ img {
 	transform: translateY(20px);
 	color: skyblue;
 	font-size: 0.7em;
+	font-weight: 450;
 	margin: 0.1em;
 	transition: opacity 1.5s ease, transform 1.5s ease, margin 1.5s ease;
 }
 
 
 .texto1:hover::after {
-	content: " Es un almacenamiento de código explicado y simplificado";
+	content: " es un almacenamiento de código explicado y simplificado";
 	opacity: 1;
 	transform: translateY(0);
 }
