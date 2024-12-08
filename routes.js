@@ -8,11 +8,12 @@ function cargarRedesSociales(filePath) {
         .then(response => response.json())
         .then(data => {
             const container = document.getElementById('redes-sociales');
-            data.sigueme_en.forEach(red => {
+            data.sigueme_en.forEach(red => {    
                 const a = document.createElement('a');
                 a.href = red.url;
-                a.classList.add('shadow-inset-center-hover', 'radius');
+                a.classList.add('growHover', 'reboteHover');
                 a.classList.add(red.plataforma.toLowerCase());
+                a.classList.add(red.plataforma.toLowerCase() + "Hover");
                 container.appendChild(a);
             });
         })

@@ -15,7 +15,7 @@
 	margin: 0;
 }
 
-/*-----------------------------------FUENTES--------------------------------------------*/
+/*-----------------------------------TIPOS DE FUENTES--------------------------------------------*/
 
 .textoLato {
 	font-family: 'Lato', sans-serif;
@@ -62,7 +62,7 @@
 }
 
 
-/*-------------------------------------TAMAÑO---------------------------------------------*/
+/*-------------------------------------TAMAÑO DE FUENTE---------------------------------------------*/
 
 .tamanioMed {
     font-size: 2vw;
@@ -192,6 +192,17 @@
 	background-repeat: no-repeat;
 }
 
+.fondoImagenCiudad3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 30px 30px 0px 0px;
+}
+
 .fondoBajar {
 	background-image: url('../images/bajar.gif');
 	background-size: cover;
@@ -216,10 +227,32 @@
 	background-repeat: no-repeat;
 }
 
+.fondoImagenCiudad2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 30px 30px 0px 0px;
+}
+
 .fondoImagenCiudad {
 	background-image: url('../images/city.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.fondoImagenCiudad::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 30px 30px 0px 0px;
 }
 
 .fondoImagenPerro {
@@ -1120,6 +1153,30 @@
 	background-image: url(../images/linkedin.png);
 }
 
+.tiktokHover:hover {
+	background-image: url(../images/tiktok_color.png);
+}
+
+.githubHover:hover {
+	background-image: url(../images/githubColor.png);
+}
+
+.youtubeHover:hover {
+	background-image: url(../images/youtubeColor.png);
+}
+
+.twitterHover:hover {
+	background-image: url(../images/twitter.png);
+}
+
+.instagramHover:hover {
+	background-image: url(../images/instagramColor.png);
+}
+
+.linkedinHover:hover {
+	background-image: url(../images/linkedinColor.png);
+}
+
 .horizontal {
 	display: flex;
 	flex-direction: wrap;
@@ -1195,8 +1252,6 @@ header {
 	border: solid 4px rgba(0, 0, 0, 0.507) ;
 	border-radius: 30px 30px 30px 30px;
 }
-
-
 
 .smallIcons {
 	max-width: 15%;
