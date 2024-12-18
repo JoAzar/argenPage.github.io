@@ -7,24 +7,35 @@
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
 	<header class="fondoTiburon dropSombraNegra padding2 superiorRadius">
-		<h1 class="letraBlanca sombraNegra textoChanga tamanioGran">Redes</h1>
-		<nav class="navDesplegable fondoNegro radius centrarItem letraBlanca letraAzulHover dropSombraNegra margen2">
+		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">Redes</h1>
+		<nav class="navDesplegable centrarItem">
 			<ul class="menu" id="navMenu"></ul>
 		</nav>
 	</header>
 	<body class="margen2">
 		<main class="padding2">
 			<h1 class="letraBlanca margen2 tamanioGran">Información sobre redes</h1>
-			<div class="margen2">
-				<b class="letraEpica">Entiendase [012 345 67 89 xx] como los componentes de la interfaz de red</b><br><br>
-	          	<br><b class="letraBlanca">012 </b><b class="letraNaranja"> indica que es una interfaz inalámbrica</b><br><br>
-	          	<br><b class="letraBlanca">345 </b><b class="letraNaranja"> slot del bus PCI y la posición de la interfaz inalámbrica en el sistema</b><br><br>
-	          	<br><b class="letraBlanca">67 </b><b class="letraNaranja"> interfaz Ethernet</b><br><br>
-	          	<br><b class="letraBlanca">89 </b><b class="letraNaranja"> Corresponde al slot del bus PCI donde está ubicada la tarjeta de red</b><br><br>
-	          	<br><b class="letraBlanca">xx </b><b class="letraNaranja"> Indica la interfaz número 0 en ese slot PCI. Si hubiera más de una interfaz en el mismo slot, se usarían s1, s2, y así sucesivamente</b><br>
-				<br><b class="letraBlanca">UDP (User Datagram Protocol) </b><b class="letraNaranja">Es un protocolo de capa de transporte en el modelo OSI que No incluye mecanismos de control de flujo, control de congestión ni retransmisión de datos perdidos, lo que significa que los datos pueden llegar desordenados, duplicados o incluso perderse sin que el protocolo lo detecte.</b><br>
-				<br><b class="letraBlanca">TCP (Transmission Control Protocol) </b><b class="letraNaranja">Es un protocolo de capa de transporte en el modelo OSI que proporciona una comunicación confiable y orientada a la conexión entre aplicaciones en redes IP</b><br>
-	        </div>
+			<div class="margen2 centrarItem">
+				<h2 class="letraEpica textoLato">Entiendase [012 345 67 89 xx] como los componentes de la interfaz de red</h2>
+				<h2 class="letraBlanca textoLato">012</h2>
+				<h3 class="letraNaranja textoLato"> indica que es una interfaz inalámbrica</h3>
+	        	<h2 class="letraBlanca textoLato">345</h2>
+				<h3 class="letraNaranja textoLato">slot del bus PCI y la posición de la interfaz inalámbrica en el sistema</h3>
+	        	<h2 class="letraBlanca textoLato">67</h2>
+				<h3 class="letraNaranja textoLato"> interfaz Ethernet</h3>
+	        	<h2 class="letraBlanca textoLato">89</h2>
+				<h3 class="letraNaranja textoLato">Corresponde al slot del bus PCI donde está ubicada la tarjeta de red</h3>
+	        	<h2 class="letraBlanca textoLato">xx</h2>
+				<h3 class="letraNaranja textoLato"> Indica la interfaz número 0 en ese slot PCI. Si hubiera más de una interfaz en el mismo slot, se usarían s1, s2, y así sucesivamente</b><br>
+				<h2 class="letraBlanca textoLato">UDP (User Datagram Protocol)</h2>
+				<h3 class="letraNaranja textoLato">Es un protocolo de capa de transporte en el modelo OSI que No incluye mecanismos de control de flujo, control de congestión ni retransmisión de datos perdidos, lo que significa que los datos pueden llegar desordenados, duplicados o incluso perderse sin que el protocolo lo detecte.</h2>
+				<h2 class="letraBlanca textoLato">TCP (Transmission Control Protocol)</h2>
+				<h3 class="letraNaranja textoLato">Es un protocolo de capa de transporte en el modelo OSI que proporciona una comunicación confiable y orientada a la conexión entre aplicaciones en redes IP</h3>
+				<h2 class="letraBlanca textoLato">Address Resolution Protocol</h2>
+				<h3 class="letraNaranja textoLato fino">Resuelve las direcciones IP a direcciones MAC dentro de una local network</h3>
+				<h2 class="letraBlanca textoLato">Man</h2>
+				<h3 class="letraNaranja textoLato fino">Comando para ver información acerca del uso de una herramienta</h3>
+			</div>
 			<div class="fondoNegroSuave letraBlanca tamanioGran textoSerio margen2 padding2 dropSombraNegra">
 				<div class="margen2">
 					calculadora de redes
@@ -34,13 +45,26 @@
 					<a class="letraBlanca letraEpicaHover dropSombraNegraHover" href="//www.calculadora-redes.com">Más detalles</a>
 				</div>
 			</div>
+			<h1 class="letraBlanca margen2 tamanioGran">ARP On</h1>
+			<div class="margen2 centrarItem">
+				<h2 class="letraEpica textoLato">Herramienta de seguridad para sistemas Linux que se utiliza para detectar y prevenir ataques relacionados con la manipulación de direcciones ARP (Address Resolution Protocol)</h2>
+				<h2 class="letraBlanca textoLato">sudo apt install arpon</h2>
+				<h3 class="letraNaranja textoLato">Instalación de la herramienta (comando de Linux en general)</h3>
+				<h2 class="letraBlanca textoLato">sudo arpon -i interfaz -S</h2>
+				<h3 class="letraNaranja textoLato">Escaneo de interfaz de red en tiempo real</h3>
+				<h2 class="letraBlanca textoLato">Métodos de detección</h2>
+				<h3 class="letraVerde textoLato margen1">1 - SARPI (Static ARP Inspection) for the statically configured networks without DHCP</h3>
+				<h3 class="letraNaranja textoLato margen1">2 - DARPI (Dynamic ARP Inspection) for the dynamically configured networks with DHCP</h3>
+				<h3 class="letraRoja textoLato margen1">3 - HARPI (Hybrid ARP Inspection) for the statically and dynamically configured networks with DHCP</h3>
+				<h3 class="letraAmarilla textoLato margen1">-H para HARPI | -S para SARPI | -D para Darpi</h3>
+			</div>
 		</main>
 		<button class="margen2 fondoSubir" id="subir"></button>
 		<button class="margen2 fondoBajar" id="bajar"></button>
 	</body>
 	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
 		<div class="redes horizontal">
-			<div class="copyright textoOsvaldo textoLato">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
 					<label for="btnModal">
