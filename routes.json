@@ -197,6 +197,11 @@
       "nombre": "Ropa interior",
       "url": "../indumentaria/ropainterior/ropainterior.html",
       "descripcion": "Garantizamos que tu intimidad sea hermosa y éxitosa"
+    },
+    {
+      "nombre": "Artículos electrónicos",
+      "url": "../indumentaria/articulosElectronicos/articulos_electronicos.html",
+      "descripcion": "Artículos electrónicos de primera calidad"
     }
   ],
   "formulario": [

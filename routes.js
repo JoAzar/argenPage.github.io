@@ -36,7 +36,7 @@ fetch('../routes.json')
             innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste');
+            p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
             p.textContent = lenguaje.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -64,7 +64,7 @@ fetch('../routes.json')
             innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste');
+            p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
             p.textContent = bitacora.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -92,7 +92,7 @@ fetch('../routes.json')
             innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste');
+            p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
             p.textContent = hacking.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -120,7 +120,7 @@ fetch('../routes.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = hardware.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -148,7 +148,7 @@ fetch('../routes.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = tienda.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -176,7 +176,35 @@ fetch('routesAccesorios.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.textContent = tienda.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = tienda.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorTienda.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('ruteo_articulos_electronicos.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorTienda = document.getElementById('contenedor-tienda');
+    data.tienda.forEach(tienda => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = tienda.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = tienda.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -204,7 +232,7 @@ fetch('../routes.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
         p.textContent = formulario.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');

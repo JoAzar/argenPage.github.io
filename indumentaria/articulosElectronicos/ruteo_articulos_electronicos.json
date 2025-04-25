@@ -1,0 +1,24 @@
+{
+    "tienda": [
+      {
+        "nombre": "inicio",
+        "url": "../../inicio/inicio.html",
+        "descripcion": "Volver a Inicio"
+      },
+      {
+        "nombre": "Tienda",
+        "url": "../tienda.html",
+        "descripcion": "Volver a la de tienda"
+      },
+      {
+        "nombre": "Pantalones",
+        "url": "../pantalones/pantalones.html",
+        "descripcion": "Ver pantalones"
+      },
+      {
+        "nombre": "Remeras",
+        "url": "../remeras/remeras.html",
+        "descripcion": "Ver remeras"
+      }
+    ]
+  }
