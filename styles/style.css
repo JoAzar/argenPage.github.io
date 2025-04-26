@@ -62,7 +62,7 @@
 }
 
 
-/*-------------------------------------TAMAÑO DE FUENTE---------------------------------------------*/
+/*---------TAMAÑO DE FUENTE------*/
 
 .tamanioMed {
     font-size: 2vw;
@@ -77,10 +77,10 @@
 }
 
 .tamanioGran {
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
 
-/*---------------------------------------SOMBRAS------------------------------------------------*/
+/*---SOMBRAS-----*/
 
 .cajaSombraNegra {
 	box-shadow: black 10px 10px 10px;
@@ -855,6 +855,34 @@
 	padding-top: 30vh;
 }
 
+.paddingTop20 {
+	padding-top: 20vh;
+}
+
+.paddingTop10 {
+	padding-top: 10vh;
+}
+
+.paddingTop5 {
+	padding-top: 5vh;
+}
+
+.paddingBottom30 {
+	padding-bottom: 30vh;
+}
+
+.paddingBottom10 {
+	padding-bottom: 10vh;
+}
+
+.paddingBottom5 {
+	padding-bottom: 5vh;
+}
+
+.paddingBottom20 {
+	padding-bottom: 20vh;
+}
+
 .paddingDer10 {
 	padding-right: 10vw;
 }
@@ -1352,7 +1380,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
     align-items: center;
 }
 
@@ -1478,6 +1506,59 @@ img {
 
 .repararTexto {
 	text-wrap: balance;
+}
+
+/*cards*/
+
+.card_muestra {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin: 1rem auto;
+}
+
+.card_muestra:hover {
+    transform: scale(1.03);
+}
+
+.card_muestra .imgBx {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card_muestra .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card_muestra .content {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.card_muestra .content .wrapper {
+    background-color: #eaeaea;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.card_muestra .content .wrapper text {
+    font-size: 1rem;
+    font-weight: bold;
+    fill: #333;
+}
+
+.card_muestra h4, .card_muestra h5 {
+    margin: 0.3rem 0;
+    font-family: 'Lato', sans-serif;
 }
 
 /*-------------------------------------------------------------*/
@@ -1807,5 +1888,24 @@ img {
 }
 
 
+/*CELULARES*/
 
-/*---------------------------------------------------------------------- ICONOS -------------------------------------------------------------------*/
+@media (max-width: 768px) {
+
+	body {
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+	.centrarItem {
+		align-self: center;
+	}
+
+	
+	
+}
+

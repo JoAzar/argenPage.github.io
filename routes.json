@@ -10,11 +10,11 @@
     },
     {
       "plataforma": "Instagram",
-      "url": "https://instagram.com/ired_monkey"
+      "url": "https://instagram.com/iirediii"
     },
     {
       "plataforma": "YouTube",
-      "url": "https://www.youtube.com/@IRedMonkey"
+      "url": "https://www.youtube.com/@IIRedIII"
     },
     {
       "plataforma": "GitHub",
@@ -58,7 +58,7 @@
       "descripcion": "Es un sistema de gestión de bases de datos relacional de código abierto, popular en aplicaciones web por su rapidez y fiabilidad."
     },
     {
-      "nombre": "Php",
+      "nombre": "PHP",
       "url": "../lenguajes/php.html",
       "descripcion": "Ees un lenguaje de programación del lado del servidor, ampliamente utilizado para desarrollar aplicaciones web dinámicas y trabajar con bases de datos."
     },

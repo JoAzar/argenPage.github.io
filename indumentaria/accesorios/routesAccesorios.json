@@ -19,7 +19,13 @@
         "nombre": "Remeras",
         "url": "../remeras/remeras.html",
         "descripcion": "Ver remeras"
+      },
+      {
+        "nombre": "Artículos de Electrónica",
+        "url": "../articulosElectronicos/articulos_electronicos.html",
+        "descripcion": "Ver artículos electrónicos"
       }
+
     ]
   }
   

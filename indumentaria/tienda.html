@@ -4,45 +4,40 @@
 		<meta charset="utf-8">
 		<title>Tiendas 🇦🇷</title>
 		<link rel="stylesheet" href='../styles/style.css'>
-		<link rel="stylesheet" href='../styles/card.css'>   
 		<link rel="stylesheet" href='../styles/popup.css'>        
 	</head>
 	
 	<header class="fondoAzul superiorRadius">
-		<h1 class="letraBlanca sombraNegra textoLato tamanioGran margen2">Monkey Tienda</h1>
-		<div class="avanzarLargo letraBlanca dropSombraBlanca">
-			<button class="fondoTienda padding2"></button>
-		</div>
+		<h1 class="letraBlanca sombraNegra textoLato tamanioGran margen2">Tienda
+			<div class="letraBlanca dropSombraBlanca">
+				<button class="fondoTienda padding2"></button>
+			</div>
+		</h1>
 		<nav class="navDesplegable centrarItem">
 			<ul class="menu" id="navMenu"></ul>
 		</nav>
 	</header>
-	<body class=" margen2 fondoNegroSuave">
+	<body class="margen2 fondoNegroSuave">
 		<main class="horizontal fondoBlanco">
-			<h1 class="letraNaranja tamanioGran textoLato margen2 padding2">¡Mira nuestros productos!</h1>
-			<h2 class="letraNegra textoLato tamanioMed">Tus productos serán exhibidos en una de nuestras tiendas</h2>	
+			<h1 class="letraNaranja tamanioGran textoLato margen2 paddingTop5">¡Mirá nuestros productos!</h1>
+			<h1 class="letraTiburon textoLato tamanioMed paddingBottom5">Selecciona una de nuestras tiendas para ver cada producto</h2>	
 
-			<div class="margen2 padding2 radius fondoVidrio wid50 horizontal">
+			<div class="margen2 padding1 radius fondoVidrio wid50 horizontal">
 				<h2 class="letraTiburon textoLato">Se verán representados de la siguiente manera</h2>
-				<div class="card manito dropSombraNegraHover">
-					<div class="lines"></div>
+
+				<div class="card_muestra">
 					<div class="imgBx">
-						<img class="dropShadowNegro" src="../images/nike2.png">
+						<img src="../images/nike2.png" alt="Imagen del producto">
 					</div>
 					<div class="content">
-						<div class="details">
-							<div class="wrapper">
-								<svg>
-									<text x="50%" y="50%" dy=".35em" text-anchor="middle">
-										Nombre del producto
-									</text>
-								</svg>
-							</div>
-							<div>
-								<h2 class="sombraNegra">Forma de pago</h2>
-								<h1 class="sombraNegra">$ costo</h1>
-							</div>
-						</div>  
+						<div class="wrapper">
+							<svg width="100%" height="30">
+								<text x="50%" y="50%" dy=".35em" text-anchor="middle">Nombre del Producto</text>
+							</svg>
+						</div>
+						<h4 class="fondoAzul letraBlanca radius textoLato">Modo de pago: Transferencia</h4>
+						<h4 class="letraNegra textoLato">Precio: $X</h4>
+						<h5 class="letraNegra textoLato">Código: Código123</h5>
 					</div>
 				</div>
 			</div>
@@ -66,8 +61,8 @@
 	</body>
 	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
 		<div class="redes horizontal">
-			<div class="contenedorPopup centrarItem">
-                <div style="display: inline-block;" class="copyright textoOsvaldo">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="contenedorPopup">
 				<div class="botonModal">
 					<label for="btnModal">
 						Términos y condiciones
@@ -86,7 +81,7 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-            <script src="../funcionalidades.js"></script>
+			<script src="../funcionalidades.js"></script>
 		</div>
 	</footer>
 </HTML>

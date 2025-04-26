@@ -36,7 +36,7 @@ fetch('../routes.json')
             innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+            p.classList.add('tamaniopeq', 'letraCeleste');
             p.textContent = lenguaje.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -64,7 +64,7 @@ fetch('../routes.json')
             innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+            p.classList.add('tamaniopeq', 'letraCeleste');
             p.textContent = bitacora.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -92,7 +92,7 @@ fetch('../routes.json')
             innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+            p.classList.add('tamaniopeq', 'letraCeleste');
             p.textContent = hacking.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -120,7 +120,7 @@ fetch('../routes.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.classList.add('tamaniopeq', 'letraCeleste');
         p.textContent = hardware.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -148,7 +148,7 @@ fetch('../routes.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.classList.add('tamaniopeq', 'letraCeleste');
         p.textContent = tienda.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -176,7 +176,7 @@ fetch('routesAccesorios.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.classList.add('tamaniopeq', 'letraCeleste');
         p.textContent = tienda.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -204,7 +204,7 @@ fetch('ruteo_articulos_electronicos.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.classList.add('tamaniopeq', 'letraCeleste');
         p.textContent = tienda.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -232,7 +232,7 @@ fetch('../routes.json')
         innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste', 'bordeGrisArriba');
+        p.classList.add('tamaniopeq', 'letraCeleste');
         p.textContent = formulario.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');

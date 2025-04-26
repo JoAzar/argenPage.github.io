@@ -19,6 +19,11 @@
         "nombre": "Remeras",
         "url": "../remeras/remeras.html",
         "descripcion": "Ver remeras"
+      },
+      {
+        "nombre": "Accesorios",
+        "url": "../accesorios/accesorios.html",
+        "descripcion": "Ver artículos electrónicos"
       }
     ]
   }
