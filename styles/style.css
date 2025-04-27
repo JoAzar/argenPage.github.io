@@ -1380,7 +1380,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	/*min-height: 100vh;*/
     align-items: center;
 }
 
@@ -1892,17 +1891,41 @@ img {
 
 @media (max-width: 768px) {
 
-	body {
-		font-size: 16px;
-		padding: 10px;
+	html, body, main {
+		padding: 0px;
+		margin: 0px;
 	}
 
+	.tamanioMed {
+		font-size: 10px;
+	}
+	
+	.tamaniopeq {
+		font-size: 8px;
+	}
+	
+	.tamanioMin {
+		font-size: 5.5px;
+	}
+	
+	.tamanioGran {
+		font-size: 20px;
+	}
+	
 	.menu {
 		flex-direction: column;
 	}
 
 	.centrarItem {
 		align-self: center;
+	}
+
+	/*CAJA CON BOTONES DE REDES SOCIALES*/
+	#redes-sociales a {
+		display: inline-block;
+		margin-top: 15px;
+		padding: 8px;
+		width: 2vw;
 	}
 
 	

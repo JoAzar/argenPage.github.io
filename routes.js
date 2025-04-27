@@ -28,15 +28,15 @@ fetch('../routes.json')
         const contenedorLenguajes = document.getElementById('contenedor-lenguajes');
         data.lenguajes.forEach(lenguaje => {
             const div = document.createElement('div');
-            div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+            div.classList.add('margen2', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
             div.onclick = () => {
                 location.href = lenguaje.url;
             };
             const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste');
+            p.classList.add('tamanioMin', 'letraCeleste');
             p.textContent = lenguaje.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
