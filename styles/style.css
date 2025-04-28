@@ -1898,6 +1898,9 @@ img {
 	html, body, main {
 		padding: 0px;
 		margin: 0px;
+	}
+
+	main {
 		height: 100%;
 	}
 

@@ -7,46 +7,38 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoTiburon dropSombraNegra padding2 superiorRadius">
+	<header class="fondoTiburon dropSombraNegra padding2">
 		<h1 class="letraBlanca sombraNegra textoLato tamanioGran margen2">Nmap</h1>
-		<nav class="navDesplegable fondoNegro radius centrarItem letraBlanca letraAzulHover dropSombraNegra margen2">
+		<nav class="navDesplegable centrarItem letraBlanca letraAzulHover dropSombraNegra margen2">
 			<ul class="menu" id="navMenu"></ul>
 		</nav>
 	</header>
 
-	<body class="margen2">
+	<body>
 		<main class="padding2">
-			<h1 class="margen2 padding2 letraBlanca sombraNegra subrayado textoChanga tamanioGran letraColores3">Comandos de Nmap</h1>
+			<h1 class="margen2 padding2 letraBlanca sombraNegra subrayado textoChanga letraColores3">Comandos de Nmap</h1>
 			<div>
-				<h2 class="padding2 margen2 letraCeleste">Descripción: NET = nombre de la network </h2>
-
-				<div class="letraEpica tamaniopeq padding1">Verbose Syn-scan System Op</div>
-				<div class="letraBlanca padding1"> sudo nmap -v -sS -O ip</div><br>
-
-				<br><div class="letraEpica tamaniopeq padding1">Dispositivos conectados</div>
-				<div class="letraBlanca padding1"> sudo arp-scan --interface=NET --localnet</div>
-			</div>
-
-			<div>
-				<h2 class="padding2 margen2 letraCeleste">Escaner de vulnerabilidades</h2>
-				<div class="letraEpica tamaniopeq padding1">Escanear puertos</div>
-				<div class="letraBlanca padding1"> sudo nmap -sV scanme.nmap.org</div>
-			</div>
-
-			<div>
-				<h2 class="padding2 margen2 letraCeleste">Versiones y puertos</h2>
-				<div class="letraEpica tamaniopeq padding1">Escanear puertos y versiones de sistema</div>
-				<div class="letraBlanca padding1"> sudo nmap -O scanme.nmap.org -v</div><br>
-				<div class="letraEpica tamaniopeq padding1">Escanear datos de una IP</div>
-				<div class="letraBlanca padding1"> sudo nmap -sV (Dirección IP) -p 80 -O -T4</div>
+				<br><h3 class="textoLato margen2 letraCeleste">Descripción: NET = nombre de la network</h3>
+				<h4 class="letraEpica margen2 textoLato">Verbose Syn-scan System Op</h4>
+				<h4 class="letraBlanca margen2 textoLato"> sudo nmap -v -sS -O ip</h4>
+				<h4 class="letraEpica margen2 textoLato">Dispositivos conectados</h4>
+				<h4 class="letraBlanca margen2 textoLato"> sudo arp-scan --interface=NET --localnet</h4>
+				<br><h3 class="margen2 textoLato letraCeleste">Escaner de vulnerabilidades</h3>
+				<h4 class="letraEpica margen2 textoLato">Escanear puertos</h4>
+				<h4 class="letraBlanca margen2 textoLato"> sudo nmap -sV scanme.nmap.org</h4>
+				<br><h3 class="margen2 letraCeleste">Versiones y puertos</h3>
+				<h4 class="letraEpica margen2 textoLato">Escanear puertos y versiones de sistema</h4>
+				<h4 class="letraBlanca margen2 textoLato"> sudo nmap -O scanme.nmap.org -v</h4>
+				<h4 class="letraEpica margen2 textoLato">Escanear datos de una IP</h4>
+				<h4 class="letraBlanca margen2 textoLato"> sudo nmap -sV (Dirección IP) -p 80 -O -T4</h4>
 			</div>             
 		</main>
 		<button class="margen2 fondoSubir" id="subir"></button>
 		<button class="margen2 fondoBajar" id="bajar"></button>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
+	<footer class="fondoAzul letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="copyright textoOsvaldo textoLato">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
 					<label for="btnModal">
