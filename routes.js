@@ -61,10 +61,10 @@ fetch('../routes.json')
                 location.href = bitacora.url;
             };
             const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste');
+            p.classList.add('tamanioMin', 'letraCeleste');
             p.textContent = bitacora.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -89,10 +89,10 @@ fetch('../routes.json')
                 location.href = hacking.url;
             };
             const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
             const p = document.createElement('p');
-            p.classList.add('tamaniopeq', 'letraCeleste');
+            p.classList.add('tamanioMin', 'letraCeleste');
             p.textContent = hacking.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
@@ -117,10 +117,10 @@ fetch('../routes.json')
             location.href = hardware.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.classList.add('tamanioMin', 'letraCeleste');
         p.textContent = hardware.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');
@@ -229,10 +229,10 @@ fetch('../routes.json')
             location.href = formulario.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
-        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.classList.add('tamanioMin', 'letraCeleste');
         p.textContent = formulario.descripcion || 'Descripción no disponible';
 
         const h1 = document.createElement('h1');

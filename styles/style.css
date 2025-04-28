@@ -141,6 +141,10 @@
 	text-shadow: #333 1px 1px 1px;
 }
 
+.sombraCeleste {
+	text-shadow: rgba(122, 228, 255, 0.781) 1px 1px 1px;
+}
+
 /*--------------------------GAP----------------------------------------------------------*/
 
 .gap {
@@ -235,7 +239,6 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 30px 30px 0px 0px;
 }
 
 .fondoImagenCiudad {
@@ -252,7 +255,6 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 30px 30px 0px 0px;
 }
 
 .fondoImagenPerro {
@@ -1403,12 +1405,6 @@ main {
     box-sizing: border-box;
 }
 
-h2 {
-	margin-top: 4vh;
-	text-align: center;
-	padding: 3vh;
-}
-
 p.contenedorTransparente {
   	padding: 20px;
 }
@@ -1928,6 +1924,21 @@ img {
 		width: 2vw;
 	}
 
+	/* Adaptar los botones (subir/bajar) */
+    #subir, #bajar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+
+	/* Oculta los botones en pantallas pequeñas */
+	#subir, #bajar {
+        display: none;  
+    }
+	
 	
 	
 }
