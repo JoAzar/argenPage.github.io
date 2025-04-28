@@ -1071,6 +1071,14 @@
 	height: 3vh;
 }
 
+.alturaMinMax {
+	min-height: 59vh;
+}
+
+.alturaMinMaxPro {
+	min-height: 81vh;
+}
+
 /*-------------------------------COLORES DE BOTON-----------------------------*/
 
 .botonBlanco {
@@ -1890,6 +1898,7 @@ img {
 	html, body, main {
 		padding: 0px;
 		margin: 0px;
+		
 	}
 
 	.tamanioMed {
