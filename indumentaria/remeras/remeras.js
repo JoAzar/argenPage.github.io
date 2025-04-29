@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('lista_productos_accesorios.json')
+    fetch('lista_productos_remeras.json')
         .then(response => response.json())
         .then(data => {
             const container = document.querySelector('main2');
@@ -7,18 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
             productos.forEach(producto => {
                 const card = document.createElement('div');
-                card.classList.add('horizontal', 'manito', 'reboteHover', 'radius', 'padding2', 'margen2', 'centrarCaja');
+                card.classList.add('manito', 'reboteHover', 'radius', 'padding2');
                 
                 //Contenedor de la imagen
                 const imgBx = document.createElement('div');
                 imgBx.classList.add('imgBx');
                 const img = document.createElement('img');
-                img.classList.add('radius', 'fondoVidrio');
+                img.classList.add('radius');
                 img.src = producto.imagen;
 
                 //Redimensionar las imágenes
-                img.style.width = '300px';        
-                img.style.height = '300px';    
+                img.style.width = '100%';        
+                img.style.height = '200px';    
                 img.style.objectFit = 'cover';
 
                 imgBx.appendChild(img);
@@ -65,8 +65,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 codigoProducto.classList.add('codigoProducto','letraNegra','textoLato');
                 codigoProducto.textContent = `Código: ${producto.codigoProducto || "Código no disponible"}`;
                 details.appendChild(codigoProducto);
+
+                //Añadir los detalles al contenedor de contenido
                 content.appendChild(details);
                 card.appendChild(content);
+
+                //Añadir la tarjeta al contenedor principal
                 container.appendChild(card);
             });
         })

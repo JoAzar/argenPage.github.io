@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tienda 🇦🇷</title>
 		<link rel="stylesheet" href='../../styles/style.css'>
-		<link rel="stylesheet" href='../styles/card.css'>   
 		<link rel="stylesheet" href='../../styles/popup.css'> 
 	</head>
-	
-	<header class="fondoAzul superiorRadius">
-		<h1 class="letraBlanca sombraNegra textoLato tamanioGran dropSombraBlanca sinSeleccion margen2">Tienda de pantalones</h1>
-		<nav class="navDesplegable fondoNegro radius centrarItem letraBlanca letraAzulHover dropSombraNegra margen2">
-			<ul class="menu" id="navMenu"></ul>
-		</nav>
+	<header class="fondoAzul dropSombraNegra">
+		<h1 class="letraBlanca sombraNegra textoLato tamanioGran margen2 padding2">Pantalones</h1>
 	</header>
-	<body class="sinSeleccion margen2 fondoNegroSuave centrarItem">
-		<main2 class="horizontal fondoBlanco mainTarjeta centrarItem">
-			
-		</main2>
-		<button class="botonBlanco botonAzulHover margen2" id="bajar">Bajar</button>
-		<button class="botonBlanco botonAzulHover margen2" id="subir">Subir</button>
+	<body>
+		<main class="padding2 fondoNegro">
+			<div id="contenedor-tienda" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
 	</body>
-	<main class="padding2 fondoNegro">
-		<div id="contenedor-tienda" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
-	</main>
-	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
+	<button class="margen2 fondoSubir" id="subir"></button>
+	<button class="margen2 fondoBajar" id="bajar"></button>
+	<footer class="fondoAzul letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
 			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
@@ -47,6 +39,7 @@
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../../routes.js"></script>
 			<script src="../../funcionalidades.js"></script>
+			<script src="pantalones.js"></script>
 		</div>
 	</footer>
 </HTML>

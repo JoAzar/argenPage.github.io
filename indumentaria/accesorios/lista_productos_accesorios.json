@@ -1,7 +1,7 @@
 {
-    "articulo1": [
+    "accesorio1": [
         {
-            "nombre": "Anillo Angelical",
+            "nombre": "Anillo A.",
             "imagen": "imagenes/accesorio1.jpeg",
             "modo de pago": "Efectivo",
             "precio": "$1000",
@@ -48,8 +48,20 @@
             "Modo de pago": "Efectivo",
             "Precio": "Precio",
             "codigoProducto": "A00007"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio7.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00007"
+        },
+        {
+            "nombre": "nombre del producto",
+            "imagen": "imagenes/accesorio7.jpeg",
+            "Modo de pago": "Efectivo",
+            "Precio": "Precio",
+            "codigoProducto": "A00007"
         }
     ]
-
-
 }

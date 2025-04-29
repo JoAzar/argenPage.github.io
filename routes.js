@@ -162,7 +162,7 @@ fetch('../routes.json')
     });
 })
 
-fetch('routesAccesorios.json')
+fetch('routes_accesorios.json')
 .then(response => response.json())
 .then(data => {
     const contenedorTienda = document.getElementById('contenedor-tienda');
@@ -190,7 +190,7 @@ fetch('routesAccesorios.json')
     });
 })
 
-fetch('ruteo_articulos_electronicos.json')
+fetch('routes_pantalones.json')
 .then(response => response.json())
 .then(data => {
     const contenedorTienda = document.getElementById('contenedor-tienda');
@@ -218,7 +218,119 @@ fetch('ruteo_articulos_electronicos.json')
     });
 })
 
-fetch('../routes.json')
+fetch('routes_zapatillas.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorTienda = document.getElementById('contenedor-tienda');
+    data.tienda.forEach(tienda => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = tienda.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.textContent = tienda.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = tienda.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorTienda.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('routes_ropa_interior.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorTienda = document.getElementById('contenedor-tienda');
+    data.tienda.forEach(tienda => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = tienda.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.textContent = tienda.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = tienda.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorTienda.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('routes_remeras.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorTienda = document.getElementById('contenedor-tienda');
+    data.tienda.forEach(tienda => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = tienda.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.textContent = tienda.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = tienda.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorTienda.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('routes_articulos_electronicos.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorTienda = document.getElementById('contenedor-tienda');
+    data.tienda.forEach(tienda => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = tienda.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+
+        const p = document.createElement('p');
+        p.classList.add('tamaniopeq', 'letraCeleste');
+        p.textContent = tienda.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = tienda.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorTienda.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('routes.json')
 .then(response => response.json())
 .then(data => {
     const contenedorFormulario = document.getElementById('contenedor-formulario');
