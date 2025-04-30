@@ -213,6 +213,12 @@
 	background-repeat: no-repeat;
 }
 
+.fondoHacker1 {
+	background-image: url('../images/fondo_hacker1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .fondoBajar {
 	background-image: url('../images/bajar.gif');
 	background-size: cover;
