@@ -1564,6 +1564,11 @@ img {
     font-family: 'Lato', sans-serif;
 }
 
+.video {
+	width: 900px;
+	height: 500px;
+}
+
 /*-------------------------------------------------------------*/
 
 @keyframes iniciarColor {
@@ -1951,6 +1956,10 @@ img {
         display: none;  
     }
 	
+	.video {
+		width: 450px;
+		height: 250px;
+	}
 	
 	
 }
