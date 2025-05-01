@@ -33,7 +33,7 @@ fetch('../routes.json')
             location.href = inicio.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');
@@ -107,32 +107,32 @@ fetch('../routes.json')
     })
 
 fetch('../routes.json')
-    .then(response => response.json())
-    .then(data => {
-        const contenedorHacking = document.getElementById('contenedor-hacking');
-        data.hacking.forEach(hacking => {
-            const div = document.createElement('div');
-            div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
-            div.onclick = () => {
-                location.href = hacking.url;
-            };
-            const innerDiv = document.createElement('div');
-            innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
+.then(response => response.json())
+.then(data => {
+    const contenedorHacking = document.getElementById('contenedor-hacking');
+    data.hacking.forEach(hacking => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = hacking.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
-            const p = document.createElement('p');
-            p.classList.add('tamanioMin', 'letraCeleste');
-            p.textContent = hacking.descripcion || 'Descripción no disponible';
+        const p = document.createElement('p');
+        p.classList.add('tamanioMin', 'letraCeleste');
+        p.textContent = hacking.descripcion || 'Descripción no disponible';
 
-            const h1 = document.createElement('h1');
-            h1.classList.add('textoLato', 'letraBlanca');
-            h1.textContent = hacking.nombre;
-            
-            innerDiv.appendChild(h1);
-            div.appendChild(innerDiv);
-            contenedorHacking.appendChild(div);
-            innerDiv.appendChild(p);
-        });
-    })
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = hacking.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorHacking.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
 
 fetch('../routes.json')
 .then(response => response.json())
@@ -173,7 +173,7 @@ fetch('../routes.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');
@@ -201,7 +201,7 @@ fetch('routes_accesorios.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');
@@ -229,7 +229,7 @@ fetch('routes_pantalones.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');
@@ -257,7 +257,7 @@ fetch('routes_zapatillas.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');
@@ -285,7 +285,7 @@ fetch('routes_ropa_interior.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');
@@ -313,7 +313,7 @@ fetch('routes_remeras.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');
@@ -341,7 +341,7 @@ fetch('routes_articulos_electronicos.json')
             location.href = tienda.url;
         };
         const innerDiv = document.createElement('div');
-        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
         const p = document.createElement('p');
         p.classList.add('tamaniopeq', 'letraCeleste');

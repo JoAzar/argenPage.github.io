@@ -214,9 +214,87 @@
 }
 
 .fondoHacker1 {
-	background-image: url('../images/fondo_hacker1.jpg');
+	background-image: url('../images/fondo_hacker1.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoHacker2 {
+	background-image: url('../images/hacking2.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoHacker3 {
+	background-image: url('../images/hacking3.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoHacker4 {
+	background-image: url('../images/hacking4.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoHacker5 {
+	background-image: url('../images/hacking5.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoHacker6 {
+	background-image: url('../images/hacking6.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoHacker7 {
+	background-image: url('../images/hacking7.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoFuture1 {
+	background-image: url('../images/future1.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoFuture2 {
+	background-image: url('../images/future2.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoFuture3 {
+	background-image: url('../images/future3.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoFuture4 {
+	background-image: url('../images/future4.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoFuture5 {
+	background-image: url('../images/future5.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .fondoBajar {
@@ -315,13 +393,16 @@
 }
 
 .fondoNegro {
-	background-color:  #292929;
+	background-color:  #1d1d1d;
 }
 
 .fondoNegroHover:hover {
 	background-color:  #292929;
 }
 
+.fondoNegroOscuro {
+	background-color:  #131313;
+}
 
 .fondoBlanco {
 	background-color: rgb(255, 255, 255);
@@ -1511,10 +1592,6 @@ footer {
 	font-weight: 450;
 }
 
-.normal {
-	font-weight: normal;
-}
-
 .gruesa {
 	font-weight: bold;
 }
@@ -1884,7 +1961,7 @@ img {
 /*---------------------------------------------------------------------- ICONOS -------------------------------------------------------------------*/
 
 .icono1{
-	background-image: url(../images/almacenar.gif);
+	background-image: url(../images/calavera.gif);
 	background-size: cover;
 	background-position: center;
 	width: 2vw;
@@ -1893,7 +1970,7 @@ img {
 }
 
 .icono2{
-	background-image: url(../images/almacenar2.gif);
+	background-image: url(../images/anonimous.gif);
 	background-size: cover;
 	background-position: center;
 	width: 2vw;
@@ -1902,7 +1979,7 @@ img {
 }
 
 .icono3{
-	background-image: url(../images/almacenar3.gif);
+	background-image: url(../images/404.gif);
 	background-size: cover;
 	background-position: center;
 	width: 2vw;
@@ -1911,7 +1988,34 @@ img {
 }
 
 .icono4{
-	background-image: url(../images/almacenar4.gif);
+	background-image: url(../images/load.gif);
+	background-size: cover;
+	background-position: center;
+	width: 2vw;
+	height: 2vw;
+	background-repeat: no-repeat;
+}
+
+.icono5{
+	background-image: url(../images/error.gif);
+	background-size: cover;
+	background-position: center;
+	width: 2vw;
+	height: 2vw;
+	background-repeat: no-repeat;
+}
+
+.icono6 {
+	background-image: url(../images/error2.gif);
+	background-size: cover;
+	background-position: center;
+	width: 2vw;
+	height: 2vw;
+	background-repeat: no-repeat;
+}
+
+.icono7 {
+	background-image: url(../images/pirate.gif);
 	background-size: cover;
 	background-position: center;
 	width: 2vw;
