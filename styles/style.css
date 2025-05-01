@@ -674,6 +674,10 @@
 	align-self: center;
 }
 
+.centrarDosItems {
+	display: block ruby;
+}
+
 .centrarImagen {
 	text-align: center;
 }
@@ -1111,6 +1115,19 @@
 	transition:  all 1.5s ease;
 }
 
+.botonRojoHover:hover {
+	background-color:  #ff6553;
+	color: black;
+	border: black solid .5px;
+	transition:  all 1.5s ease;
+}
+
+.botonRojo {
+	background-color:  black;
+	color: #ff6553;
+	border: #ff6553 solid .5px;
+	transition:  all 1.5s ease;
+}
 
 
 .botonNaranjetaHover:hover {
@@ -1120,12 +1137,7 @@
 	transition:  all 1.5s ease;
 }
 
-.botonRojoHover:hover {
-	background-color:  #ff6553;
-	color: black;
-	border: black solid .5px;
-	transition:  all 1.5s ease;
-}
+
 
 .botonRosa:hover {
     background-color: pink;

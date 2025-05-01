@@ -127,6 +127,11 @@
       "nombre": "Redes",
       "url": "redes.html",
       "descripcion": "Info, software y herramientas relacionadas"
+    },
+    {
+      "nombre": "Mapa",
+      "url": "hacking_map.html",
+      "descripcion": "Mapa de ciberataques a nivel mundial"
     }
   ],
 
@@ -237,6 +242,43 @@
       "descripcion": "Lenguajes de programación"
     }
 
+  ],
+  "inicio": [
+    {
+      "nombre": "Lenguaje",
+      "url": "../lenguajes/lenguajes.html",
+      "descripcion": "Aprende diversos lenguajes de programación"
+    },
+    {
+      "nombre": "Hacking",
+      "url": "../hacking/hacking.html",
+      "descripcion": "Conocimientos sobre hacking"
+    },
+    {
+      "nombre": "Bitacora",
+      "url": "../bitacora/bitacora.html",
+      "descripcion": "Juegos y otros"
+    },
+    {
+      "nombre": "Hardware",
+      "url": "../hardware/hardware.html",
+      "descripcion": "Tipos de hardware"
+    },
+    {
+      "nombre": "Tienda",
+      "url": "../indumentaria/tienda.html",
+      "descripcion": "Vitrinas de productos"
+    },
+    {
+      "nombre": "Acerca de",
+      "url": "nosotros.html",
+      "descripcion": "Más acerca del desarrollador"
+    },
+    {
+      "nombre": "Formulario",
+      "url": "../formulario/form.html",
+      "descripcion": "Formulario de consultas o sugerencias"
+    }
   ]
   
 }

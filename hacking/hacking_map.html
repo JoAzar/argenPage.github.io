@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" class="sinSeleccion">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hacking 🇦🇷</title>
+		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">  
+	</head>
+	<header class="fondoNegro dropSombraNegra vertical">
+		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">Mapa Mundial de Ciberataques</h1>
+	</header>
+	<body>
+        <iframe src="https://livethreatmap.radware.com/" height="600" width="100%"></iframe>
+		<div class="centrarImagen fondoHacker padding2">
+            <h1 class="letraBlanca textoLato">Investiga los ciberataques que están ocurriendo ahora</h1>
+            <div class="padding2 centrarDosItems centrarImagen">
+                <div class="padding2">
+                    <form action="https://www.google.com/search" method="get">
+                        <input class="radius padding1 wid100 centrarImagen fondoNegro bordeVidrio letraRoja textoLato" type="text" name="q" placeholder="Busca en Google" required>
+                        <button type="submit" class="botonRojo botonRojoHover">Buscar</button>
+                    </form>
+                </div>
+                <div class="padding2">
+                    <form action="https://www.duckduckgo.com/search" method="get">
+                        <input class="radius padding1 wid100 centrarImagen fondoNegro bordeVidrio letraRoja textoLato" type="text" name="q" placeholder="Busca en DuckDuckGo" required>
+                        <button type="submit" class="botonRojo botonRojoHover">Buscar</button>
+                    </form> 
+                </div>
+            </div>
+        </div>
+        <main class="padding2 fondoNegro">
+            <div id="contenedor-hacking" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
+	</body>
+	<footer class="fondoAzul letraBlanca dropSombraNegra">
+		<div class="redes horizontal">
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="contenedorPopup">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal shadow-inset-center">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoLato subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
+			<script src="../routes.js"></script>
+			<script src="../funcionalidades.js"></script>
+		</div>
+	</footer>
+</html>
