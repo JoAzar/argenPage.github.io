@@ -245,7 +245,12 @@
   ],
   "inicio": [
     {
-      "nombre": "Lenguaje",
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver a inicio"
+    },
+    {
+      "nombre": "Lenguajes",
       "url": "../lenguajes/lenguajes.html",
       "descripcion": "Aprende diversos lenguajes de programación"
     },
