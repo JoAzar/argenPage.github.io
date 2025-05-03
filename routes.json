@@ -283,6 +283,29 @@
       "nombre": "Formulario",
       "url": "../formulario/form.html",
       "descripcion": "Formulario de consultas o sugerencias"
+    },
+    {
+      "nombre": "Cotización",
+      "url": "../inversiones/cotizacion.html",
+      "descripcion": "Cotización y valores de bolsa"
+    }
+  ],
+
+  "cotizacion": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver a inicio"
+    },
+    {
+      "nombre": "Cotización",
+      "url": "inversiones/cotizacion.html",
+      "descripcion": "Cotización y valores de criptomonedas"
+    },
+    {
+      "nombre": "Cotización",
+      "url": "inversiones/cotizacion_dolar.html",
+      "descripcion": "Cotización del dolar"
     }
   ]
   

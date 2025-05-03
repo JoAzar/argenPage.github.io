@@ -53,7 +53,7 @@ fetch('../routes.json')
 fetch('../routes.json')
     .then(response => response.json())
     .then(data => {
-        const contenedorLenguajes = document.getElementById('contenedor-lenguajes');
+        const contenedorCotizacion = document.getElementById('contenedor-lenguajes');
         data.lenguajes.forEach(lenguaje => {
             const div = document.createElement('div');
             div.classList.add('margen2', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
@@ -73,10 +73,38 @@ fetch('../routes.json')
             
             innerDiv.appendChild(h1);
             div.appendChild(innerDiv);
-            contenedorLenguajes.appendChild(div);
+            contenedorCotizacion.appendChild(div);
             innerDiv.appendChild(p);
         });
     })
+
+fetch('../routes.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorLenguajes = document.getElementById('contenedor-cotizacion');
+    data.cotizacion.forEach(cotizacion => {
+        const div = document.createElement('div');
+        div.classList.add('margen2', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = cotizacion.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
+
+        const p = document.createElement('p');
+        p.classList.add('tamanioMin', 'letraCeleste');
+        p.textContent = cotizacion.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = cotizacion.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorLenguajes.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
 
 fetch('../routes.json')
     .then(response => response.json())

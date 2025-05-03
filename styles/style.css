@@ -262,6 +262,83 @@
 	background-position: center center;
 }
 
+.fondoAnimado1 {
+	background-image: url('../images/fondoAnimado.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado2 {
+	background-image: url('../images/fondoAnimado2.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado3 {
+	background-image: url('../images/fondoAnimado3.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado4 {
+	background-image: url('../images/fondoAnimado4.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado5 {
+	background-image: url('../images/fondoAnimado5.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado6 {
+	background-image: url('../images/fondoAnimado6.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado7 {
+	background-image: url('../images/fondoAnimado7.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado8 {
+	background-image: url('../images/fondoAnimado8.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado9 {
+	background-image: url('../images/fondoAnimado9.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado10 {
+	background-image: url('../images/fondoAnimado10.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.fondoAnimado11 {
+	background-image: url('../images/fondoAnimado11.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 .fondoFuture1 {
 	background-image: url('../images/future1.jpeg');
 	background-size: cover;
