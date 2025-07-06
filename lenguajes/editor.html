@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Compilar Python Online</title>
+  <style>
+    body { font-family: Arial; margin: 30px; }
+    textarea { width: 100%; height: 200px; font-family: monospace; }
+    button { padding: 10px 20px; margin-top: 10px; }
+    pre { background: #3e3e3e; color: #eee; padding: 10px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h2>Ejecutar código Python online</h2>
+  <textarea id="code">print("Hola desde Pyodide!")</textarea><br>
+  <button id="run-btn">Ejecutar</button>
+  <h3>Resultado:</h3>
+  <pre id="output">Esperando ejecución...</pre>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>  
+  <script type="module" src="editor.js"></script>
+</body>
+</html>
