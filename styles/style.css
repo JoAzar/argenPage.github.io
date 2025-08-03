@@ -220,6 +220,13 @@
 	background-position: center center;
 }
 
+.fondoIntro {
+	background-image: url('../images/intro.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 .fondoHacker2 {
 	background-image: url('../images/hacking2.jpeg');
 	background-size: cover;
