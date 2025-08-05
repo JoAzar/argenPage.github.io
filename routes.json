@@ -48,6 +48,11 @@
       "descripcion": "Es un lenguaje de programación de alto nivel, fácil de aprender y utilizado en desarrollo web, ciencia de datos e inteligencia artificial."
     },
     {
+      "nombre": "Editor",
+      "url": "../lenguajes/editor.html",
+      "descripcion": "Editor para practicas básicas de python."
+    },
+    {
       "nombre":"Javascript",
       "url": "../lenguajes/javascript.html",
       "descripcion": "Es un lenguaje de programación que permite agregar interactividad y dinámicas a las páginas web."
