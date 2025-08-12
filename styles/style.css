@@ -1139,6 +1139,10 @@
 	max-width: 100%;
 }
 
+.widFitContent {
+	width: fit-content;
+}
+
 .wid10 { 
 	width: 10%;
 }
@@ -1162,6 +1166,10 @@
 .wid100 {
 	width: 100%;
 }
+.wid300 {
+	width: 300%;
+}
+
 
 .heighMax {
 	height: 100%;
@@ -1435,6 +1443,10 @@
 
 .centrarCaja {
 	align-items: center;
+}
+
+.resizeNone {
+	resize: none;
 }
 
 .vertical {

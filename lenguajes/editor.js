@@ -1,6 +1,8 @@
-//PETICIÓN DE LA API
-let pyodide = await loadPyodide();
-console.log("Pyodide cargado");
+let pyodide = await loadPyodide(); //API de python
+
+document.getElementById("run-btn-recargar").addEventListener("click", () => {
+  location.reload();
+});
 
 document.getElementById("run-btn").addEventListener("click", async () => {
   const code = document.getElementById("code").value;
