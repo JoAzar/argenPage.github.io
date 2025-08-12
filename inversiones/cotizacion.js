@@ -15,7 +15,6 @@ async function obtenerPrecioWorldcoin() {
 
 
         if(!dolarARS || !dolarMayorista) {
-            console.error('No se pudo obtener el valor del dólar');
             document.getElementById("precio").innerText = "Error al obtener el valor del dólar";
             return;
         }
@@ -31,7 +30,6 @@ async function obtenerPrecioWorldcoin() {
         }
 
         if(worldcoinUSD < 0.1) {
-            console.warn('El valor de Worldcoin en USD parece muy bajo, ajustando manualmente');
             worldcoinUSD = 5.5;
         }
         const worldcoinARS = (worldcoinUSD * dolarARS).toFixed(2);
@@ -52,16 +50,17 @@ async function obtenerPrecioWorldcoin() {
 }
 
 function actualizarContador() {
-    if (countdown > 0) {
-        document.getElementById("contador").innerText = `Actualización de cotizaciones en: ${countdown--} segundos`;
-    } else {
-        obtenerPrecioWorldcoin();
-    }
+    document.getElementById("contador").innerText = `Actualización de cotizaciones en: ${countdown--} segundos`;
+    obtenerPrecioWorldcoin();
+    if(countdown < 0) countdown = 30;
 }
 
 window.onload = () => {
     const tiempo_de_refresco = 30000;
     obtenerPrecioWorldcoin();
     setInterval(actualizarContador, 1000);
-    setInterval(obtenerPrecioWorldcoin, tiempo_de_refresco);
+    setInterval(() => {
+        obtenerPrecioWorldcoin();
+        countdown = 30;
+    }, tiempo_de_refresco);
 };
