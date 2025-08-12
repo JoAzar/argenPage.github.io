@@ -5,20 +5,32 @@
 		<title>Cotizaciones</title>
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
-        <script src="cotizacion.js" defer></script> 
+        <script src="cotizacion.js" defer></script>
 	</head>
 	<header class="fondoNegro dropSombraNegra vertical">
-		<h1 class="textoLato tamanioGran letraBlanca sombraNegra margen2">Cotización Cripto</h1>
+		<h1 class="textoLato tamanioGran letraBlanca sombraNegra margen2">Cotizaciones</h1>
 	</header>
 	<body>
-        <div class="centrarImagen centrarItem fondoAnimado3 padding2 letraBlanca dropSombraBlanca">
-            <h1 class="textoLato centrarItem padding1">Worldcoin | Pesos Argentinos</h1>
-            <div id="precio" class="textoLato padding2">Cargando...</div>
-            <div id="actualizado" class="actualizado"></div>
-            <div id="contador" class="padding2">Actualización en: 30 segundos</div>
+		<div id="contador" class="padding2 sombraNegra letraBlanca centrarImagen fondoNegro bold">Actualización de cotizaciones en: 30 segundos</div>
+        <div class="lineaNaranja"></div>
+		<div class="centrarImagen centrarItem fondoAzul padding2 letraBlanca">
+            <h1 class="textoLato centrarItem sombraNegra padding1 bold">Worldcoin | Pesos Argentinos</h1>
+            <div id="precio" class="textoLato padding2 sombraNegra bold">Cargando...</div>
+            <div id="actualizado" class="actualizado sombraNegra bold"></div>
         </div>
-
-
+		<div class="lineaNaranja"></div>
+		<div class="centrarImagen centrarItem fondoAzul padding2 letraBlanca">
+            <h1 class="textoLato centrarItem padding1 sombraNegra bold">Dolar | Pesos Argentinos</h1>
+            <div id="precio_dolar_mayorista" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+			<div id="precio_dolar_oficial" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+			<div id="precio_dolar_ahorro" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+			<div id="precio_dolar_tarjeta" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+			<div id="precio_dolar_blue" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+			<div id="precio_dolar_cripto" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+			<div id="precio_dolar_mep" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+			<div id="precio_dolar_ccl" class="textoLato sombraNegra padding2 bold">Cargando...</div>
+        </div>
+		<div class="lineaNaranja"></div>
 		<main class="padding2 fondoNegro">
             <div id="contenedor-inicio" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
@@ -46,6 +58,7 @@
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
 			<script src="../funcionalidades.js"></script>
+			<script src="cotizacion.js"></script>
             
 		</div>
 	</footer>

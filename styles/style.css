@@ -827,12 +827,23 @@
 
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .linea {
 	border: 0;
 	height: 1px;
 	background-color: #ddd; /* Gris claro */
 	margin: 20px 0;
 }
+
+.lineaNaranja {
+	background-color: rgb(255, 150, 89);
+	height: 3px;
+	max-width: 100%;
+	padding: 0;
+  }
 
 .girarHover:hover {
 	animation: rotar 2s linear infinite;

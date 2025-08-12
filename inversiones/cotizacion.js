@@ -4,8 +4,17 @@ async function obtenerPrecioWorldcoin() {
         const dolarResponse = await fetch("https://criptoya.com/api/dolar");
         const dolarData = await dolarResponse.json();
         const dolarARS = dolarData.blue ? dolarData.blue.bid : null;
+        const dolarMayorista = dolarData.mayorista.price;
+        const dolarOficial = dolarData.oficial.price;
+        const dolarAhorro = dolarData.ahorro.ask;
+        const dolarTarjeta = dolarData.tarjeta.price;
+        const dolarBlue = dolarData.blue.ask;
+        const dolarCripto = dolarData.cripto["ccb"].ask;
+        const dolarMep = dolarData.mep.al30["24hs"].price;
+        const dolarCCL = dolarData.ccl.al30["24hs"].price;
 
-        if(!dolarARS) {
+
+        if(!dolarARS || !dolarMayorista) {
             console.error('No se pudo obtener el valor del dólar');
             document.getElementById("precio").innerText = "Error al obtener el valor del dólar";
             return;
@@ -27,8 +36,15 @@ async function obtenerPrecioWorldcoin() {
         }
         const worldcoinARS = (worldcoinUSD * dolarARS).toFixed(2);
         document.getElementById("precio").innerText = `1 Worldcoin ≈ ARS ${worldcoinARS}`;
-        document.getElementById("actualizado").innerText = `USD: ${worldcoinUSD} – Dólar: ${dolarARS} ARS`;
-        countdown = 30;
+        document.getElementById("actualizado").innerText = `USD: ${worldcoinUSD} – Dolar: ${dolarARS} ARS`;
+        document.getElementById("precio_dolar_mayorista").innerText = `Mayorista: ${dolarMayorista}`;
+        document.getElementById("precio_dolar_oficial").innerText = `Oficial: ${dolarOficial}`;
+        document.getElementById("precio_dolar_ahorro").innerText = `Ahorro: ${dolarAhorro}`;
+        document.getElementById("precio_dolar_tarjeta").innerText = `Tarjeta: ${dolarTarjeta}`;
+        document.getElementById("precio_dolar_blue").innerText = `Blue: ${dolarBlue}`;
+        document.getElementById("precio_dolar_cripto").innerText = `Cripto: ${dolarCripto}`;
+        document.getElementById("precio_dolar_mep").innerText = `Mep: ${dolarMep}`;
+        document.getElementById("precio_dolar_ccl").innerText = `CCL: ${dolarCCL}`;
     } catch(error) {
         console.error("Error al obtener precios:", error);
         document.getElementById("precio").innerText = "Error al cargar el precio";
@@ -37,9 +53,8 @@ async function obtenerPrecioWorldcoin() {
 
 function actualizarContador() {
     if (countdown > 0) {
-        document.getElementById("contador").innerText = `Actualización en: ${countdown--} segundos`;
+        document.getElementById("contador").innerText = `Actualización de cotizaciones en: ${countdown--} segundos`;
     } else {
-        // Cuando el contador llega a 0, actualizamos los precios
         obtenerPrecioWorldcoin();
     }
 }
