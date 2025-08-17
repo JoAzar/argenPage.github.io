@@ -74,30 +74,20 @@
     }
   ],
 
-  "bitacora": [
+  "juegos": [
     {
       "nombre": "Inicio",
       "url": "../inicio/inicio.html",
       "descripcion": "Volver al inicio de la página"
     },
     {
-      "nombre": "Conversaciones",
-      "url": "conversaciones.html",
-      "descripcion": "Conversaciones con IA y otras charlas interesantes"
-    },
-    {
-      "nombre": "Ideas",
-      "url": "ideas.html",
-      "descripcion": "Ideas para desarrollar o análizar"
-    },
-    {
       "nombre": "Free Pig",
-      "url": "juegos2.html",
+      "url": "freepig.html",
       "descripcion": "Juego interactivo"
     },
     {
       "nombre": "Encontrar pares",
-      "url": "juegos.html",
+      "url": "parejas.html",
       "descripcion": "Juego de encontrar parejas de animales"
     }
   ],
@@ -232,7 +222,7 @@
     },
     {
       "nombre": "Bitácora",
-      "url": "../bitacora/bitacora.html",
+      "url": "../juegos/juegos.html",
       "descripcion": "Juegos y más"
     }
     ,
@@ -265,8 +255,8 @@
       "descripcion": "Conocimientos sobre hacking"
     },
     {
-      "nombre": "Bitacora",
-      "url": "../bitacora/bitacora.html",
+      "nombre": "juegos",
+      "url": "../juegos/juegos.html",
       "descripcion": "Juegos y otros"
     },
     {

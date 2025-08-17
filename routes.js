@@ -109,27 +109,27 @@ fetch('../routes.json')
 fetch('../routes.json')
     .then(response => response.json())
     .then(data => {
-        const contenedorBitacoras = document.getElementById('contenedor-bitacora');
-        data.bitacora.forEach(bitacora => {
+        const contenedorJuegos = document.getElementById('contenedor-juegos');
+        data.juegos.forEach(juegos => {
             const div = document.createElement('div');
             div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
             div.onclick = () => {
-                location.href = bitacora.url;
+                location.href = juegos.url;
             };
             const innerDiv = document.createElement('div');
             innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
 
             const p = document.createElement('p');
             p.classList.add('tamanioMin', 'letraCeleste');
-            p.textContent = bitacora.descripcion || 'Descripción no disponible';
+            p.textContent = juegos.descripcion || 'Descripción no disponible';
 
             const h1 = document.createElement('h1');
             h1.classList.add('textoLato', 'letraBlanca');
-            h1.textContent = bitacora.nombre;
+            h1.textContent = juegos.nombre;
             
             innerDiv.appendChild(h1);
             div.appendChild(innerDiv);
-            contenedorBitacoras.appendChild(div);
+            contenedorJuegos.appendChild(div);
             innerDiv.appendChild(p);
         });
     })

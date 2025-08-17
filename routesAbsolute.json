@@ -5,8 +5,8 @@
       "url": "/lenguajes/lenguajes.html"
     },
     {
-      "name": "Bitácora",
-      "url": "/bitacora/bitacora.html"
+      "name": "Juegos",
+      "url": "/juegos/juegos.html"
     },
     {
       "name": "Hardware",
@@ -27,6 +27,10 @@
     {
       "name": "Tienda",
       "url": "/indumentaria/tienda.html"
+    },
+    {
+      "noticias": "Noticias",
+      "url": "/noticias/noticias.html"
     }
   ]
 }
