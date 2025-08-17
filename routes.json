@@ -283,6 +283,11 @@
       "nombre": "Cotización",
       "url": "../inversiones/cotizacion.html",
       "descripcion": "Cotización y valores de bolsa"
+    },
+    {
+      "nombre": "Noticias",
+      "url": "../noticias/noticias.html",
+      "descripcion": "Noticias sobre informática"
     }
   ],
 
@@ -301,6 +306,18 @@
       "nombre": "Cotización",
       "url": "inversiones/cotizacion_dolar.html",
       "descripcion": "Cotización del dolar"
+    }
+  ],
+  "noticias": [
+    {
+      "nombre": "Inicio",
+      "url": "../inicio/inicio.html",
+      "descripcion": "Volver a inicio"
+    },
+    {
+      "nombre": "Noticias",
+      "url": "noticias.html",
+      "descripcion": "Noticias sobre informática"
     }
   ]
   
