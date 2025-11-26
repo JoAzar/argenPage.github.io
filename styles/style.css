@@ -399,6 +399,12 @@
 	background-repeat: no-repeat;
 }
 
+.texto_inicio1 {
+	background-image: url('../images/texto_inicio1.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .fondoImagenCiudad2 {
 	background-image: url('../images/city2.jpeg');
 	background-size: cover;
@@ -492,6 +498,10 @@
 	background-color: rgb(255, 255, 255);
 }
 
+.fondoBlancoOscuro {
+	background-color: rgb(216, 216, 216);
+}
+
 .fondoBlancoHover:hover {
 	background-color: rgba(255, 255, 255);
 	transition:  all 1.5s ease;
@@ -507,6 +517,10 @@
 
 .fondoVerde {
 	background-color: #b2e070;
+}
+
+.fondoVerdeOscuro {
+	background-color: #628630;
 }
 
 .fondoAzul {
@@ -535,6 +549,10 @@
 	 background-color: #d69ff1;
 }
 
+.fondoVioletaOscuro {
+	 background-color: #8d64a1;
+}
+
 .fondoRosa {
 	background-color: #ff38a1;
 }
@@ -561,7 +579,7 @@
 }
 
 .fondoRojoImperial {
-	background-color: #9B111E ;
+	background-color: #9B111E;
 }
 
 .letraVioleta {
@@ -570,6 +588,14 @@
 
 .letraRoja {
 	color:  #ff6553;
+}
+
+.letraRojaGranate {
+	color:  #800000;
+}
+
+.letraRojaImperial {
+	color: #9B111E;
 }
 
 .letraRosa {
@@ -635,6 +661,10 @@
 
 .letraVerde {
 	color:  #b2e070;
+}
+
+.letraVerdeOscuro {
+	color:  #5d9909;
 }
 
 .letraVerdeHover:hover {
@@ -1053,6 +1083,10 @@
 	padding: 2vw;
 }
 
+.padding3 {
+	padding: .5vw;
+}
+
 .padding1 {
 	padding: .3vw;
 }
@@ -1089,6 +1123,14 @@
 	padding-bottom: 20vh;
 }
 
+.paddingDer3 {
+	padding-right: 3vw;
+}
+
+.paddingDer5 {
+	padding-right: 5vw;
+}
+
 .paddingDer10 {
 	padding-right: 10vw;
 }
@@ -1100,6 +1142,28 @@
 .paddingDer30 {
 	padding-right: 30vw;
 }
+
+.paddingIzq3 {
+	padding-left: 3vw;
+}
+
+.paddingIzq5 {
+	padding-left: 5vw;
+}
+
+.paddingIzq10 {
+	padding-left: 10vw;
+}
+
+.paddingIzq15 {
+	padding-left: 15vw;
+}
+
+.paddingIzq30 {
+	padding-left: 30vw;
+}
+
+
 
 .childCajaDerInf {
 	position: absolute;
@@ -2058,38 +2122,6 @@ margin: 10px 0;
 	font-weight: 450;
 	margin: 0.1em;
 	transition: opacity 1.5s ease, transform 1.5s ease, margin 1.5s ease;
-}
-
-
-.texto1:hover::after {
-	content: " es un almacenamiento de código explicado y simplificado";
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.texto2:hover::after {
-	content: " Es una fuente de código directo con una explicación resumida pensada para profesionales que ya conocen del tema y sólo precisan recordar fragmentos específicos de código";
-	opacity: 1;
-	transform: translateY(0);
-}
-
-
-.texto3:hover::after {
-	content: " La página busca maximizar recursos y eficiencia por lo que la mejor opción es Ctrl + F (no, acá no hay buscador interno, ¿para qué?)";
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.texto4:hover::after {
-	content: " Recorré toda la página hasta encontrar algo que te sirva o interese";
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.texto4:hover::after {
-	content: " ";
-	opacity: 1;
-	transform: translateY(0);
 }
 
 /*---------------------------------------------------------------------- ICONOS -------------------------------------------------------------------*/

@@ -9,35 +9,60 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-
-	<header class="fondoVioleta dropSombraNegra vertical superiorRadius">
-		<h1 class="letraBlanca textoLato tamanioGran margen2">Bienvenidos a PHP</h1>
-		<nav class="navDesplegable centrarItem">
-			<ul class="menu" id="navMenu"></ul>
-		</nav>
+	<header class="fondoVioletaOscuro dropSombraNegra vertical">
+		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">PHP</h1>
 	</header>
-
-	<body class="margen2">
+	<body>
 		<main class="padding2">
-			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Código en PHP</h1>
+			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeVioleta" href="https://www.php.net/manual/es/" target="_blank">Ir a la página oficial de PHP</a>
 			<div>
-				<h2 class="letraBlanca sombraNegra letraNaranja">Estamos trabajando, sepa disculpar</h2>
+				<h1 class="letraVioleta padding2 dropSombraNegra">Booleanos en PHP</h1>
+				<div class="letraBlanco radius padding1">
+					<div class="padding1 dropSombraNegra">
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoBlancoOscuro superiorRadius">
+							<p class="letraNegra centrarItem">var_dump((bool) "");</p><p class="padding1 radius letraRoja sombraNegra fondoNegro">(false)</p>
+						</div>
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoVioletaOscuro">
+							<p class="letraBlanca sombraNegra centrarItem ">var_dump((bool) "0");</p><p class="letraRoja sombraNegra fondoNegro padding1 radius">(false)</p>
+						</div>
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoBlancoOscuro">
+							<p class="letraNegra centrarItem">var_dump((bool) 1);</p><p class="letraVerdeOscuro sombraNegra fondoNegro padding1 radius">(true)</p>
+						</div>
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoVioletaOscuro">
+							<p class="letraBlanca sombraNegra centrarItem">var_dump((bool) "foo");</p><p class="letraVerdeOscuro sombraNegra fondoNegro padding1 radius">(true)</p>
+						</div>
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoBlancoOscuro">
+							<p class="letraNegra centrarItem">var_dump((bool) 2.3e5);</p><p class="letraVerdeOscuro sombraNegra fondoNegro padding1 radius">(true)</p>
+						</div>
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoVioletaOscuro">
+							<p class="letraBlanca sombraNegra centrarItem paddingDer3">var_dump((bool) array(12));</p><p class="letraVerdeOscuro sombraNegra fondoNegro padding1 radius">(true)</p>
+						</div>
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoBlancoOscuro">
+							<p class="letraNegra centrarItem">var_dump((bool) array());</p><p class="padding1 radius letraRoja sombraNegra fondoNegro">(false)</p>
+						</div>
+						<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoVioletaOscuro inferiorRadius">
+							<p class="letraBlanca sombraNegra centrarItem">var_dump((bool) "false");</p><p class="letraVerdeOscuro sombraNegra fondoNegro padding1 radius">(true)</p>
+						</div>
+					</div>
+				</div>
 			</div>
-	        <div class="margen2 encuadrar radius">
-				<img class="radius bordeVidrio fondoVidrio padding2" src="../images/mono1.jpeg" width="90%">
+			
+			<div>
+				<h1 class="letraVioleta padding2 dropSombraNegra">Booleanos en PHP</h1>
+
 			</div>
+			
 		</main>
-		<button class="margen2 fondoSubir" id="subir"></button>
-		<button class="margen2 fondoBajar" id="bajar"></button>
+		<main class="padding2 fondoNegro">
+			<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
+	<footer class="fondoVioletaOscuro letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">

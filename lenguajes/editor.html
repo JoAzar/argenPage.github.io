@@ -13,25 +13,25 @@
   <body>
     <main class="padding2 fondoNegro paddingBottom5">
       <div class="textoLato letraBlanca sombraNegra vertical centrarCaja margen2">
-        <textarea id="code" class="wid300 altura50 resizeNone margen1 padding2 textoLato bold"></textarea>        
+        <textarea id="code" class="wid300 altura50 resizeNone margen1 padding2 textoLato bold bordeAzul radius"></textarea>        
         <div class="horizontal">
           <button id="run-btn" class="margen1">Ejecutar</button>
           <button id="run-btn-recargar" class="margen1">Recargar</button>
         </div>
         <h3 class="margen1">Resultado</h3>
-        <pre id="output" class="letraNegra sombraBlanca fondoVerde textoLato padding2 radius">Esperando ejecución...</pre>
+        <pre id="output" class="letraBlanca sombraNegra fondoNegro textoLato padding2 radius">Esperando ejecución...</pre>
       </div>
     </main>
+	<main class="padding2 fondoNegro">
+		<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+	</main>
   </body>
-
-  <footer class="fondoRojoGranate letraBlanca dropSombraNegra">
+  <footer class="fondoNegro letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
 			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -51,5 +51,4 @@
 			<script src="../funcionalidades.js"></script>
 		</div>
 	</footer>
-
 </html>
