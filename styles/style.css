@@ -773,6 +773,22 @@
 	border-left: #ff6553 solid 3px;
 }
 
+.bordeRojoFino {
+	border:  #ff6553 solid 1px ;
+}
+
+.bordeRojoOscuro {
+	border:  #c42c1b solid 5px ;
+}
+
+.bordeRojoOscuroIzq {
+	border-left: #c42c1b solid 3px;
+}
+
+.bordeRojoOscuroIzqHover:hover {
+	border-left: #c42c1b solid 3px;
+}
+
 .bordeNegro {
 	border: #4f4f4f solid 5px;
 }
