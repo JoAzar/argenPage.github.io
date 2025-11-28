@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="es" class="sinSeleccion">
 	<head>
@@ -9,34 +8,44 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-
-	<header class="fondoAzul dropSombraNegra superiorRadius">
-		<h1 class="textoLato letraBlanca tamanioGran margen2">Postgresql</h1>
-		<nav class="navDesplegable centrarItem">
-			<ul class="menu" id="navMenu"></ul>
-		</nav>
+	<header class="fondoAzul dropSombraNegra vertical">
+		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">PostgresSQL</h1>
 	</header>
-	<body class="margen2">
+	<body>
 		<main class="padding2">
-			<h1 class="margen2 letraBlanca sombraNegra subrayado textoChanga tamanioGran">Código PostgreSql</h1>
-			<div>
-				<h2 class="letraBlanca sombraNegra letraNaranja">Estamos trabajando, sepa disculpar</h2>
+			<a class="fondoAzul radius margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeVioleta" href="https://www.postgresql.org/" target="_blank">Ir a la página oficial de PostgresSQL</a>
+			<p class="letraBlanca margen1 textoLato">Antes que nada hay que conectarse al servidor de PostgreSQL con el comando <code class="fondoNegro margen1 paddingDer1 paddingIzq1 radius">psql</code>o usando un cliente de administración como <code class="fondoNegro margen1 paddingDer1 paddingIzq1 radius">pgAdmin</code></p>
+			<p class="letraBlanca margen1 textoLato">Para conectarte a través de la terminal, usa el siguiente comando <code class="fondoNegro margen1 paddingDer1 paddingIzq1 radius">psql -U nombre_de_usuario</code></p>
+			<h1 class="letraAzul padding2 dropSombraNegra textoLato margen2">CREATE DATABASE</h1>
+			<div class="letraBlanco radius padding1">
+				<div class="padding1 dropSombraNegra">
+					<div class="padding2">
+					</div>
+					<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoBlancoOscuro radius">
+						<p class="letraNegra centrarItem textoLato bold">CREATE DATABASE db_test;</p>
+					</div>
+				</div>
 			</div>
-	        <div class="padding2 encuadrar radius fondoVidrio centrarImagen">
-				<img class="radius" src="../images/mono1.jpeg" width="100%">
-			</div>
+			<h1 class="letraAzul padding2 dropSombraNegra textoLato margen2">DELETE DATABASE</h1>
+			<div class="letraBlanco radius padding1">
+				<div class="padding1 dropSombraNegra">
+					<div class="horizontal padding3 paddingIzq3 paddingDer3 fondoBlancoOscuro radius">
+						<p class="letraNegra centrarItem bold">DROP DATABASE db_test;</p>
+					</div>
+				</div>
+			<div id="contenedor"></div>
+			<p class="margin2 padding2"></p>
 		</main>
-		<button class="margen2 fondoSubir" id="subir"></button>
-		<button class="margen2 fondoBajar" id="bajar"></button>
+		<main class="padding2 fondoNegro">
+			<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
+	<footer class="fondoAzul letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -52,6 +61,7 @@
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
 			<script src="../funcionalidades.js"></script>
+			<script SRC="data/cargar_datos_postgresql.js" defer></script>
 		</div>
 	</footer>
 </HTML>
