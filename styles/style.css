@@ -217,168 +217,193 @@
 	background-image: url('../images/fondo_hacker1.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoIntro {
 	background-image: url('../images/intro.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoHacker2 {
 	background-image: url('../images/hacking2.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoHacker3 {
 	background-image: url('../images/hacking3.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoHacker4 {
 	background-image: url('../images/hacking4.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoHacker5 {
 	background-image: url('../images/hacking5.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoHacker6 {
 	background-image: url('../images/hacking6.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoHacker7 {
 	background-image: url('../images/hacking7.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado1 {
 	background-image: url('../images/fondoAnimado.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado2 {
 	background-image: url('../images/fondoAnimado2.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado3 {
 	background-image: url('../images/fondoAnimado3.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado4 {
 	background-image: url('../images/fondoAnimado4.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado5 {
 	background-image: url('../images/fondoAnimado5.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado6 {
 	background-image: url('../images/fondoAnimado6.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado7 {
 	background-image: url('../images/fondoAnimado7.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado8 {
 	background-image: url('../images/fondoAnimado8.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado9 {
 	background-image: url('../images/fondoAnimado9.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado10 {
 	background-image: url('../images/fondoAnimado10.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoAnimado11 {
 	background-image: url('../images/fondoAnimado11.gif');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
+.fondoAnimado12 {
+	background-image: url('../images/fondoAnimado12.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado13 {
+	background-image: url('../images/fondoAnimado13.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado14 {
+	background-image: url('../images/fondoAnimado14.gif');
+	background-position: center;
+}
+
+.fondoAnimado15 {
+	background-image: url('../images/fondoAnimado15.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .fondoFuture1 {
 	background-image: url('../images/future1.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoFuture2 {
 	background-image: url('../images/future2.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoFuture3 {
 	background-image: url('../images/future3.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoFuture4 {
 	background-image: url('../images/future4.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoFuture5 {
 	background-image: url('../images/future5.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center;
 }
 
 .fondoBajar {
@@ -778,7 +803,7 @@
 }
 
 .bordeRojoOscuro {
-	border:  #c42c1b solid 5px ;
+	border:  #c42c1b solid 1px ;
 }
 
 .bordeRojoOscuroIzq {
@@ -918,6 +943,10 @@
 
 .centrarDosItems {
 	display: block ruby;
+}
+
+.centrarItemInicial {
+	display: initial;
 }
 
 .centrarImagen {
@@ -1807,7 +1836,6 @@ a {
 
 footer {
 	text-align: center;
-	border-top: solid orange;
 	padding-bottom: 4vh;
 	position: relative;
 	z-index: 2;
