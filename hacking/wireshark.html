@@ -1,78 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Wireshark 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 	</head>
-	<header class="fondoAzul padding2">
+	<header class="fondoTiburon padding2">
 		<h1 class="letraBlanca sombraNegra textoLato tamanioGran">Wireshark</h1>
 	</header>
-	<body>
-		<main class="fondoNegro padding2">
+	<body class="fondoAnimado5">
+		<main class="fondoNegro padding2 margen2 radius">
 			<div class="horizontal padding2 margen2 fondoHacker dropSombraNegra radius">
 				<h1 class="letraBlanca sombraNegra textoLato centrarItem">Aprende a usar Wireshark</h1>
 			</div>
+			<div id="contenedor_carusel" class="contenedor_carusel">
+					<div id="carusel" class="bordeVidrio radius padding2 carusel">
+						<h1 id="titulo_de_video" class="letraBlanca margen2"></h1>
+						<iframe id="iframe_de_video" class="dropSombraNegra radius video" src="" allowfullscreen></iframe>
+						<h3 class="letraBlanca margen2">Créditos al creador original: Chris Greer</h3>
+					</div>
+					<div class="boton_derecha radius altura30 flex">
+						<span onclick="siguiente_url()" class="centrarItem material-symbols-outlined">chevron_forward</span>		
+					</div>
+					<div class="boton_izquierda radius altura30 flex">
+						<span onclick="anterior_url()" class="centrarItem material-symbols-outlined">chevron_backward</span>
+					</div>
+				</div>
 			<div>
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">Where to start with Wireshark</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/OU-A2EmVrKQ?si=hKm_xDEXXOAardhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">How to Capture Network Traffic</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/nWvscuxqais?si=QWgVYCcXy2T59tqz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-			
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">Capturing Packets with Dumpcap</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/DAtyzE1TUlI?si=Yi7kEAXkdRio7gdG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">Capturing network traffic</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/Atde35_9AAc?si=Sq8re_UVF2kW7qJh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">How to Filter Traffic</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/-HDpYR_QSFw?si=CbSV19f-4rMyu-Cl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">Name Resolution</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/gfxxCBCKvMU?si=aAAFMNz1gBxBMEzq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">Using the Time Column</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/SllJu5MdkAg?si=gJXap39rT7A3kVEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-				<div class="margen2 padding2">
-					<h2 class="letraBlanca textoLato margen2 dropSombraNegra">Reading PCAPs with Wireshark Statistics</h2>
-					<iframe class="bordeVidrio radius video" src="https://www.youtube.com/embed/ZNS115MPsO0?si=3PvFK-fUc9RzD-b8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<h4 class="letraBlanca textoLato margen2 dropSombraNegra">Créditos al creador original: Chris Greer</h4>
-				</div>
-			</div>
 		</main>
 		<main class="padding2 fondoNegro">
             <div id="contenedor-hacking" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
 	</body>
-	<button class="margen2 fondoSubir" id="subir"></button>
-	<button class="margen2 fondoBajar" id="bajar"></button>
-	<footer class="fondoAzul letraBlanca dropSombraNegra">
+	<footer class="fondoTiburon letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -87,7 +55,7 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-			<script src="../funcionalidades.js"></script>
+			<script src="data_hacking/cargar_datos_wireshark.js"></script>
 		</div>
 	</footer>
 </html>

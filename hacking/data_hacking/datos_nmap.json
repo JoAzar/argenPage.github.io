@@ -1,0 +1,29 @@
+{
+  "comandos_de_nmap": [
+    {
+        "titulo": "Comandos de Nmap",
+        "subtitulo": "Verbose Syn-scan System Op",
+        "descripcion": "sudo nmap -v -sS -O ip"
+    },
+    {
+        "titulo": "",
+        "subtitulo": "Dispositivos conectados",
+        "descripcion": "sudo arp-scan --interface=NET --localnet"
+    },
+    {
+        "titulo": "Escaner de vulnerabilidades",
+        "subtitulo": "Escanear puertos",
+        "descripcion": "sudo nmap -sV scanme.nmap.org"
+    },
+    {
+        "titulo": "Versiones y puertos",
+        "subtitulo": "Escanear puertos y versiones de sistema",
+        "descripcion": "sudo nmap -O scanme.nmap.org -v"
+    },
+    {
+        "titulo": "",
+        "subtitulo": "Escanear datos de una IP",
+        "descripcion": "sudo nmap -sV (Dirección IP) -p 80 -O -T4"
+    }
+    ]
+}

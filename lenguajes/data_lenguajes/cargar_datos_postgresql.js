@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         subtitulo.textContent = tipo.subtitulo;
 
         const descripcion = document.createElement('p');
-        descripcion.classList.add('letraNegra', 'centrarItem', 'textoLato', 'bold', 'fondoBlanco', 'radiusIzq', 'padding3', 'dropSombraNegra');
+        descripcion.classList.add('letraNegra', 'centrarItem', 'bold', 'fondoBlanco', 'radiusIzq', 'padding3', 'dropSombraNegra');
         descripcion.textContent = tipo.descripcion;
 
         innerDivHijo.appendChild(subtitulo);

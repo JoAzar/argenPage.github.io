@@ -1,0 +1,72 @@
+{
+  "puertos": [
+        {
+            "titulo": "Puertos y protocolos",
+            "subtitulo": "FTP (20, 21)",
+            "descripcion": "Protocolo de Transferencia de Archivos Opera en un modelo cliente-servidor"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "SSH (22)",
+            "descripcion": "Secure Shell, utiliza técnicas de cifrado para proteger la integridad y confidencialidad"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "SMB (139, 137, 445)",
+            "descripcion": "Bloque de Mensajes del Servidor"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "DNS (53)",
+            "descripcion": "Sistema de Nombres de Dominio"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "HTTP/HTTPS (443, 80, 8080, 8443)",
+            "descripcion": "Protocolo de Transferencia de Hipertexto/Seguro"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "Telnet (23)",
+            "descripcion": "teletype network no cifra los datos transmitidos"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "SMTP (25)",
+            "descripcion": "Protocolo Simple de Transferencia de Correo su comunicación no es cifrada"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "TFTP (69)",
+            "descripcion": " Protocolo de Transferencia de Archivos Trivial"
+        }
+    ],
+
+    "comandos_para_escuchar_puertos": [
+        {
+            "titulo": "Escuchar los puertos abiertos",
+            "subtitulo": "LINUX",
+            "descripcion": "sudo lsof -i -P -n | grep LISTEN"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "Ver puertos que están escuchando",
+            "descripcion": "ss -tulnp | grep :NUMERO_DE_PUERTO"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "Abrir un puerto para escuchar (Netcat)",
+            "descripcion": "nc -lvnp 6060"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "Abrir un puerto para escuchar (Socat)",
+            "descripcion": "socat TCP-LISTEN:6060,reuseaddr,fork -"
+        },
+        {
+            "titulo": "",
+            "subtitulo": "Ver qué servicio usa un puerto específico",
+            "descripcion": "lsof -i :22"
+        }
+    ]
+}

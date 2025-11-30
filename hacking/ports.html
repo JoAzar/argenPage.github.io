@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,76 +13,19 @@
 	</header>
 	<body>
 		<main class="padding2">
-			<div class="textoCentrado">
-				<h1 class="margen2 textoSerio letraAmarilla tamanioGran subrayado dropSombraBlanca">Puertos y protocolos</h1>
-
-				<div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">FTP (20, 21)</div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1">Protocolo de Transferencia de Archivos</div>
-		          	<div class="letraCeleste tamaniopeq padding1">(FTP opera en un modelo cliente-servidor, donde un cliente se conecta a un servidor para enviar o recibir archivos)</div>
-		        </div>
-
-		        <div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">SSH (22) </div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1"> Secure Shell</div>
-		          	<br><div class="letraCeleste tamaniopeq padding1">(SSH utiliza técnicas de cifrado para proteger la integridad y confidencialidad de los datos transmitidos a través de la red. Simétrico, asimétrico con autenticación de claves e integridad de datos con hash SHA-256)</div>
-		        </div>
-
-		        <div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">SMB (139, 137, 445) </div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1"> Bloque de Mensajes del Servidor</div>
-		          	<br><div class="letraCeleste tamaniopeq padding1">(Incluye características como el cifrado de datos, la detección y corrección de errores, y mejoras en la eficiencia de la transferencia de archivos)</div>
-		        </div>
-
-		        <div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">DNS (53)</div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1"> Sistema de Nombres de Dominio</div>
-		          	<br><div class="letraCeleste tamaniopeq padding1">(El DNS ha sido objeto de preocupaciones de seguridad, incluido el envenenamiento de caché (cache poisoning) y ataques de suplantación de identidad (DNS spoofing). Se han implementado extensiones como DNSSEC (DNS Security Extensions) para abordar algunas de estas preocupaciones)</div>
-		        </div class="textoCentrado margen2 padding2">
-
-				<div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">HTTP/HTTPS (443, 80, 8080, 8443)</div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1"> Protocolo de Transferencia de Hipertexto/Seguro</div>
-		          	<br><div class="letraCeleste tamaniopeq padding1">(HTTP utiliza el puerto 80 de manera predeterminada para la comunicación sin cifrar)</div>
-		        </div class="textoCentrado margen2 padding2">
-
-		        <div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">Telnet (23)</div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1"> teletype network</div>
-		          	<br><div class="letraCeleste tamaniopeq padding1">(Es importante señalar que Telnet no cifra los datos transmitidos, lo que significa que la información, incluyendo nombres de usuario y contraseñas, se envía en texto claro)</div>
-		        </div>
-		        <div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">SMTP (25)</div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1"> Protocolo Simple de Transferencia de Correo</div>
-		          	<br><div class="letraCeleste tamaniopeq padding1">(La comunicación SMTP en el puerto 25 es típicamente no cifrada. Esto significa que la información, incluidos los datos del correo electrónico y las credenciales, se transmite en texto claro, lo que puede ser un riesgo de seguridad)</div>
-		        </div>
-		        <div class="textoCentrado margen2 padding2">
-		          	<div class="letraBlanca tamanioMed padding1">TFTP (69)</div>
-					<div class="textoSerio letraNaranja tamaniopeq padding1"> Protocolo de Transferencia de Archivos Trivial</div>
-		          	<br><div class="letraCeleste tamaniopeq padding1">(TFTP no proporciona mecanismos sólidos de autenticación ni cifrado de datos. Esto lo hace adecuado para situaciones donde la simplicidad es más importante que la seguridad. Sin embargo, esta falta de seguridad también lo hace vulnerable a ataques, por lo que su uso se limita a entornos de confianza)</div>
-		        </div>
-
-		        <h1 class="textoSerio tamanioGran letraAmarilla dropSombraBlanca margen2 padding2">Comandos para escuchar puertos</h1>
-		        <div class="margen2 padding2">
-		          	<div class="letraBlanca tamanioMed">Escuchar los puertos abiertos </div>
-					<div class="textoformal letraNaranja tamaniopeq">sudo lsof -i -P -n | grep LISTEN</div>
-		        </div>
-		    </div>
+			<div id="contenedor"></div>
+			<div class="margen2"></div>
 		</main>
 		<main class="padding2 fondoNegro">
             <div id="contenedor-hacking" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
 	</body>
-	<button class="margen2 fondoSubir" id="subir"></button>
-	<button class="margen2 fondoBajar" id="bajar"></button>
 	<footer class="fondoAzul letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -97,8 +40,7 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-			<script src="../funcionalidades.js"></script>
+			<script src="data_hacking/cargar_datos_puertos.js"></script>
 		</div>
 	</footer>
-
 </HTML>

@@ -269,6 +269,12 @@
 	background-position: center;
 }
 
+.fondoNmap {
+	background-image: url('../images/nmap.png');
+	background-size: contain;
+	background-repeat: repeat;
+}
+
 .fondoAnimado1 {
 	background-image: url('../images/fondoAnimado.gif');
 	background-size: cover;
@@ -371,6 +377,98 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.fondoAnimado16 {
+	background-image: url('../images/fondoAnimado16.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado17 {
+	background-image: url('../images/fondoAnimado17.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado18 {
+	background-image: url('../images/fondoAnimado18.gif');
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+}
+
+.fondoAnimado19 {
+	background-image: url('../images/fondoAnimado19.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado20 {
+	background-image: url('../images/fondoAnimado20.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado21 {
+	background-image: url('../images/fondoAnimado21.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado22 {
+	background-image: url('../images/fondoAnimado22.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado23 {
+	background-image: url('../images/fondoAnimado23.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado24 {
+	background-image: url('../images/fondoAnimado24.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado25 {
+	background-image: url('../images/fondoAnimado25.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado26 {
+	background-image: url('../images/fondoAnimado26.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado27 {
+	background-image: url('../images/fondoAnimado27.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fondoAnimado28 {
+	background-image: url('../images/fondoAnimado28.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .fondoFuture1 {
 	background-image: url('../images/future1.jpeg');
 	background-size: cover;
@@ -1124,6 +1222,14 @@
 	margin-left: 45%;
 }
 
+.margenAbajo {
+	margin-bottom: 5vh;
+}
+
+.margenArriba {
+	margin-top: 5vh;
+}
+
 .paddingNulo {
 	padding: 0px;
 }
@@ -1501,6 +1607,32 @@
 	transition:  all 1.5s ease;
 }
 
+.boton_derecha, .boton_izquierda {
+	position: absolute;
+	top: 50%;
+	color: white;
+	background: rgba(0, 0, 0, 0.534);
+	transform: translateY(-50%);
+	cursor: pointer;
+	padding: 10px 15px;
+}
+
+.boton_derecha {
+	right: 10px;
+}
+
+.boton_izquierda {
+	left: 10px;
+}
+
+.contenedor_carusel {
+	position: relative;
+	width: fit-content;
+}
+
+.carusel {
+	position: relative;
+}
 
 /*-------------------------------ARMADO DE CAJAS-----------------------------*/
 
