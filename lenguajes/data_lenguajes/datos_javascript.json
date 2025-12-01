@@ -1,0 +1,29 @@
+{
+    "animaciones" : [
+        {
+            "titulo" : "Enlazar archivo de JS",
+            "codigo_de_animacion" : "Introducir un script en html",
+            "codigo_de_js_de_ejemplo" : "../images/insertarJS.png"
+        },
+
+        {
+            "titulo" : "setInterval",
+            "codigo_de_animacion" : "Realiza una animación durante un intervalo de tiempo",
+            "codigo_de_js_de_ejemplo" : "../images/insertarJS1.png"
+        },
+        
+        {
+            "titulo" : "Uso de modulos",
+            "codigo_de_animacion" : "Módulos de JS",
+            "codigo_de_js_de_ejemplo" : "../images/insertarJS2.png"
+        }
+        ,
+        
+        {
+            "titulo" : "Uso de modulos con promesa",
+            "codigo_de_animacion" : "Function animar con promesas",
+            "codigo_de_js_de_ejemplo" : "../images/insertarJS3.png"
+        }
+        
+    ]
+}

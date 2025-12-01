@@ -8,8 +8,9 @@
 		<link rel="stylesheet" href="../styles/popup.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 	</head>
-	<header class="fondoTiburon padding2">
-		<h1 class="letraBlanca sombraNegra textoLato tamanioGran">Wireshark</h1>
+	<header class="fondoTiburon padding2 horizontal">
+		<img class="centrarItem" id="animar_svg" src="../images/wireshark_icon.svg" alt="SVG Imagen" width="120" height="70">
+		<h1 class="letraBlanca sombraNegra textoLato tamanioGran centrarItem">Wireshark</h1>
 	</header>
 	<body class="fondoAnimado5">
 		<main class="fondoNegro padding2 margen2 radius">
@@ -22,10 +23,10 @@
 						<iframe id="iframe_de_video" class="dropSombraNegra radius video" src="" allowfullscreen></iframe>
 						<h3 class="letraBlanca margen2">Créditos al creador original: Chris Greer</h3>
 					</div>
-					<div class="boton_derecha radius altura30 flex">
+					<div class="boton_derecha radius flex">
 						<span onclick="siguiente_url()" class="centrarItem material-symbols-outlined">chevron_forward</span>		
 					</div>
-					<div class="boton_izquierda radius altura30 flex">
+					<div class="boton_izquierda radius flex">
 						<span onclick="anterior_url()" class="centrarItem material-symbols-outlined">chevron_backward</span>
 					</div>
 				</div>

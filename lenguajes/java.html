@@ -8,32 +8,25 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoRojo dropSombraNegra vertical">
-		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">Java</h1>
+	<header class="fondoBlancoOscuro dropSombraNegra horizontal">
+		<img class="centrarItem" id="animar_svg" src="../images/java_icon.svg" alt="SVG Imagen" width="60" height="50">
+		<h1 class="textoLato tamanioGran sombraNegra letraRojaOscura margen2 centrarItem">Java</h1>
 	</header>
-		
 	<body>
 		<main class="fondoConImagen5 padding2">
-			<div class="fondoNegroTransparente radius bordeBlancoFino">
-				<h1 class="padding2 letraBlanca textoLato subrayado tamanioGran sombraNegra">Clases y Métodos</h1>
-				<b class="textoLato letraNaranja tamanioMed sombraNegra">(Clase Persona)</b><br>
-				<b class="textoLato letraCeleste tamanioMed sombraNegra">(atributos nombre, apellido, fechaNacimiento)</b><br>
-				<img class="margen2 radius bordeNaranja" src="../images/imagenJava.png" alt="imagenJava">
-			</div>
+			<div id="contenedor" class="margen2"></div>
+			<div class="margen2"></div>
 		</main>
 		<main class="padding2 fondoNegro">
 			<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
 	</body>
-	<script src="../funcionalidades.js"></script>
-	<footer class="fondoRojo letraBlanca dropSombraNegra">
+	<footer class="fondoBlancoOscuro letraNegraOscura dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -48,7 +41,7 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-			<script src="../funcionalidades.js"></script>
+			<script src="data_lenguajes/cargar_datos_java.js"></script>
 		</div>
 	</footer>
 </HTML>

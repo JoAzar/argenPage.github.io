@@ -1,0 +1,78 @@
+{
+  "urls_python": [
+        {
+            "titulo": "¿fstrings para qué sirven?",
+            "url": "https://www.youtube.com/embed/0jxeQC99Gno?si=g9tabG1YiFPMqOPP"
+        },
+        {
+            "titulo": "Operadores lógicos",
+            "url": "https://www.youtube.com/embed/W-EbmMiiqZE?si=mtk4aZIaDsGCWEQm"
+        },
+        {
+            "titulo": "Aprende operadores lógicos",
+            "url": "https://www.youtube.com/embed/iKB3P06BDZk?si=zo4mckdxgNDGlmjA"
+        },
+        {
+            "titulo": "¿Arrays para qué?",
+            "url": "https://www.youtube.com/embed/IvlGGRd6ij8?si=neEldGw-FyZp10c3"
+        },
+        {
+            "titulo": "Ciclo While en Python",
+            "url": "https://www.youtube.com/embed/Dx6AKRU-Ke4?si=ncAgs9xue2gOmPpb"
+        },
+        {
+            "titulo": "Ciclo For en Python",
+            "url": "https://www.youtube.com/embed/VDFdmyDukmA?si=A6TDKuKBgydUQquq"
+        },
+
+        {
+            "titulo": "Switch en Python",
+            "url": "https://www.youtube.com/embed/xB3XumAAxSI?si=5ZZx4O7CDkoXiOli"
+        },
+
+        {
+            "titulo": "Recorrer String por Caracteres",
+            "url": "https://www.youtube.com/embed/8d1zqkOQqX4?si=JHv4IYzS8tliQDDp"
+        },
+        
+        {
+            "titulo": "Ejercicios integradores 1",
+            "url": "https://www.youtube.com/embed/tRpRv6xn1lc?si=Lm48iRKk7vhegUtd"
+        },
+        
+        {
+            "titulo": "Ejercicios integradores 2",
+            "url": "https://www.youtube.com/embed/9FCtR5VxeJU?si=6KJwPK8k3hGAyBJb"
+        },
+        
+        {
+            "titulo": "Funciones en Python",
+            "url": "https://www.youtube.com/embed/j971A37j0Yo?si=gYWxFAQRil2wHjtn"
+        },
+
+        {
+            "titulo": "La verdad de la milanesa",
+            "url": "https://www.youtube.com/embed/Q_Cjpayoxxc?si=QUnq0CH8LmuiP87g"
+        },
+
+        {
+            "titulo": "Terminologías de programacón",
+            "url": "https://www.youtube.com/embed/4EtG-GgavOc?si=vUZK46pbX-gfg2wZ"
+        },
+
+        {
+            "titulo": "Comandos más temidos de Linux",
+            "url": "https://www.youtube.com/embed/Y23D4XODOoo?si=yh9Vic7ldOieLicG"
+        },
+            
+        {
+            "titulo": "Terminologías de programacón",
+            "url": "https://www.youtube.com/embed/4EtG-GgavOc?si=vUZK46pbX-gfg2wZ"
+        },
+
+        {
+            "titulo": "Convenciones y Ley divina",
+            "url": "https://www.youtube.com/embed/83NLD9msVvA?si=S5P1kph96SY8NG_A"
+        }
+    ]
+}

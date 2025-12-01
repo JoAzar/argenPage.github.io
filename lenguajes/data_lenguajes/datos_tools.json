@@ -1,0 +1,48 @@
+{
+  "urls_tools": [
+        {
+            "titulo": "MVT Mobile Verification Toolkit",
+            "url": "https://pypi.org/project/mvt"
+        },
+        {
+            "titulo": "Bash full commands",
+            "url": "https://manytools.org/hacker-tools/ascii-banner"
+        },
+        {
+            "titulo": "Comandos de bash",
+            "url": "https://es.wikipedia.org/wiki/Comandos_Bash"
+        },
+        {
+            "titulo": "Descarga de iconos",
+            "url": "https://www.flaticon.es"
+        },
+        {
+            "titulo": "Virus total",
+            "url": "https://www.virustotal.com/gui/home/upload"
+        },
+        {
+            "titulo": "IP Logger",
+            "url": "https://grabify.link"
+        },
+
+        {
+            "titulo": "Emojis",
+            "url": "https://emojiterra.com/es"
+        },
+
+        {
+            "titulo": "Recortar imagenes",
+            "url": "https://www.iloveimg.com/es/recortar-imagen/recortar-png"
+        },
+        
+        {
+            "titulo": "Escanear IP",
+            "url": "https://lookup.icann.org/en"
+        },
+        
+        {
+            "titulo": "Crear booteable de Linux Mint",
+            "url": "https://linuxmint-user-guide.readthedocs.io/en/latest/winiso.html#installation"
+        }
+    ]
+}

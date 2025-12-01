@@ -1,0 +1,53 @@
+{
+    "animaciones" : [
+        {
+            "titulo" : "Main Class en Java",
+            "subtitulo" : "Clase principal para ejecución de programa",
+            "url" : "../images/imagenJava1.jpg"
+        },
+
+        {
+            "titulo" : "Clase Persona",
+            "subtitulo" : "Con diversos constructores y método edad",
+            "url" : "../images/imagenJava.png"
+        },
+        
+        {
+            "titulo" : "Funcionamiento de Java",
+            "subtitulo" : "Cómo funciona java por dentro",
+            "url" : "../images/imagenJava2.png"
+        }
+        ,
+        
+        {
+            "titulo" : "Comentarios en Java",
+            "subtitulo" : "Comentarios de una y varias lineas",
+            "url" : "../images/imagenJava3.png"
+        },
+
+        {
+            "titulo" : "Arrays en Java",
+            "subtitulo" : "Funcionamiento de un array en Java",
+            "url" : "../images/imagenJava4.png"
+        },
+
+        {
+            "titulo" : "ForEach en Java",
+            "subtitulo" : "Funcionamiento del forEach en Java",
+            "url" : "../images/imagenJava5.png"
+        },
+
+        {
+            "titulo" : "Hashtable en Java",
+            "subtitulo" : "Funcionamiento de hashtable en Java",
+            "url" : "../images/imagenJava6.png"
+        },
+
+        {
+            "titulo" : "Recursividad en Java",
+            "subtitulo" : "Método recursivo en Java",
+            "url" : "../images/imagenJava7.png"
+        }
+        
+    ]
+}

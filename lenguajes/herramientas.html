@@ -8,40 +8,26 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoNegro dropSombraNegra vertical superiorRadius">
-		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">Herramientas</h1>
-		<nav class="navDesplegable centrarItem">
-			<ul class="menu" id="navMenu"></ul>
-		</nav>
+	<header class="fondoAzulOscuro dropSombraNegra horizontal">
+		<img class="centrarItem fondoBlanco radius dropSombraNegra padding2" id="animar_svg" src="../images/tools_icon.svg" alt="SVG Imagen" width="50" height="40">
+		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2 centrarItem">Tools</h1>
 	</header>
-
-	<body class="margen2">
+	<body>
 		<main>
-			<h2 class="subrayado letraEpica tamanioGran">Links de herramientas</h2>
-			<p>
-				<h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://pypi.org/project/mvt/'">MVT Mobile Verification Toolkit</h3><br>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://manytools.org/hacker-tools/ascii-banner/'">Crear Banner ASCII</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://es.wikipedia.org/wiki/Comandos_Bash'">Bash full commands</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://www.flaticon.es/'">Descarga de iconos</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://www.virustotal.com/gui/home/upload'">Virus total</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://grabify.link/'">IP Logger</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://emojiterra.com/es/'">Emojis</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://www.iloveimg.com/es/recortar-imagen/recortar-png'">Recortar imagenes</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://lookup.icann.org/en'">Escanear IP</h3>
-				<br><h3 class="link textoLato letraBlanca tamanioMed" onclick="location.href='https://linuxmint-user-guide.readthedocs.io/en/latest/winiso.html#installation'">Crear booteable desde Linux</h3>
-			</p>
+			<h2 class="letraEpica dropSombraNegra sombraNegra tamanioGran margen2">Links de herramientas</h2>
+			<div id="contenedor"></div>
+			<div class="margen2"></div>
 		</main>
-		<button class="margen2 fondoSubir" id="subir"></button>
-		<button class="margen2 fondoBajar" id="bajar"></button>
+		<main class="padding2 fondoNegro">
+			<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
+	<footer class="fondoAzul letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -56,8 +42,7 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-			<script src="../funcionalidades.js"></script>
+			<script src="data_lenguajes/cargar_datos_tools.js"></script>
 		</div>
 	</footer>
-	
 </HTML>

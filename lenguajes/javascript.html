@@ -8,28 +8,30 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 	</head>
-	<header class="fondoNegro dropSombraNegra vertical">
-		<h1 class="textoLato tamanioGran sombraNegra letraAmarilla margen2">Javascript</h1>
+	<header class="fondoNegro dropSombraNegra horizontal">
+		<img class="centrarItem" id="animar_svg" src="../images/js_icon.svg" alt="SVG Imagen" width="50" height="50">
+		<h1 class="centrarItem textoLato tamanioGran sombraNegra letraAmarilla margen2">Javascript</h1>
 	</header>
 	<body>
 		<main class="fondoConImagen4 padding2">
-			<h1 class="letraAmarilla tamanioGran sombraNegra textoSerio subrayado padding2 sinSeleccion">Enlaza JavaScript a HTML con el Atributo script src</h1>
-			<h3 class="bordeVidrio padding2 radius">
-				<img src="../images/insertarJS.png">
-			</h3>
+			<div id="contenedor"></div>
+			<div class="fondoAnimado26 margen2 padding2 radius bordeNegro">
+				<h1 class="letraAmarilla sombraNegra radius margen2 padding2 bold fondoNegro">NO ME TOQUES, ME ROMPO</h1>
+    			<textarea id="textArea" class="wid100" placeholder="CUIDADO SOY UN TEXTAREA GENERACIÓN DE CRISTAL"></textarea>
+    			<button class="botonAmarilloHover" onclick="animateText()">¡NO ME TOQUES TE DIJE!</button>
+			</div>
+
 		</main>
 		<main class="padding2 fondoNegro">
 			<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra">
+	<footer class="fondoNegroSuave letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -44,7 +46,9 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-			<script src="../funcionalidades.js"></script>
+			<script src="data_lenguajes/cargar_datos_javascript.js"></script>
+			<script type="module" src="data_lenguajes/app.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 		</div>
 	</footer>
 </HTML>

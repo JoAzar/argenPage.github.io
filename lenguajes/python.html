@@ -6,192 +6,39 @@
 		<title>Python 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
 	</head>
-	<header class="fondoAzul dropSombraNegra vertical">
-		<h1 class="textoLato tamanioGran sombraNegra letraAmarilla margen2 avanzarLargo">Python</h1>
+	<header class="fondoAzulOscuro dropSombraNegra horizontal">
+		<img class="centrarItem" id="animar_svg" src="../images/py_icon.svg" alt="SVG Imagen" width="50" height="50">
+		<h1 class="textoLato tamanioGran sombraNegra letraAmarilla margen2">Python</h1>
 	</header>
-	
-	<body>
-		<main class="fondoNegro padding2">
-			<div class="horizontal padding2 margen2 fondoAzul dropSombraNegra radius">
-				<div class="letraBlanca letraAmarillaHover sombraNegra textoPixel tamanioGran dropSombraBlanca">Videos para aprender Python
-				</div>
-			</div>
-
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>¿fstrings para qué sirven?</div>
+	<body class="fondoAnimado2">
+		<main class="fondoAnimado7 padding2 margen2 radius">
+			<div id="contenedor_carusel" class="contenedor_carusel">
+					<div id="carusel" class="bordeVidrio radius padding2 carusel">
+						<h1 id="titulo_de_video" class="letraBlanca margen2"></h1>
+						<iframe id="iframe_de_video" class="dropSombraNegra radius video" src="" allowfullscreen></iframe>
+						<h3 class="letraBlanca margen2">Créditos al creador original: Grayman</h3>
 					</div>
-					<iframe class="bordeBlanco radius" width="560" height="315" src="https://www.youtube.com/embed/0jxeQC99Gno?si=g9tabG1YiFPMqOPP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
+					<div class="boton_derecha radius flex">
+						<span onclick="siguiente_url()" class="centrarItem material-symbols-outlined">chevron_forward</span>		
+					</div>
+					<div class="boton_izquierda radius flex">
+						<span onclick="anterior_url()" class="centrarItem material-symbols-outlined">chevron_backward</span>
 					</div>
 				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Operadores lógicos</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/W-EbmMiiqZE?si=mtk4aZIaDsGCWEQm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Aprende operadores lógicos</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/iKB3P06BDZk?si=zo4mckdxgNDGlmjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>¿Arrays para qué?</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/IvlGGRd6ij8?si=neEldGw-FyZp10c3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Ciclo While en Python</div>
-					</div>
-						<iframe width="560" class="bordeBlanco radius" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/Dx6AKRU-Ke4?si=ncAgs9xue2gOmPpb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Ciclo For en Python</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/VDFdmyDukmA?si=A6TDKuKBgydUQquq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Switch en Python</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/xB3XumAAxSI?si=5ZZx4O7CDkoXiOli" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Recorrer String por Caracteres</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/8d1zqkOQqX4?si=JHv4IYzS8tliQDDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Ejercicios integradores 1</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/tRpRv6xn1lc?si=Lm48iRKk7vhegUtd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Ejercicios integradores 2</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/9FCtR5VxeJU?si=6KJwPK8k3hGAyBJb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Funciones en Python</div>
-					</div>
-						<iframe width="560" class="bordeBlanco radius" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/j971A37j0Yo?si=gYWxFAQRil2wHjtn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>La verdad de la milanesa</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/Q_Cjpayoxxc?si=QUnq0CH8LmuiP87g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Terminologías de programacón</div>
-					</div>
-						<iframe width="560" class="bordeBlanco radius" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/4EtG-GgavOc?si=vUZK46pbX-gfg2wZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Comandos más temidos de Linux</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/Y23D4XODOoo?si=yh9Vic7ldOieLicG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
-			<div class="horizontal">
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Terminologías de programacón</div>
-					</div>
-						<iframe width="560" class="bordeBlanco radius" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/4EtG-GgavOc?si=vUZK46pbX-gfg2wZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-				<div class="margen2 padding2 dropSombraNegra">
-					<div class="letraBlanca sombraNegra textoLilita tamanioMed horizontal padding2 subrayado">
-						<div>Convenciones y Ley divina</div>
-					</div>
-					<iframe width="560" class="bordeBlanco radius" height="315" src="https://www.youtube.com/embed/83NLD9msVvA?si=S5P1kph96SY8NG_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<div class="letraBlanca sombraNegra textoLilita tamaniopeq horizontal padding2">
-						<div>Créditos al creador original: Red Monkey</div>
-					</div>
-				</div>
-			</div>
+			<div>
 		</main>
 		<main class="padding2 fondoNegro">
 			<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra">
+	<footer class="fondoAzulOscuro letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
-					<label for="btnModal">
-						Términos y condiciones
-					</label>
+					<label for="btnModal">Términos y condiciones</label>
 				</div>
 				<input type="checkbox" id="btnModal">
 				<div class="contenedorModal shadow-inset-center">
@@ -206,7 +53,7 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-			<script src="../funcionalidades.js"></script>
+			<script src="data_lenguajes/cargar_datos_python.js"></script>
 		</div>
 	</footer>
 </HTML>
