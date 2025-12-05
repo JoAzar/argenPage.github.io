@@ -291,23 +291,64 @@
     }
   ],
 
-  "cotizacion": [
+  "cotizaciones": [
     {
       "nombre": "Inicio",
       "url": "../inicio/inicio.html",
       "descripcion": "Volver a inicio"
     },
     {
-      "nombre": "Cotización",
-      "url": "inversiones/cotizacion.html",
+      "nombre": "Cotización del dolar anual",
+      "url": "cotizacion_dolar.html",
       "descripcion": "Cotización y valores de criptomonedas"
     },
     {
       "nombre": "Cotización",
-      "url": "inversiones/cotizacion_dolar.html",
+      "url": "cotizacion.html",
       "descripcion": "Cotización del dolar"
+    },
+    {
+      "nombre": "Lenguajes",
+      "url": "../lenguajes/lenguajes.html",
+      "descripcion": "Aprende diversos lenguajes de programación"
+    },
+    {
+      "nombre": "Hacking",
+      "url": "../hacking/hacking.html",
+      "descripcion": "Conocimientos sobre hacking"
+    },
+    {
+      "nombre": "juegos",
+      "url": "../juegos/juegos.html",
+      "descripcion": "Juegos y otros"
+    },
+    {
+      "nombre": "Hardware",
+      "url": "../hardware/hardware.html",
+      "descripcion": "Tipos de hardware"
+    },
+    {
+      "nombre": "Tienda",
+      "url": "../indumentaria/tienda.html",
+      "descripcion": "Vitrinas de productos"
+    },
+    {
+      "nombre": "Acerca de",
+      "url": "../nosotros.html",
+      "descripcion": "Más acerca del desarrollador"
+    },
+    {
+      "nombre": "Formulario",
+      "url": "../formulario/form.html",
+      "descripcion": "Formulario de consultas o sugerencias"
+    },
+    {
+      "nombre": "Noticias",
+      "url": "../noticias/noticias.html",
+      "descripcion": "Noticias sobre informática"
     }
   ],
+
   "noticias": [
     {
       "nombre": "Inicio",
@@ -315,9 +356,44 @@
       "descripcion": "Volver a inicio"
     },
     {
-      "nombre": "Noticias",
-      "url": "noticias.html",
-      "descripcion": "Noticias sobre informática"
+      "nombre": "Lenguajes",
+      "url": "../lenguajes/lenguajes.html",
+      "descripcion": "Aprende diversos lenguajes de programación"
+    },
+    {
+      "nombre": "Hacking",
+      "url": "../hacking/hacking.html",
+      "descripcion": "Conocimientos sobre hacking"
+    },
+    {
+      "nombre": "juegos",
+      "url": "../juegos/juegos.html",
+      "descripcion": "Juegos y otros"
+    },
+    {
+      "nombre": "Hardware",
+      "url": "../hardware/hardware.html",
+      "descripcion": "Tipos de hardware"
+    },
+    {
+      "nombre": "Tienda",
+      "url": "../indumentaria/tienda.html",
+      "descripcion": "Vitrinas de productos"
+    },
+    {
+      "nombre": "Acerca de",
+      "url": "../nosotros.html",
+      "descripcion": "Más acerca del desarrollador"
+    },
+    {
+      "nombre": "Formulario",
+      "url": "../formulario/form.html",
+      "descripcion": "Formulario de consultas o sugerencias"
+    },
+    {
+      "nombre": "Cotización",
+      "url": "../inversiones/cotizacion.html",
+      "descripcion": "Cotización y valores de bolsa"
     }
   ]
   

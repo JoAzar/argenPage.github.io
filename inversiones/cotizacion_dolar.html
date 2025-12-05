@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html lang="es" class="sinSeleccion rebote">
+<html lang="es" class="sinSeleccion">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Noticias</title>
+		<title>Cotizaciones del dolar anual</title>
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
-		<link rel="stylesheet" href="../landing.css">
 	</head>
-	<header class="fondoAnimado8 dropSombraNegra horizontal">
-		<img class="centrarItem" id="animar_svg" src="../images/news_icon.png" alt="SVG Imagen" width="80" height="80">
-		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">Noticias</h1>
+	<header class="fondoNegro dropSombraNegra vertical">
+		<h1 class="textoLato tamanioGran letraBlanca sombraNegra margen2">Cotizaciones del dolar anual</h1>
 	</header>
 	<body>
-        <div class="flex centrarImagen centrarItem fondoBlancoOscuro flex">
-            <h1 class="padding2 letraBlanca textoLato wid100"></h1>
-            <div id="contenedorNoticias" class="textoLato letraBlanca vertical centrarImagen"></div>
-        </div>
+        <canvas id="graficoDolar"></canvas>
+
 		<main class="padding2 fondoNegro">
-            <div id="contenedor-noticias" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+            <div id="contenedor-cotizaciones" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
-		
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra">
+	<footer class="fondoRojoGranate letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
-			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
 				<div class="botonModal">
 					<label for="btnModal">Términos y condiciones</label>
@@ -42,7 +37,8 @@
 			</div>
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
-			<script src="noticias.js"></script>
+   			<script src="crear_grafico_dolar.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 		</div>
 	</footer>
-</HTML>
+</html>

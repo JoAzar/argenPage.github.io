@@ -414,6 +414,63 @@ fetch('routes.json')
     });
 })
 
+fetch('../routes.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorNoticias = document.getElementById('contenedor-noticias');
+    data.noticias.forEach(noticias  => {
+
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => location.href = noticias.url;
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
+
+        const p = document.createElement('p');
+        p.classList.add('tamanioMin', 'letraCeleste');
+        p.textContent = noticias.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = noticias.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorNoticias.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+fetch('../routes.json')
+.then(response => response.json())
+.then(data => {
+    const contenedorCotizaciones = document.getElementById('contenedor-cotizaciones');
+    data.cotizaciones.forEach(cotizaciones => {
+        const div = document.createElement('div');
+        div.classList.add('margen1', 'radius', 'encuadrar', 'shadow-inset-center-hover', 'bordeAzulIzqHover', 'bordeAzulAbajoHover', 'growHover', 'manito');
+        div.onclick = () => {
+            location.href = cotizaciones.url;
+        };
+        const innerDiv = document.createElement('div');
+        innerDiv.classList.add('letraBlanca', 'sombraNegra', 'textoLato', 'padding2', 'radius', 'tamaniopeq');
+
+        const p = document.createElement('p');
+        p.classList.add('tamanioMin', 'letraCeleste');
+        p.textContent = cotizaciones.descripcion || 'Descripción no disponible';
+
+        const h1 = document.createElement('h1');
+        h1.classList.add('textoLato', 'letraBlanca');
+        h1.textContent = cotizaciones.nombre;
+        
+        innerDiv.appendChild(h1);
+        div.appendChild(innerDiv);
+        contenedorCotizaciones.appendChild(div);
+        innerDiv.appendChild(p);
+    });
+})
+
+
+
 
 /*------------------------- RUTEO DE LAS RUTAS ABSOLUTAS -----------------------------*/
 

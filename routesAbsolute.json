@@ -29,8 +29,12 @@
       "url": "/indumentaria/tienda.html"
     },
     {
-      "noticias": "Noticias",
+      "name": "Noticias",
       "url": "/noticias/noticias.html"
+    },
+    {
+      "name":"Cotizaciones",
+      "url":"/inversiones/cotizacion.html"
     }
   ]
 }
