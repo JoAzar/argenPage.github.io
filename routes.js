@@ -386,7 +386,7 @@ fetch('routes_articulos_electronicos.json')
     });
 })
 
-fetch('routes.json')
+fetch('../routes.json')
 .then(response => response.json())
 .then(data => {
     const contenedorFormulario = document.getElementById('contenedor-formulario');

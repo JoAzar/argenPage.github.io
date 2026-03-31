@@ -6,19 +6,26 @@
         <title>Free Pig</title>
         <link href="juego2.css" rel="stylesheet">
         <link href="../styles/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/popup.css">
+		<link rel="stylesheet" href="../styles/colores_de_bordes.css">
+		<link rel="stylesheet" href="../styles/colores_de_letras.css">
+		<link rel="stylesheet" href="../styles/colores_de_fondos.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombra_de_caja.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombras.css">
+		<link rel="stylesheet" href="../styles/imports.css">
+		<link rel="stylesheet" href="../styles/fuentes.css">
     </head>
-    <header class="fondoImagenCiudad2 dropSombraNegra">
-		<h1 class="letraBlanca sombraNegra textoLato tamanioGran margen2">Juegos</h1>
+    <header class="fondoRosa">
+		<h1 class="letraBlanca sombraNegra textoRoboto margen2">Juegos</h1>
 	</header>
     <body>
         <div>
             <div class="info fondoNegro">
-                <h2 class="textoLato margen2 sombraRosaHover radius">-= Free Pig =-</h2>
+                <h3 class="textoRoboto margen2 sombraRosaHover radius">-= Free Pig =-</h3>
             </div>
 			<div class="centrarCaja vertical fondoNegro">
-				<div class="letraBlanca textoLato tamanioMed margen2 horizontal radius fondoAzul padding1">🇦🇷 Reglas 🇦🇷</div>
-				<div class="letraBlanca textoLato tamanioMed margen2 horizontal radius fondoAzul padding1">R para reiniciar juego | saltar con la letra E</div>
+				<div class="letraBlanca textoRoboto tamanioMed margen2 horizontal radius fondoAzul padding1">🇦🇷 Reglas 🇦🇷</div>
+				<div class="letraBlanca textoRoboto tamanioMed margen2 horizontal radius fondoAzul padding1">R para reiniciar juego | saltar con la letra E</div>
 			</div>
             <div class="contenedor">
                 <div class="suelo"></div>
@@ -40,16 +47,34 @@
                 <div class="agradecimiento">¡Comparte con tus amigos!</div>
             </div>  
         </div>
-		<script src="juego2.js"></script>
+        <main class="padding2 fondoNegro">
+			<div id="contenedor-juegos" class="zindex margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
     </body>
-    <footer class="fondoRosa letraBlanca">
-        <div class="redes">
-            <div class="linkedin1"></div>
-            <a class="link1 textoOsvaldo" href="www.linkedin.com">Created By Joel Z.</a>
-            <div class="linkedin2" href="https://www.linkedin.com/in/joel-zalazar-a69325191"></div>
-            <a class="link2 textoOsvaldo" href="https://www.linkedin.com/in/anna-ma%C3%B1ay-965928268?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5Fc6YPeFSRmV74%2BXyk%2BjSQ%3D%3D">& Anna M.</a>
-        </div>
-        <script src="../routes.js"></script>
-        <script src="../funcionalidades.js"></script>
-    </footer>
+    <footer class="fondoRosa letraBlanca dropSombraNegra">
+		<div class="redes horizontal">
+			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
+			<div class="contenedorPopup">
+				<div class="botonModal">
+					<label for="btnModal">
+						Términos y condiciones
+					</label>
+				</div>
+				<input type="checkbox" id="btnModal">
+				<div class="contenedorModal shadow-inset-center">
+					<div class="contentModal">
+						<div class="subrayado tituloPopup">Términos y condiciones</div>
+						<div class="textoLato subtituloPopup">Esta página respeta las bases y condiciones del opensource</div>
+						<div class="btnCerrar">
+							<label for="btnModal">Cerrar</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
+            <script src="juego2.js"></script>
+            <script src="../routes.js"></script>
+            <script src="../funcionalidades.js"></script>
+		</div>
+	</footer>
 </html>

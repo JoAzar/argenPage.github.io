@@ -7,30 +7,36 @@
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
 		<link rel="stylesheet" href="juegos.css">
-		
+		<link rel="stylesheet" href="../styles/colores_de_bordes.css">
+		<link rel="stylesheet" href="../styles/colores_de_letras.css">
+		<link rel="stylesheet" href="../styles/colores_de_fondos.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombra_de_caja.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombras.css">
+		<link rel="stylesheet" href="../styles/imports.css">
+		<link rel="stylesheet" href="../styles/fuentes.css">
 	</head>
-	<header class="fondoImagenCiudad3 dropSombraNegra padding2 superiorRadius">
+	<header class="fondoImagenCiudad3 dropSombraNegra padding2">
 		<h1 class="letraBlanca sombraNegra textoLato tamanioGran margen2">Juegos</h1>
-		<nav class="navDesplegable fondoNegro radius centrarItem letraBlanca letraAzulHover dropSombraNegra margen2">
-			<ul class="menu" id="navMenu"></ul>
-		</nav>
 	</header>
-	<body class="margen2">
+	<body>
 		<main class="padding2">
-			<h1 class="margen2 letraBlanca textoLato sombraNegra tamanioGran">Bienvenidos a los Juegos</h1>
+			<h1 class="margen2 letraBlanca textoLato sombraNegra">Bienvenidos a los Juegos</h1>
 			<div>
-				<div class="letraBlanca textoLato sombraNegra tamanioMed margen2">Juego de parejas</div>
-				<div class="letraCeleste tamaniopeq margen2 textoChanga">Tiene que encontrar las parejas de cada animal</div>
+				<h2 class="letraBlanca textoLato sombraNegra margen2">Juego de parejas</h1>
+				<h3 class="letraCyan margen2 textoChanga">Tiene que encontrar las parejas de cada animal</h2>
 			</div>
-	        <div class="padding2 encuadrar radius centrarImagen">
+	        <div class="padding2 encuadrar radius zindex flex">
 				<div class="juego"></div>
-				<div class="contador letraAzul tamanioGran radius padding2">Parejas encontradas: 0</div>
-				<div id="mensajeGanaste" class="oculto radius fondoBlanco letraAzul tamanioGran">GANASTE</div>
-				<button class="botonBlanco botonAzulHover margen2" onclick="reiniciarJuego()">Reiniciar Juego</button>
+				<h1 class="contador letraAzul radius">Parejas encontradas: 0</h1>
+				<h1 id="mensajeGanaste" class="oculto radius fondoBlanco letraAzul">GANASTE</h1>
+				<button class="botonBlanco botonAzulHover" onclick="reiniciarJuego()">Reiniciar Juego</button>
 			</div>
 		</main>
+		<main class="padding2 fondoNegro">
+			<div id="contenedor-juegos" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
+		</main>
 	</body>
-	<footer class="fondoAzul letraBlanca dropSombraNegra inferiorRadius">
+	<footer class="fondoAzul letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
 			<div class="copyright textoOsvaldo textoLato">©Copyright 2023 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">
@@ -53,7 +59,6 @@
 			<div class="subrayado centrarItem desaparecer" id="redes-sociales"></div>
 			<script src="../routes.js"></script>
 			<script src="juegos.js"></script>
-			<script src="funcionalidades.js"></script>
 		</div>
 	</footer>
 </html>

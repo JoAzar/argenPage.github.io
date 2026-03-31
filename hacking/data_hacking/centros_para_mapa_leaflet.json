@@ -1,0 +1,20 @@
+[
+  {
+    "Nombre": "Centro de Salud",
+    "Lat": "-34.52",
+    "Lon": "-58.78",
+    "Municipio": "Los Polvorines",
+    "Provincia": "Buenos Aires",
+    "Tipo": "Salud",
+    "Info": "Acá vive Messi"
+  },
+  {
+    "Nombre": "UNGS",
+    "Lat": "-34.5229284548799",
+    "Lon": "-58.70043188644074",
+    "Municipio": "Los Polvorines",
+    "Provincia": "Buenos Aires",
+    "Tipo": "Universidad",
+    "Info": "Acá estudia el butazo de Jorge"
+  }
+]

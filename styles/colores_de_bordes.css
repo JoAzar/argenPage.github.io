@@ -1,0 +1,178 @@
+/* GAMA DE COLORES: AZUL */
+.bordeAzul {border:  #2563EB solid 2px;}
+.bordeAzulIzq {border-left: #2563EB solid 2px;}
+.bordeAzulIzqHover:hover {border-left: #2563EB solid 2px;}
+.bordeAzulDer {border-right: #2563EB solid 2px;}
+.bordeAzulDerHover:hover {border-right: #2563EB solid 2px;}
+.bordeAzulInferior {border-bottom: #2563EB solid 2px;}
+.bordeAzulInferiorHover:hover {border-bottom: #2563EB solid 2px;}
+.bordeAzulSuperior {border-top: #2563EB solid 2px;}
+.bordeAzulSuperiorHover:hover {border-top: #2563EB solid 2px;}
+
+/* GAMA DE COLORES: CYAN MODERNO */
+.bordeCyan {border:  #06B6D4 solid 2px;}
+.bordeCyanIzq {border-left: #06B6D4 solid 2px;}
+.bordeCyanIzqHover:hover {border-left: #06B6D4 solid 2px;}
+.bordeCyanDer {border-right: #06B6D4 solid 2px;}
+.bordeCyanDerHover:hover {border-right: #06B6D4 solid 2px;}
+.bordeCyanInferior {border-bottom: #06B6D4 solid 2px;}
+.bordeCyanInferiorHover:hover {border-bottom: #06B6D4 solid 2px;}
+.bordeCyanSuperior {border-top: #06B6D4 solid 2px;}
+.bordeCyanSuperiorHover:hover {border-top: #06B6D4 solid 2px;}
+
+
+/* GAMA DE COLORES: NARANJA */
+.bordeNaranja {border:  #FB923C solid 2px;}
+.bordeNaranjaIzq {border-left: #FB923C solid 2px;}
+.bordeNaranjaIzqHover:hover {border-left: #FB923C solid 2px;}
+.bordeNaranjaDer {border-right: #FB923C solid 2px;}
+.bordeNaranjaDerHover:hover {border-right: #FB923C solid 2px;}
+.bordeNaranjaInferior {border-bottom: #FB923C solid 2px;}
+.bordeNaranjaInferiorHover:hover {border-bottom: #FB923C solid 2px;}
+.bordeNaranjaSuperior {border-top: #FB923C solid 2px;}
+.bordeNaranjaSuperiorHover:hover {border-top: #FB923C solid 2px;}
+
+
+/* GAMA DE COLORES: AMARILLO */
+.bordeAmarillo {border:  #FACC15 solid 2px;}
+.bordeAmarilloIzq {border-left: #FACC15 solid 2px;}
+.bordeAmarilloIzqHover:hover {border-left: #FACC15 solid 2px; transition:  all .5s ease; }
+.bordeAmarilloDer {border-right: #FACC15 solid 2px;}
+.bordeAmarilloDerHover:hover {border-right: #FACC15 solid 2px; transition:  all .5s ease;}
+.bordeAmarilloInferior {border-bottom: #FACC15 solid 2px;}
+.bordeAmarilloInferiorHover:hover {border-bottom: #FACC15 solid 2px; transition:  all .5s ease;}
+.bordeAmarilloSuperior {border-top: #FACC15 solid 2px;}
+.bordeAmarilloSuperiorHover:hover {border-top: #FACC15 solid 2px; transition:  all .5s ease;}
+
+
+/* GAMA DE COLORES: BLANCA */
+.bordeBlanco {border:  #EFFFFF solid 2px;}
+.bordeBlancoIzq {border-left: #EFFFFF solid 2px;}
+.bordeBlancoIzqHover:hover {border-left: #EFFFFF solid 2px; transition:  all .5s ease; }
+.bordeBlancoDer {border-right: #EFFFFF solid 2px;}
+.bordeBlancoDerHover:hover {border-right: #EFFFFF solid 2px; transition:  all .5s ease;}
+.bordeBlancoInferior {border-bottom: #EFFFFF solid 2px;}
+.bordeBlancoInferiorHover:hover {border-bottom: #EFFFFF solid 2px; transition:  all .5s ease;}
+.bordeBlancoSuperior {border-top: #EFFFFF solid 2px;}
+.bordeBlancoSuperiorHover:hover {border-top: #EFFFFF solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: PINK ROSA */
+.bordeRosa {border:  #EC4899 solid 2px;}
+.bordeRosaIzq {border-left: #EC4899 solid 2px;}
+.bordeRosaIzqHover:hover {border-left: #EC4899 solid 2px; transition:  all .5s ease; }
+.bordeRosaDer {border-right: #EC4899 solid 2px;}
+.bordeRosaDerHover:hover {border-right: #EC4899 solid 2px; transition:  all .5s ease;}
+.bordeRosaInferior {border-bottom: #EC4899 solid 2px;}
+.bordeRosaInferiorHover:hover {border-bottom: #EC4899 solid 2px; transition:  all .5s ease;}
+.bordeRosaSuperior {border-top: #EC4899 solid 2px;}
+.bordeRosaSuperiorHover:hover {border-top: #EC4899 solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: MORADO */
+.bordeMorado {border:  #6D28D9 solid 2px;}
+.bordeMoradoIzq {border-left: #6D28D9 solid 2px;}
+.bordeMoradoIzqHover:hover {border-left: #6D28D9 solid 2px; transition:  all .5s ease; }
+.bordeMoradoDer {border-right: #6D28D9 solid 2px;}
+.bordeMoradoDerHover:hover {border-right: #6D28D9 solid 2px; transition:  all .5s ease;}
+.bordeMoradoInferior {border-bottom: #6D28D9 solid 2px;}
+.bordeMoradoInferiorHover:hover {border-bottom: #6D28D9 solid 2px; transition:  all .5s ease;}
+.bordeMoradoSuperior {border-top: #6D28D9 solid 2px;}
+.bordeMoradoSuperiorHover:hover {border-top: #6D28D9 solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: ROJO */
+.bordeRojo {border:  #EF4444 solid 2px;}
+.bordeRojoIzq {border-left: #EF4444 solid 2px;}
+.bordeRojoIzqHover:hover {border-left: #EF4444 solid 2px; transition:  all .5s ease; }
+.bordeRojoDer {border-right: #EF4444 solid 2px;}
+.bordeRojoDerHover:hover {border-right: #EF4444 solid 2px; transition:  all .5s ease;}
+.bordeRojoInferior {border-bottom: #EF4444 solid 2px;}
+.bordeRojoInferiorHover:hover {border-bottom: #EF4444 solid 2px; transition:  all .5s ease;}
+.bordeRojoSuperior {border-top: #EF4444 solid 2px;}
+.bordeRojoSuperiorHover:hover {border-top: #EF4444 solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Verde Success  */
+.bordeVerdeSucess {border:  #22c55e solid 2px;}
+.bordeVerdeSucessIzq {border-left: #22c55e solid 2px;}
+.bordeVerdeSucessIzqHover:hover {border-left: #22c55e solid 2px; transition:  all .5s ease; }
+.bordeVerdeSucessDer {border-right: #22c55e solid 2px;}
+.bordeVerdeSucessDerHover:hover {border-right: #22c55e solid 2px; transition:  all .5s ease;}
+.bordeVerdeSucessInferior {border-bottom: #22c55e solid 2px;}
+.bordeVerdeSucessInferiorHover:hover {border-bottom: #22c55e solid 2px; transition:  all .5s ease;}
+.bordeVerdeSucessSuperior {border-top: #22c55e solid 2px;}
+.bordeVerdeSucessSuperiorHover:hover {border-top: #22c55e solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Verde SOFT */
+.bordeVerdeSoft {border:  #86EFAC solid 2px;}
+.bordeVerdeSoftIzq {border-left: #86EFAC solid 2px;}
+.bordeVerdeSoftIzqHover:hover {border-left: #86EFAC solid 2px; transition:  all .5s ease; }
+.bordeVerdeSoftDer {border-right: #86EFAC solid 2px;}
+.bordeVerdeSoftDerHover:hover {border-right: #86EFAC solid 2px; transition:  all .5s ease;}
+.bordeVerdeSoftInferior {border-bottom: #86EFAC solid 2px;}
+.bordeVerdeSoftInferiorHover:hover {border-bottom: #86EFAC solid 2px; transition:  all .5s ease;}
+.bordeVerdeSoftSuperior {border-top: #86EFAC solid 2px;}
+.bordeVerdeSoftSuperiorHover:hover {border-top: #86EFAC solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Verde Oscuro */
+.bordeVerdeOscuro {border:  #15803d solid 2px;}
+.bordeVerdeOscuroIzq {border-left: #15803d solid 2px;}
+.bordeVerdeOscuroIzqHover:hover {border-left: #15803d solid 2px; transition:  all .5s ease; }
+.bordeVerdeOscuroDer {border-right: #15803d solid 2px;}
+.bordeVerdeOscuroDerHover:hover {border-right: #15803d solid 2px; transition:  all .5s ease;}
+.bordeVerdeOscuroInferior {border-bottom: #15803d solid 2px;}
+.bordeVerdeOscuroInferiorHover:hover {border-bottom: #15803d solid 2px; transition:  all .5s ease;}
+.bordeVerdeOscuroSuperior {border-top: #15803d solid 2px;}
+.bordeVerdeOscuroSuperiorHover:hover {border-top: #15803d solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Rojo suave */
+.bordeRojoSuave {border:  #FCA5A5 solid 2px;}
+.bordeRojoSuaveIzq {border-left: #FCA5A5 solid 2px;}
+.bordeRojoSuaveIzqHover:hover {border-left: #FCA5A5 solid 2px; transition:  all .5s ease; }
+.bordeRojoSuaveDer {border-right: #FCA5A5 solid 2px;}
+.bordeRojoSuaveDerHover:hover {border-right: #FCA5A5 solid 2px; transition:  all .5s ease;}
+.bordeRojoSuaveInferior {border-bottom: #FCA5A5 solid 2px;}
+.bordeRojoSuaveInferiorHover:hover {border-bottom: #FCA5A5 solid 2px; transition:  all .5s ease;}
+.bordeRojoSuaveSuperior {border-top: #FCA5A5 solid 2px;}
+.bordeRojoSuaveSuperiorHover:hover {border-top: #FCA5A5 solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Rojo oscuro */
+.bordeRojoOscuro {border:  #991B1B solid 2px;}
+.bordeRojoOscuroIzq {border-left: #991B1B solid 2px;}
+.bordeRojoOscuroIzqHover:hover {border-left: #991B1B solid 2px; transition:  all .5s ease; }
+.bordeRojoOscuroDer {border-right: #991B1B solid 2px;}
+.bordeRojoOscuroDerHover:hover {border-right: #991B1B solid 2px; transition:  all .5s ease;}
+.bordeRojoOscuroInferior {border-bottom: #991B1B solid 2px;}
+.bordeRojoOscuroInferiorHover:hover {border-bottom: #991B1B solid 2px; transition:  all .5s ease;}
+.bordeRojoOscuroSuperior {border-top: #991B1B solid 2px;}
+.bordeRojoOscuroSuperiorHover:hover {border-top: #991B1B solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Gris Claro */
+.bordeGrisClaro {border:  #E5E7EB solid 2px;}
+.bordeGrisClaroIzq {border-left: #E5E7EB solid 2px;}
+.bordeGrisClaroIzqHover:hover {border-left: #E5E7EB solid 2px; transition:  all .5s ease; }
+.bordeGrisClaroDer {border-right: #E5E7EB solid 2px;}
+.bordeGrisClaroDerHover:hover {border-right: #E5E7EB solid 2px; transition:  all .5s ease;}
+.bordeGrisClaroInferior {border-bottom: #E5E7EB solid 2px;}
+.bordeGrisClaroInferiorHover:hover {border-bottom: #E5E7EB solid 2px; transition:  all .5s ease;}
+.bordeGrisClaroSuperior {border-top: #E5E7EB solid 2px;}
+.bordeGrisClaroSuperiorHover:hover {border-top: #E5E7EB solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Gris Oscuro */
+.bordeGrisOscuro {border:  #374151 solid 2px;}
+.bordeGrisOscuroIzq {border-left: #374151 solid 2px;}
+.bordeGrisOscuroIzqHover:hover {border-left: #374151 solid 2px; transition:  all .5s ease; }
+.bordeGrisOscuroDer {border-right: #374151 solid 2px;}
+.bordeGrisOscuroDerHover:hover {border-right: #374151 solid 2px; transition:  all .5s ease;}
+.bordeGrisOscuroInferior {border-bottom: #374151 solid 2px;}
+.bordeGrisOscuroInferiorHover:hover {border-bottom: #374151 solid 2px; transition:  all .5s ease;}
+.bordeGrisOscuroSuperior {border-top: #374151 solid 2px;}
+.bordeGrisOscuroSuperiorHover:hover {border-top: #374151 solid 2px; transition:  all .5s ease;}
+
+/* GAMA DE COLORES: Negro */
+.bordeNegro {border:  #333333 solid 2px;}
+.bordeNegroIzq {border-left: #333333 solid 2px;}
+.bordeNegroIzqHover:hover {border-left: #333333 solid 2px; transition:  all .5s ease; }
+.bordeNegroDer {border-right: #333333 solid 2px;}
+.bordeNegroDerHover:hover {border-right: #333333 solid 2px; transition:  all .5s ease;}
+.bordeNegroInferior {border-bottom: #333333 solid 2px;}
+.bordeNegroInferiorHover:hover {border-bottom: #333333 solid 2px; transition:  all .5s ease;}
+.bordeNegroSuperior {border-top: #333333 solid 2px;}
+.bordeNegroSuperiorHover:hover {border-top: #333333 solid 2px; transition:  all .5s ease;}

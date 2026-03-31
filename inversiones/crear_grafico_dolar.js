@@ -13,16 +13,16 @@ async function cargarDolar() {
             meses[mes] = item.v;
         });
 
-        const labels = Object.keys(meses);
-        const valores = Object.values(meses);
+        const labels = ultimos.map(item => item.d);
+        const valores = ultimos.map(item => item.v);
 
         const dataChart = {
             labels: labels,
             datasets: [{
                 label: 'Dólar Oficial (BCRA)',
                 data: valores,
-                backgroundColor: 'rgba(54, 162, 235, 0.7)',
-                borderColor: 'rgba(54, 162, 235, 1)',
+                backgroundColor: 'rgba(23, 48, 65, 0.7)',
+                borderColor: 'rgba(7, 22, 32, 0.34)',
                 borderWidth: 1
             }]
         };

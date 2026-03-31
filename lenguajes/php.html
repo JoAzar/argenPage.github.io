@@ -8,70 +8,77 @@
 		<title>PHP 🇦🇷</title>
 		<link rel="stylesheet" href="../styles/style.css">
 		<link rel="stylesheet" href="../styles/popup.css">
+		<link rel="stylesheet" href="../styles/colores_de_bordes.css">
+		<link rel="stylesheet" href="../styles/colores_de_letras.css">
+		<link rel="stylesheet" href="../styles/colores_de_fondos.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombra_de_caja.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombras.css">
+		<link rel="stylesheet" href="../styles/imports.css">
+		<link rel="stylesheet" href="../styles/fuentes.css">
 	</head>
-	<header class="fondoVioletaOscuro dropSombraNegra horizontal">
+	<header class="fondoMorado dropSombraNegra horizontal">
 		<img class="centrarItem" id="animar_svg" src="../images/php_icon.svg" alt="SVG Imagen" width="90" height="70">
 		<h1 class="textoLato tamanioGran sombraNegra letraBlanca margen2">PHP</h1>
 	</header>
 	<body id="maintag" class="fondoNegro">
 		<main class="padding2 fondoVidrioOscuro margen2 radius">
-			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeVioleta" href="https://www.php.net/manual/es/" target="_blank">Ir a la página oficial de PHP</a>
+			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeMorado" href="https://www.php.net/manual/es/" target="_blank">Ir a la página oficial de PHP</a>
 			<div>
-				<h1 class="letraVioleta padding2 dropSombraNegra">Booleanos en PHP</h1>
+				<h1 class="letraBlanca padding2 dropSombraNegra">Booleanos en PHP</h1>
 				<div class="letraBlanco padding1">
 					<div class="padding1 dropSombraNegra">
-						<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">var_dump((bool) ""); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraRoja sombraNegra fondoNegro centrarItem">false</code></p>
-						<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">var_dump((bool) "0"); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraRoja sombraNegra fondoNegro">false</code></p>
-						<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">var_dump((bool) 1); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraVerdeOscuro sombraNegra fondoNegro">true</code></p>
+						<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">var_dump((bool) ""); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraRojoOscuro sombraNegra fondoNegro centrarItem">false</code></p>
+						<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">var_dump((bool) "0"); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraRojoOscuro sombraNegra fondoNegro">false</code></p>
+						<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">var_dump((bool) 1); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraVerdeOscuro sombraNegra fondoNegro">true</code></p>
 						<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">var_dump((bool) "foo"); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraVerdeOscuro sombraNegra fondoNegro">true</code></p>
-						<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">var_dump((bool) 2.3e5); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraVerdeOscuro sombraNegra fondoNegro">true</code></p>
+						<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">var_dump((bool) 2.3e5); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraVerdeOscuro sombraNegra fondoNegro">true</code></p>
 						<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">var_dump((bool) array(12)); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraVerdeOscuro sombraNegra fondoNegro">true</code></p>
-						<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">var_dump((bool) array()); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraRoja sombraNegra fondoNegro">false</code></p>
+						<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">var_dump((bool) array()); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraRojoOscuro sombraNegra fondoNegro">false</code></p>
 						<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">var_dump((bool) "false"); <code class="padding1 letraBlanca bold subrayado centrarItem"> Esto da: </code><code class="padding1 radius letraVerdeOscuro sombraNegra fondoNegro">true</code></p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeVioleta" href="https://www.php.net/manual/es/language.types.boolean.php" target="_blank">Ver más sobre booleanos en PHP</a>
+			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeMorado" href="https://www.php.net/manual/es/language.types.boolean.php" target="_blank">Ver más sobre booleanos en PHP</a>
 			<div>
-				<h1 class="letraVioleta padding2 dropSombraNegra">NULL en PHP</h1>
+				<h1 class="letraBlanca padding2 dropSombraNegra">NULL en PHP</h1>
 				<div class="letraBlanco radius padding1">
 					<div class="padding1">
 						<div class="padding2">
 							<div class="fondoNegro radius margen1 padding1 dropSombraNegra">
-								<p class="letraRojaImperial bordeRojoOscuro radius margen2 bold">Advertencia (LEER ATENTAMENTE)</p>
+								<p class="letraRojoOscuro bordeRojoOscuro radius margen2 bold">Advertencia (LEER ATENTAMENTE)</p>
 								<p class="letraBlanca dropSombraNegra padding2">Esta funcionalidad está OBSOLETA a partir de PHP 7.2.0, y ELIMINADA a partir de PHP 8.0.0. Depender de esta funcionalidad está altamente desaconsejado.</p>
 								<p class="letraBlanca dropSombraNegra padding2">Convertir una variable a null utilizando la sintaxis (unset) $var no borrará la variable, ni sobrescribirá su valor. Solo devolverá el valor null. </p>
 							</div>
 						</div>
-						<p class="padding3 fondoBlancoOscuro letraNegra bold centrarItem centrarItemInicial radius dropSombraNegra">$var = NULL;</p>
+						<p class="padding3 fondoBlancoOscuro letraBlanca bold centrarItem centrarItemInicial radius dropSombraNegra">$var = NULL;</p>
 					</div>
 				</div>
 			</div>
-			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeVioleta" href="https://www.php.net/manual/es/language.types.null.php" target="_blank">Ver más sobre NULL type en PHP</a>
+			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeMorado" href="https://www.php.net/manual/es/language.types.null.php" target="_blank">Ver más sobre NULL type en PHP</a>
 			<div>
-				<h1 class="letraVioleta padding2 dropSombraNegra">INTEGER/ENTEROS en PHP</h1>
+				<h1 class="letraBlanca padding2 dropSombraNegra">INTEGER/ENTEROS en PHP</h1>
 				<div class="letraBlanco radius padding1">
 					<div class="padding1 dropSombraNegra">
 						<div>
-							<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">$a = 1234; Un número decimal</p>
+							<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">$a = 1234; Un número decimal</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">$a = 0123; Un número octal (equivalente a 83 en decimal)</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">$a = 0o123; Un número octal (a partir de PHP 8.1.0)</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">$a = 0o123; Un número octal (a partir de PHP 8.1.0)</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">$a = 0x1A; Un número hexadecimal (equivalente a 26 en decimal)</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">$a = 0b11111111; Un número binario (equivalente a 255 en decimal)</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">$a = 0b11111111; Un número binario (equivalente a 255 en decimal)</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">$a = 1_234_567;</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeVioleta" href="https://www.php.net/manual/es/language.types.null.php" target="_blank">Ver más sobre NULL type en PHP</a>
+			<a class="margen2 padding2 letraBlanca sombraNegra tamaniopeq bordeMorado" href="https://www.php.net/manual/es/language.types.null.php" target="_blank">Ver más sobre NULL type en PHP</a>
 			<div>
-				<h1 class="letraVioleta padding2 dropSombraNegra">Números de punto flotante en PHP</h1>
+				<h1 class="letraBlanca padding2 dropSombraNegra">Números de punto flotante en PHP</h1>
 				<div class="letraBlanco radius padding1">
 					<div class="padding1">
 						<div class="padding2">
 							<div class="fondoNegro radius margen1 padding1 dropSombraNegra">
-								<p class="letraRojaImperial bordeRojoOscuro radius margen2 bold">Advertencia (LEER ATENTAMENTE)</p>
+								<p class="letraRojoOscuro bordeRojoOscuro radius margen2 bold">Advertencia (LEER ATENTAMENTE)</p>
 								<p class="letraBlanca dropSombraNegra padding2">Los números de punto flotante tienen una precisión limitada. Aunque dependen del sistema, PHP utiliza el formato de precisión decimal IEEE 754, que dará un error relativo máximo del orden de 1.11e-16 (debido a los redondeos). Las operaciones aritméticas no elementales pueden dar errores más grandes y, por supuesto, los errores deben ser tenidos en cuenta cuando se realizan múltiples operaciones.</p>
 								<p class="letraBlanca dropSombraNegra padding2">Asimismo, los números racionales exactamente representables como números de punto flotante en base 10, como 0.1 o 0.7, no tienen una representación exacta como números de punto flotante en base 2, utilizada internamente, y esto independientemente del tamaño de la mantisa. Por lo tanto, no pueden ser convertidos sin una pequeña pérdida de precisión. Esto puede llevar a resultados confusos: por ejemplo, floor((0.1+0.7)*10) normalmente devolverá 7 en lugar del 8 esperado, ya que la representación interna será algo como 7.9999999999999991118</p>
 								<p class="letraBlanca dropSombraNegra padding2">Por lo tanto, nunca se debe confiar en los últimos dígitos de un número de punto flotante, y tampoco se debe comparar la igualdad de 2 números de punto flotante directamente.</p>
@@ -83,11 +90,11 @@
 			<div class="letraBlanco radius padding1">
 					<div class="padding1 dropSombraNegra">
 						<div>
-							<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">$a = 1.234;</p>
+							<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">$a = 1.234;</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">$b = 1.2e3;</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">$a = 0o123; Un número octal (a partir de PHP 8.1.0)</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">$a = 0o123; Un número octal (a partir de PHP 8.1.0)</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">$c = 7E-10;</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">$d = 1_234.567; // a partir de PHP 7.4.0</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">$d = 1_234.567; // a partir de PHP 7.4.0</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave"></p>
 						</div>
 					</div>
@@ -96,7 +103,7 @@
 					<div class="padding1">
 						<div class="padding2">
 							<div class="fondoNegro radius margen1 padding1 dropSombraNegra">
-								<p class="letraRojaImperial bordeRojoOscuro radius margen2 bold">Advertencia de uso (LEER ATENTAMENTE)</p>
+								<p class="letraRojoOscuro bordeRojoOscuro radius margen2 bold">Advertencia de uso (LEER ATENTAMENTE)</p>
 								<p class="letraBlanca dropSombraNegra padding2">$x = 8 - 6.4;  // which is equal to 1.6</p>
 								<p class="letraBlanca dropSombraNegra padding2">$y = 1.6;</p>
 								<p class="letraBlanca dropSombraNegra padding2">var_dump($x == $y); // is not true</p>
@@ -108,12 +115,12 @@
 					</div>
 				</div>
 			</div>
-			<h1 class="letraVioleta padding2 dropSombraNegra">Cadenas en PHP</h1>
+			<h1 class="letraBlanca padding2 dropSombraNegra">Cadenas en PHP</h1>
 			<div class="letraBlanco radius padding1">
 					<div class="padding1">
 						<div class="padding2">
 							<div class="fondoNegro radius margen1 padding1 dropSombraNegra">
-								<p class="letraRojaImperial bordeRojoOscuro radius margen2 bold">Advertencia de uso (LEER ATENTAMENTE)</p>
+								<p class="letraRojoOscuro bordeRojoOscuro radius margen2 bold">Advertencia de uso (LEER ATENTAMENTE)</p>
 								<p class="letraBlanca dropSombraNegra padding2">La manera más simple de especificar un string es encerrarlo entre comillas simples (el caracter ').</p>
 								<p class="letraBlanca dropSombraNegra padding2">Para especificar una comilla simple literal, escápela con un antislash (\).</p>
 								<p class="letraBlanca dropSombraNegra padding2">Para especificar un antislash literal, duplícalo (\\).</p>
@@ -126,45 +133,45 @@
 			<div class="letraBlanco radius padding1">
 					<div class="padding1 dropSombraNegra">
 						<div>
-							<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">echo 'esto es un string simple', PHP_EOL;</p>
+							<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">echo 'esto es un string simple', PHP_EOL;</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">echo 'Arnold dijo una vez: "Volveré"', PHP_EOL;</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">echo '¿Usted ha borrado C:\\*.* ?', PHP_EOL;</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">echo '¿Usted ha borrado C:\\*.* ?', PHP_EOL;</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">echo '¿Usted ha borrado C:\*.* ?', PHP_EOL;</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">echo 'Esto no se\'extenderá: \n una nueva línea', PHP_EOL;</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">echo 'Esto no se\'extenderá: \n una nueva línea', PHP_EOL;</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">echo 'Las variables no $se\'extienden $tampoco', PHP_EOL;</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<h1 class="letraVioleta padding2 dropSombraNegra">Más sobre cadenas en PHP</h1>
+			<h1 class="letraBlanca padding2 dropSombraNegra">Más sobre cadenas en PHP</h1>
 			<div class="letraBlanco radius padding1 margen2">
 					<div class="padding1 dropSombraNegra">
 						<div>
-							<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1">\n retorno de carro</p>
+							<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1">\n retorno de carro</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">\r retorno de carro</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">\t tabulación horizontal</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">\t tabulación horizontal</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">\v tabulación vertical</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">\e escape</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">\e escape</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">\f avance de formulario</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">\\ antislash</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">\\ antislash</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">\$ signo de dólar</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">\" comilla doble</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">\" comilla doble</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">\[0-7]{1,3} Octal</p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro">\x[0-9A-Fa-f]{1,2} Hexadecimal</p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado">\x[0-9A-Fa-f]{1,2} Hexadecimal</p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave">\u{[0-9A-Fa-f]+} Unicode</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<h1 class="letraVioleta padding2 dropSombraNegra">CONTINUAR</h1>
+			<h1 class="letraBlanca padding2 dropSombraNegra">CONTINUAR</h1>
 			<div class="letraBlanco radius padding1">
 					<div class="padding1 dropSombraNegra">
 						<div class="padding2">
-							<p class="letraBlanca sombraNegra centrarItem bold fondoVioletaOscuro padding1"></p>
+							<p class="letraBlanca sombraNegra centrarItem bold fondoMorado padding1"></p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave"></p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro"></p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado"></p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave"></p>
-							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoVioletaOscuro"></p>
+							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoMorado"></p>
 							<p class="letraBlanca sombraNegra centrarItem bold padding1 fondoNegroSuave"></p>
 						</div>
 					</div>
@@ -175,7 +182,7 @@
 			<div id="contenedor-lenguajes" class="margen2 horizontal wrap flex adaptarALaCaja padding2"></div>
 		</main>
 	</body>
-	<footer class="fondoVioletaOscuro letraBlanca dropSombraNegra">
+	<footer class="fondoMorado letraBlanca dropSombraNegra">
 		<div class="redes horizontal">
 			<div class="tamanioMin fino textoLato centrarItem padding2">©Copyright 2025 Favio Joel Zalazar. Todos los derechos reservados.</div>
 			<div class="contenedorPopup">

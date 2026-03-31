@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="es" class="sinSeleccion">
+<html lang="es">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Bash</title>
-		<link rel="stylesheet" href="../styles/style.css">   
-		<link rel="stylesheet" href="../styles/popup.css">         
+		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/popup.css">
+		<link rel="stylesheet" href="../styles/colores_de_bordes.css">
+		<link rel="stylesheet" href="../styles/colores_de_letras.css">
+		<link rel="stylesheet" href="../styles/colores_de_fondos.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombra_de_caja.css">
+		<link rel="stylesheet" href="../styles/colores_de_sombras.css">
+		<link rel="stylesheet" href="../styles/imports.css">
+		<link rel="stylesheet" href="../styles/fuentes.css">       
 	</head>
 	<header class="fondoAzul dropSombraNegra horizontal">
 		<img class="centrarItem" id="animar_svg" src="../images/bash_icon.svg" alt="SVG Imagen" width="50" height="50">
@@ -22,7 +29,7 @@
 				<div class="letraBlanca tamaniopeq padding1 margen1"> vas a encontrar algo así: </div>
 				<div class="letraNaranja textoFino tamaniopeq padding1 margen1">alias actualizar=sudo apt update && apt full-upgrade</div>
 			</div>
-			<h2 class="textoLato tamanioMed letraVerde dropSombraBlanca">Comandos editados de BASH</h2>
+			<h2 class="textoLato tamanioMed letraVerdeSoft dropSombraBlanca">Comandos editados de BASH</h2>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq">iniciar apache = </div><div class="letraNaranja tamaniopeq">apacheini</div>
 			</div>
@@ -61,7 +68,7 @@
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">sudo service mysql stop  =</div><div class="letraNaranja tamaniopeq">sqlfin</div>
 			</div>
 	        
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Cambiar case sensitive de la terminal</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Cambiar case sensitive de la terminal</h2>
 			<div class="horizontal padding1 margen1">
 				<div class='letraBlanca tamaniopeq margenDer1'>shopt -s nocaseglob</div><div class="letraNaranja tamaniopeq">Activar modo case-insensitive</div>
 			</div>
@@ -69,12 +76,12 @@
 				<div class='letraBlanca margenDer1 tamaniopeq'>shopt -u nocaseglob = </div><div class="letraNaranja tamaniopeq">Volver al modo case-sensitive</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Copiar archivos de una carpeta a otra</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Copiar archivos de una carpeta a otra</h2>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">sudo cp </div><div class="letraNaranja tamaniopeq">/llenar/llenar/DondeEstá/archivo.txt /llenar/llenar/DondeLoLLevo</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Ver archivos modificados</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Ver archivos modificados</h2>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">en los últimos 3 días</div><div class="letraNaranja tamaniopeq">find / -type f -mtime -3</div>
 			</div>
@@ -82,7 +89,7 @@
 				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">en los últimos 30min</div><div class="letraNaranja tamaniopeq">find / -type f -mmin -30</div>
 			</div>
 
-			<h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Copiar archivos de una carpeta a otra</h2>
+			<h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Copiar archivos de una carpeta a otra</h2>
 			<div class="horizontal padding1 margen1">
 	        	<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">Ver numeración de lineas en nano</div><div class="letraNaranja tamaniopeq">alt + ctrl + 3</div>
 			</div>
@@ -93,7 +100,7 @@
 				<div class="letraBlanca margenDer1 tamaniopeq tamaniopeq">Ocultar menu de terminal</div><div class="letraNaranja tamaniopeq">gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false</div><br>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Cambiar MAC</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Cambiar MAC</h2>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq">Dar de baja la MAC</div><div class="letraNaranja tamaniopeq">sudo ifconfig (NOMBRE DE LA NET) down</div>
 			</div>
@@ -104,7 +111,7 @@
 				<div class="letraBlanca margenDer1 tamaniopeq">Dar de alta la MAC</div><div class="letraNaranja tamaniopeq">sudo ifconfig (NOMBRE DE LA NET) up</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Codificaciones Base64 y Hex</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Codificaciones Base64 y Hex</h2>
 			<div class="horizontal padding1 margen1">
 	        	<div class="letraBlanca margenDer1 tamaniopeq">Códificar texto base 64</div><div class="letraNaranja tamaniopeq"> echo "MI TEXTO" | base64</div>
 			</div>
@@ -118,9 +125,9 @@
 				<div class="letraBlanca margenDer1 tamaniopeq">Decodificar Hexadecimal -></div><div class="letraNaranja tamaniopeq"> echo "TEXTO HEXA" | xxd -r</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Conectarse a dispositivos por ADB</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Conectarse a dispositivos por ADB</h2>
 			<div class="horizontal padding1 margen1">
-				<h2 class="letraEpica tamanioMed">¡Debes estar en la misma red WiFi!</h2>
+				<h2 class="letraBlanca tamanioMed">¡Debes estar en la misma red WiFi!</h2>
 			</div>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq">Buscar dispositivos</div><div class="letraNaranja tamaniopeq"> adb devices</div>
@@ -132,7 +139,7 @@
 				<div class="letraBlanca margenDer1 tamaniopeq">Ejecuto el script</div><div class="letraNaranja tamaniopeq"> ./adbRecon.sh</div>
 			</div>
 			<div class="horizontal padding1 margen1">
-				<h2 class="letraEpica tamanioMed">Comandos para ejecutar</h2>
+				<h2 class="letraBlanca tamanioMed">Comandos para ejecutar</h2>
 			</div>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq">Abrir una página web</div><div class="letraNaranja tamaniopeq"> adb shell am start -a android.intent.action.VIEW -d "PAGINA WEB"</div>
@@ -165,7 +172,7 @@
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Guardar captura en PC</div><div class="letraNaranja tamaniopeq"> adb pull /sdcard/captura_de_pantalla.png /carpeta/donde/quieras/</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Identificar Sistema Operativo</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Identificar Sistema Operativo</h2>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Buscar dispositivos</div><div class="letraNaranja tamaniopeq"> ping -c 1 IP</div>
 			</div>
@@ -176,9 +183,9 @@
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Linux</div><div class="letraNaranja tamaniopeq"> ttl 60/70</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Netdiscover</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Netdiscover</h2>
 			<div class="horizontal padding1 margen1">
-				<h2 class="tamanioMed letraEpica">Netdiscover es una herramienta de escaneo de red que se utiliza para descubrir y mostrar dispositivos en una red local (con esta se puede optener la MAC)</h2>
+				<h2 class="tamanioMed letraBlanca">Netdiscover es una herramienta de escaneo de red que se utiliza para descubrir y mostrar dispositivos en una red local (con esta se puede optener la MAC)</h2>
 			</div>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Obtener interfaz</div><div class="letraNaranja tamaniopeq"> ifconfig</div>
@@ -187,31 +194,31 @@
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Linux</div><div class="letraNaranja tamaniopeq"> netdiscover -i Interfaz -r IpPrivada</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Virus total scanner</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Virus total scanner</h2>
 			<div class="horizontal padding1 margen1">
-				<h2 class="tamanioMed letraEpica">Sirve para escanear archivos y detectar si es malicioso</h2>
+				<h2 class="tamanioMed letraBlanca">Sirve para escanear archivos y detectar si es malicioso</h2>
 			</div>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Escaneo</div><div class="letraNaranja tamaniopeq"> vtscan ruta/del/archivo</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Host request</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Host request</h2>
 			<div class="horizontal padding1 margen1">
-				<h2 class="tamanioMed letraEpica">Sirve para escanear una página web y obtener la ip</h2>
+				<h2 class="tamanioMed letraBlanca">Sirve para escanear una página web y obtener la ip</h2>
 			</div>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Escaneo de la página web</div><div class="letraNaranja tamaniopeq"> host www.mipaginaweb.com</div>
 	        </div>
 
-			<h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Arpscanner</h2>
+			<h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Arpscanner</h2>
 			<div class="horizontal padding1 margen1">
-				<h2 class="tamanioMed letraEpica">Sirve para obtener la MAC de una red mediante la ip (eth -> MAC)</h2>
+				<h2 class="tamanioMed letraBlanca">Sirve para obtener la MAC de una red mediante la ip (eth -> MAC)</h2>
 			</div>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Busqueda de MAC</div><div class="letraNaranja tamaniopeq"> Ip link show</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Activar/Desactivar SSH</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Activar/Desactivar SSH</h2>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Detener SSH </div><div class="letraNaranja tamaniopeq"> sudo systemctl stop ssh</div>
 			</div>
@@ -225,12 +232,12 @@
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Iniciar SSH </div><div class="letraNaranja tamaniopeq"> sudo service ssh stop</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Desactivar ipv6</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Desactivar ipv6</h2>
 			<div class="horizontal padding1 margen1">
 	        	<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Detener ipv6 </div><div class="letraNaranja tamaniopeq"> sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1</div>
 			</div>
 
-	        <h2 class="textoSerio tamanioMed letraVerde dropSombraBlanca">Network Manager</h2>
+	        <h2 class="textoSerio tamanioMed letraVerdeSoft dropSombraBlanca">Network Manager</h2>
 			<div class="horizontal padding1 margen1">
 				<div class="letraBlanca margenDer1 tamaniopeq margenDer1">Var conexiones de red activas </div><div class="letraNaranja tamaniopeq"> nmcli connection show --active</div>
 			</div>
